@@ -1,0 +1,591 @@
+.notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+}
+
+.newsletter {
+  background-color: #03054e;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 140px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Estilos Natural Scents */
+
+:global(.vtex-rich-text-0-x-headingLevel2--shelfTitle){
+  color: #FDC1CB;
+  font-family: "MontserratBold";
+  font-size: 44px;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf1)
+  :global(.vtex-button){
+  background-color: #ffffff;
+  border: 1px solid #56C271;
+  border-radius: 3px;
+  color: #56C271;
+  width: 128px;
+  height: 25px;
+  margin: 0 auto;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf1)
+  :global(.vtex-button):hover{
+  background-color: #56C271;
+  color: #ffffff;
+}
+
+:global(.vtex-add-to-cart-button-0-x-buttonText){
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--infocards){
+  margin-top: 50px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--infocard2){
+  background-color: #B8D0E8;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--infocard5),
+:global(.vtex-flex-layout-0-x-flexRowContent--infocard4),
+:global(.vtex-flex-layout-0-x-flexRowContent--infocard3),
+:global(.vtex-flex-layout-0-x-flexRowContent--infocard2){
+  height: 280px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--infocard5){
+  background-color: #ECC0A2;
+}
+
+:global(.vtex-store-components-3-x-infoCardContainer--info-card-home1),
+:global(.vtex-store-components-3-x-infoCardContainer--info-card-home6){
+  height: 560px;
+}
+
+:global(.vtex-store-components-3-x-infoCardHeadline--info-card-home2),
+:global(.vtex-store-components-3-x-infoCardHeadline--info-card-home3),
+:global(.vtex-store-components-3-x-infoCardHeadline--info-card-home4),
+:global(.vtex-store-components-3-x-infoCardHeadline--info-card-home5){
+  color: #ffffff;
+  font-family: "MontserratBold";
+  font-size: 28px;
+  text-align: center;
+}
+
+:global(.vtex-store-components-3-x-infoCardHeadline--info-card-home1),
+:global(.vtex-store-components-3-x-infoCardHeadline--info-card-home6){
+  color: #ffffff;
+  font-family: "MontserratBold";
+  font-size: 44px;
+  text-align: center;
+}
+
+:global(.vtex-store-components-3-x-infoCardTextContainer--info-card-home6),
+:global(.vtex-store-components-3-x-infoCardTextContainer--info-card-home5),
+:global(.vtex-store-components-3-x-infoCardTextContainer--info-card-home4),
+:global(.vtex-store-components-3-x-infoCardTextContainer--info-card-home3),
+:global(.vtex-store-components-3-x-infoCardTextContainer--info-card-home2),
+:global(.vtex-store-components-3-x-infoCardTextContainer--info-card-home1){
+  width: 55%;
+  margin: 0 auto;
+}
+
+:global(.vtex-rich-text-0-x-container--shelfTitle-ingred){
+  background-image: url(https://naturalscents.vteximg.com.br/arquivos/back-ing.png);
+  height: 350px;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel2--shelfTitle-ingred){
+  color: #56C271;
+  font-family: "MontserratBold";
+  font-size: 44px;
+  margin: 0;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--shelfTitle-ingred){
+  margin: 70px auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--ingredientes-container)
+  :global(.vtex-store-components-3-x-imageElement){
+    width: 350px ;
+    max-height: 100% !important;
+}
+
+:global(.vtex-slider-layout-0-x-slide--carousel-ingredientes){
+  width: 400px;
+}
+
+:global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel-ingredientes){
+  margin: 0 300px;
+}
+
+:global(.vtex-slider-layout-0-x-sliderRightArrow--carousel-ingredientes){
+  right: 270px;
+  top: 175px;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLeftArrow--carousel-ingredientes){
+  left: 270px;
+  top: 175px;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+  position: absolute;
+  top: 2060px;
+}
+
+:global(.vtex-rich-text-0-x-container--instagramText){
+  margin-top: 250px;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--instagramText){
+  margin: 0 auto;
+}
+
+:global(.vtex-rich-text-0-x-strong--instagramText){
+  color: #56C271;
+  font-family: "MontserratItalic";
+  font-size: 34px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--instagramText){
+  margin: 0 475px;
+  text-align: center;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--carrusel-insta){
+  margin: 80px 0;
+}
+
+:global(.vtex-slider-layout-0-x-sliderTrackContainer--carrusel-insta){
+  margin: 0 140px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--logos){
+  margin: 0 180px 70px 180px;
+}
+
+:global(.vtex-slider-layout-0-x-paginationDot--isActive){
+  background: #ECC0A2 !important;
+}
+
+:global(.vtex-slider-layout-0-x-paginationDot){
+  background: #5f5f5f;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf1)
+  :global(.vtex-product-summary-2-x-nameContainer){
+  justify-content: center;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf1)
+  :global(.vtex-flex-layout-0-x-flexRowContent){
+    justify-content: center;
+}
+
+:global(.vtex-product-summary-2-x-brandName){
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
+:global(.vtex-product-price-1-x-currencyContainer--summary){
+  font-size: 20px;
+  font-family: "MontserratBold";
+}
+
+:global(.vtex-slider-layout-0-x-caretIcon){
+  color: #ECC0A2;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf1){
+  left: 80px;
+}
+
+:global(.vtex-slider-layout-0-x-sliderRightArrow--shelf1){
+  right: 80px;
+}
+
+:global(.vtex-product-summary-2-x-nameWrapper){
+  text-align: center;
+}
+
+@media only screen and (min-width:425px) and (max-width: 1024px){
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel-ingredientes){
+    margin: 0 20px;
+  }
+  
+  :global(.vtex-rich-text-0-x-paragraph--instagramText){
+    margin: 0 55px;
+    text-align: center;
+  }
+
+  
+  :global(.vtex-rich-text-0-x-container--instagramText){
+    margin-top: 200px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carrusel-insta){
+    margin: 0;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--logos){
+    margin: 0 10px 30px 10px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+    position: absolute;
+    top:4200px
+  }
+
+  :global(.vtex-rich-text-0-x-paragraph--instagramText){
+    margin: 0 90px ;
+    text-align: center;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--infocards){
+    height: 500px;
+    padding: 0;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--infocardsMob)
+  :global(.vtex-store-components-3-x-infoCardHeadline){
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--infocardsMob)
+  :global(.vtex-store-components-3-x-infoCardTextContainer){
+    margin: 0 auto !important;
+  }
+
+  :global(.vtex-rich-text-0-x-headingLevel2--shelfTitle-ingred){
+    font-size: 24px;
+    text-align: center;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderRightArrow--carousel-ingredientes){
+    right: 165px;
+    top: 212px;
+  }
+  
+  :global(.vtex-slider-layout-0-x-sliderLeftArrow--carousel-ingredientes){
+    left: 180px;
+    top: 212px;
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+  :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf1){
+    left: 0;
+  }
+  
+  :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf1){
+    right: 0;
+  }
+
+  :global(.vtex-rich-text-0-x-headingLevel2--shelfTitle){
+    font-size: 24px;
+  }
+
+  :global(.vtex-product-summary-2-x-brandName){
+    font-size: 15px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderRightArrow--carousel-ingredientes){
+    right: 10px;
+    top: 175px;
+  }
+  
+  :global(.vtex-slider-layout-0-x-sliderLeftArrow--carousel-ingredientes){
+    left: 10px;
+    top: 175px;
+  }
+  
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+    position: absolute;
+    top:3680px
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel-ingredientes){
+    margin: 0 ;
+  }
+
+  :global(.vtex-rich-text-0-x-paragraph--instagramText){
+    margin: 0 55px;
+    text-align: center;
+  }
+  
+  :global(.vtex-rich-text-0-x-headingLevel2--shelfTitle-ingred){
+    font-size: 24px;
+    text-align: center;
+  }
+
+  :global(.vtex-rich-text-0-x-container--shelfTitle-ingred){
+    background-image: url(https://naturalscents.vteximg.com.br/arquivos/back-in-mob.png);
+    height: 156px;
+  }
+  
+  :global(.vtex-rich-text-0-x-wrapper--shelfTitle-ingred){
+    margin: 30px auto;
+  }
+
+  :global(.vtex-rich-text-0-x-container--instagramText){
+    margin-top: 330px;
+  }
+
+  :global(.vtex-rich-text-0-x-strong--instagramText){
+    font-size: 18px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carrusel-insta){
+    margin: 30px 0;
+  }
+  
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carrusel-insta){
+    margin: 0;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--logos){
+    margin: 0 10px 30px 10px;
+  }
+  
+}  
+
+/* Infocards mobile */
+
+:global(.vtex-store-components-3-x-infoCardContainer--info-card-home6Mob){
+  height: 518px;
+}
+
+:global(.vtex-store-components-3-x-infoCardContainer--info-card-home5Mob){
+  height: 518px;
+}
+
+:global(.vtex-store-components-3-x-infoCardContainer--info-card-home4Mob){
+  height: 518px;
+}
+
+:global(.vtex-store-components-3-x-infoCardContainer--info-card-home3Mob){
+  background-color: #ECC0A2;
+  height: 518px;
+}
+
+:global(.vtex-store-components-3-x-infoCardContainer--info-card-home2Mob){
+  background-color: #B8D0E8;
+  height: 518px;
+}
+
+:global(.vtex-store-components-3-x-infoCardContainer--info-card-home1Mob){
+  height: 518px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--infocardsMob)
+  :global(.vtex-store-components-3-x-infoCardHeadline){
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--infocardsMob)
+  :global(.vtex-store-components-3-x-container){
+  padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--infocardsMob)
+  :global(.vtex-store-components-3-x-infoCardTextContainer){
+    margin: 0 70px;
+}
+
+/*Minicart*/
+
+:global(.vtex-flex-layout-0-x-flexRowContent--minicart-footer),
+:global(.vtex-minicart-2-x-minicartQuantityBadge){
+  background: #56C271;
+}
+
+:global(.vtex-minicart-2-x-minicartCheckoutButton)
+  :global(.vtex-button){
+    background-color: #ffffff;
+    color: #56C271;
+    font-family: "Montserrat";
+    border: none;
+    font-size: 0;
+}
+
+:global(.vtex-minicart-2-x-minicartCheckoutButton)
+  :global(.vtex-button)::before{
+    content: "Ir a checkout";
+    font-size: 16px;
+}
+
+:global(.vtex-minicart-2-x-minicartCheckoutButton)
+  :global(.vtex-button):hover{
+    border: 1px solid #56C271;
+  }
+
+:global(.vtex-minicart-2-x-minicartCheckoutButton){
+  width: 283px;
+  margin: 0 auto;
+}
+
+:global(.vtex-checkout-summary-0-x-summaryItemLabel){
+  color: #000000;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+:global(.vtex-checkout-summary-0-x-summarySmallDisclaimer){
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 200 !important;
+}
+
+:global(.vtex-checkout-summary-0-x-summaryItemContainer){
+  color: #000000;
+}
+
+:global(.vtex-product-list-0-x-removeButton){
+  color: #56C271 !important;
+}
+
+:global(.vtex-minicart-2-x-minicartTitle){
+  font-size: 0;
+}
+
+:global(.vtex-minicart-2-x-minicartTitle)::after{
+  content: "Mi carrito";
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: #000000;
+}
+
+:global(.vtex-product-list-0-x-productBrandName),
+:global(.vtex-product-list-0-x-productName) {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #000000;
+}
+
+:global(.vtex-product-list-0-x-quantityDropdownContainer)
+  :global(.vtex-dropdown__container){
+  border: 1px solid #000000;
+  border-radius: 0;
+}
+
+:global(.vtex-product-list-0-x-price){
+  font-family: "Montserrat";
+  color: #56C271;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+:global(.vtex-product-list-0-x-productImageContainer){
+  border: 1px solid #000000;
+}

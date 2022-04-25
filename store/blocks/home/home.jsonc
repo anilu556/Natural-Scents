@@ -1,0 +1,553 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.phone"
+    ]
+  },
+
+  "responsive-layout.desktop":{
+    "children":[
+      "list-context.image-list#demo",
+      "__fold__.experimentalLazyAssets",
+      "rich-text#shelf-title1",
+      "flex-layout.row#shelf1",
+      "flex-layout.row#infocards",
+      "rich-text#slider-title-ingredientes",
+      "slider-layout#ingredientes",
+      "rich-text#instagram",
+      "slider-layout#instagramSlider",
+      "flex-layout.row#logos"
+    ]
+  },
+
+  "responsive-layout.tablet":{
+    "children":[
+      "list-context.image-list#demo",
+      "__fold__.experimentalLazyAssets",
+      "rich-text#shelf-title1",
+      "flex-layout.row#shelf1",
+      "flex-layout.row#infocardCol6Mob",
+      "flex-layout.row#infocardCol5Mob",
+      "flex-layout.row#infocardCol4Mob",
+      "flex-layout.row#infocardCol2Mob",
+      "flex-layout.row#infocardCol1Mob",
+      "rich-text#slider-title-ingredientes",
+      "slider-layout#ingredientes",
+      "rich-text#instagram",
+      "slider-layout#instagramSlider",
+      "flex-layout.row#logos"
+    ]
+  },
+
+  "responsive-layout.phone":{
+    "children":[
+      "list-context.image-list#demo",
+      "__fold__.experimentalLazyAssets",
+      "rich-text#shelf-title1",
+      "flex-layout.row#shelf1",
+      "flex-layout.row#infocardCol6Mob",
+      "flex-layout.row#infocardCol5Mob",
+      "flex-layout.row#infocardCol4Mob",
+      "flex-layout.row#infocardCol2Mob",
+      "flex-layout.row#infocardCol1Mob",
+      "rich-text#slider-title-ingredientes",
+      "slider-layout#ingredientes",
+      "rich-text#instagram",
+      "slider-layout#instagramSlider",
+      "flex-layout.row#logos1",
+      "flex-layout.row#logos2"
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title1": {
+    "props": {
+      "text": "## PRODUCTOS QUE AMARÁS",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  // Carrusel productos
+  "flex-layout.row#shelf1": {
+    "children": ["list-context.product-list#demo1"],
+    "props":{
+      "blockClass": "productShelf"
+    }
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf1",
+      "showPaginationDots": "never"
+    }
+  },
+  // Carrusel productos
+
+  // Infocards banners
+  "flex-layout.row#infocards":{
+    "children":[
+      "flex-layout.col#infocardCol1",
+      "flex-layout.col#infocardCol2",
+      "flex-layout.col#infocardCol3",
+      "flex-layout.col#infocardCol4"
+    ],
+    "props":{
+      "blockClass": "infocards"
+    }
+  },
+  "flex-layout.col#infocardCol1":{
+    "children":[
+      "info-card#home1"
+    ],
+    "props":{
+      "width": "20%",
+      "blockClass": "infocard1"
+    }
+  },
+  "info-card#home1": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "callToActionMode": "none",
+      "imageUrl": "assets/infobanner1.png",
+      "headline": "Aromas cítricos en tu vida",
+      "blockClass": "info-card-home1",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.col#infocardCol2":{
+    "children":[
+      "flex-layout.row#Col2banner1",
+      "flex-layout.row#Col2banner2"
+    ],
+    "props":{
+      "width": "20%",
+      "blockClass": "infocardCol2"
+    }
+  },
+  "flex-layout.row#Col2banner1":{
+    "children":[
+      "info-card#home2"
+    ],
+    "props":{
+      "blockClass": "infocard2"
+    }
+  },
+  "info-card#home2": {
+    "props": {
+      "id": "info-card-home2",
+      "isFullModeStyle": true,
+      "callToActionMode": "none",
+      "textPosition": "left",
+      "headline": "Para los amantes de la lavanda",
+      "blockClass": "info-card-home2",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#Col2banner2":{
+    "children":[
+      "info-card#home3"
+    ],
+    "props":{
+      "blockClass": "infocard3"
+    }
+  },
+  "info-card#home3": {
+    "props": {
+      "id": "info-card-home3",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/banner3.png",
+      "headline": "",
+      "callToActionMode": "none",
+      "blockClass": "info-card-home3",
+      "textAlignment": "center"
+    }
+  },
+
+  "flex-layout.col#infocardCol3":{
+    "children":[
+      "flex-layout.row#Col3banner1",
+      "flex-layout.row#Col3banner2"
+    ],
+    "props":{
+      "width": "20%",
+      "blockClass": "infocardCol3"
+    }
+  },
+  "flex-layout.row#Col3banner1":{
+    "children":[
+      "info-card#home4"
+    ],
+    "props":{
+      "blockClass": "infocard4"
+    }
+  },
+  "info-card#home4": {
+    "props": {
+      "id": "info-card-home4",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/banner4.png",
+      "headline": "",
+      "callToActionMode": "none",
+      "blockClass": "info-card-home4",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#Col3banner2":{
+    "children":[
+      "info-card#home5"
+    ],
+    "props":{
+      "blockClass": "infocard5"
+    }
+  },
+  "info-card#home5": {
+    "props": {
+      "id": "info-card-home5",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "callToActionMode": "none",
+      "headline": "Para los amantes de la lavanda",
+      "blockClass": "info-card-home5",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.col#infocardCol4":{
+    "children":[
+      "info-card#home6"
+    ],
+    "props":{
+      "width": "40%",
+      "blockClass": "infocardCol4"
+    }
+  },
+  "info-card#home6": {
+    "props": {
+      "id": "info-card-home6",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/infobanner4.png",
+      "headline": "Diseña tu rutina facial",
+      "callToActionMode": "none",
+      "blockClass": "info-card-home6",
+      "textAlignment": "center"
+    }
+  },
+
+  // Infocards banners
+
+  "rich-text#instagram": {
+    "props": {
+      "text": "**Síguenos en instagram y utiliza el hashtag #solonaturals**",
+      "blockClass": "instagramText"
+    }
+  },
+
+  // carrusel instagram 
+  "slider-layout#instagramSlider": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 4,
+          "phone": 2
+        },
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        "blockClass": "carrusel-insta"
+      },
+      "children": ["image#insta-1", "image#insta-2", "image#insta-3", "image#insta-4"]
+    },
+    "image#insta-1":{
+      "props":{
+        "src":"assets/insta1.png",
+        "blockClass": "banner-insta",
+        "link": {
+          "url": "https://www.instagram.com/naturalscentsmx/"
+        }
+      }
+    },
+    "image#insta-2":{
+      "props":{
+        "src":"assets/insta2.png",
+        "blockClass": "banner-insta",
+        "link": {"url": "https://www.instagram.com/naturalscentsmx/"}
+      }
+    },
+    "image#insta-3":{
+      "props":{
+        "src":"assets/insta3.png",
+        "blockClass": "banner-insta",
+        "link": {"url": "https://www.instagram.com/naturalscentsmx/"}
+      }
+    },
+    "image#insta-4":{
+      "props":{
+        "src":"assets/insta4.png",
+        "blockClass": "banner-insta",
+        "link": {"url": "https://www.instagram.com/naturalscentsmx/"}
+    }
+  },
+  // carrusel instagram 
+
+  //Logos
+  "flex-layout.row#logos": {
+    "children": [
+      "flex-layout.col#logos1",
+      "flex-layout.col#logos2",
+      "flex-layout.col#logos3",
+      "flex-layout.col#logos4",
+      "flex-layout.col#logos5"
+    ],
+    "props": {
+      "blockClass": "logos",
+      "preserveLayoutOnMobile":true,
+      "verticalAlign":"middle",
+      "fullWidth":true
+    }
+  },
+
+  "flex-layout.col#logos1": {
+    "children": [
+      "image#logo1"
+    ]
+  },
+  "image#logo1": {
+    "props": {
+      "src": "assets/sedex.png"
+    }
+  },
+  "flex-layout.col#logos2": {
+    "children": [
+      "image#logo2"
+    ]
+  },
+  "image#logo2": {
+    "props": {
+      "src": "assets/hecho.png"
+    }
+  },
+
+  "flex-layout.col#logos3": {
+    "children": [
+      "image#logo3"
+    ]
+  },
+  "image#logo3": {
+    "props": {
+      "src": "assets/cruelty.png"
+    }
+  },
+  "flex-layout.col#logos4": {
+    "children": [
+      "image#logo4"
+    ]
+  },
+  "image#logo4": {
+    "props": {
+      "src": "assets/naturals.png"
+    }
+  },
+  "flex-layout.col#logos5": {
+    "children": [
+      "image#logo5"
+    ]
+  },
+  "image#logo5": {
+    "props": {
+      "src": "assets/cofepris.png"
+    }
+  },
+  //Logos
+
+  //Responsive Logos
+
+  "flex-layout.row#logos1": {
+    "children": [
+      "flex-layout.col#logos1",
+      "flex-layout.col#logos2"
+    ],
+    "props": {
+      "blockClass": "logos",
+      "preserveLayoutOnMobile":true,
+      "verticalAlign":"middle",
+      "fullWidth":true
+    }
+  },
+
+  "flex-layout.row#logos2": {
+    "children": [
+      "flex-layout.col#logos3",
+      "flex-layout.col#logos5",
+      "flex-layout.col#logos4"
+    ],
+    "props": {
+      "blockClass": "logos",
+      "preserveLayoutOnMobile":true,
+      "verticalAlign":"middle",
+      "fullWidth":true
+    }
+  },
+
+  // Responsive Phone Infocards
+
+  // Infocards banners
+  "flex-layout.row#infocardCol1Mob":{
+    "children":[
+      "info-card#home1Mob"
+    ],
+    "props":{
+      "width": "100%",
+      "blockClass": ["infocard1Mob", "infocardsMob"]
+    }
+  },
+  "info-card#home1Mob": {
+    "props": {
+      "id": "info-card-home1Mob",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "callToActionMode": "none",
+      "imageUrl": "assets/infobanner1.png",
+      "headline": "Aromas cítricos en tu vida",
+      "blockClass": "info-card-home1Mob",
+      "textAlignment": "center",
+      "title":"banner1"
+    }
+  },
+  "flex-layout.row#infocardCol2Mob":{
+    "children":[
+      "info-card#home2Mob"
+    ],
+    "props":{
+      "width": "100%",
+      "blockClass": ["infocard2Mob", "infocardsMob"]
+    }
+  },
+  "info-card#home2Mob": {
+    "props": {
+      "id": "info-card-home2Mob",
+      "isFullModeStyle": true,
+      "callToActionMode": "none",
+      "textPosition": "left",
+      "headline": "Para los amantes de la lavanda",
+      "blockClass": "info-card-home2Mob",
+      "textAlignment": "center",
+      "title":"banner2"
+    }
+  },
+
+  "flex-layout.row#infocardCol4Mob":{
+    "children":[
+      "info-card#home4Mob"
+    ],
+    "props":{
+      "width": "100%",
+      "blockClass": ["infocard4Mob", "infocardsMob"]
+    }
+  },
+  "info-card#home4Mob": {
+    "props": {
+      "id": "info-card-home4Mob",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/banner4.png",
+      "headline": "",
+      "callToActionMode": "none",
+      "blockClass": "info-card-home4Mob",
+      "textAlignment": "center",
+      "title":"banner4"
+    }
+  },
+  "flex-layout.row#infocardCol5Mob":{
+    "children":[
+      "info-card#home5Mob"
+    ],
+    "props":{
+      "width": "100%",
+      "blockClass": ["infocard5Mob", "infocardsMob"]
+    }
+  },
+  "info-card#home5Mob": {
+    "props": {
+      "id": "info-card-home3Mob",
+      "isFullModeStyle": true,
+      "callToActionMode": "none",
+      "textPosition": "left",
+      "headline": "Para los amantes de la lavanda",
+      "blockClass": "info-card-home3Mob",
+      "textAlignment": "center",
+      "title":"banner5"
+    }
+  },
+  "flex-layout.row#infocardCol6Mob":{
+    "children":[
+      "info-card#home6Mob"
+    ],
+    "props":{
+      "width": "100%",
+      "blockClass": ["infocard6Mob", "infocardsMob"]
+    }
+  },
+  "info-card#home6Mob":{
+    "props": {
+      "id": "info-card-home6Mob",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/infobanner4.png",
+      "headline": "Diseña tu rutina facial",
+      "callToActionMode": "none",
+      "blockClass": "info-card-home6Mob",
+      "textAlignment": "center",
+      "title":"banner6"
+    }
+  }
+}
+
+ 
+

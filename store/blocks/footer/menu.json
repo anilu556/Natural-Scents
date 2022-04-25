@@ -1,0 +1,232 @@
+{
+  "vtex.menu@2.x:menu#Acerca": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footerAcerca"
+    },
+    "children": [
+      "menu-item#tituloAcerca",
+      "menu-item#acerca",
+      "menu-item#terminos",
+      "menu-item#aviso",
+      "menu-item#devolucion"
+    ]
+  },
+  "menu-item#tituloAcerca":{
+    "props":{
+      "text": "Acerca de nosotros",
+      "blockClass":"titleMenu1"
+    }
+  },
+  "menu-item#acerca": {
+    "props": {
+      "id": "menu-item-acerca",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Acerca de Natural Scents",
+        "text": "Acerca de Natural Scents"
+      }
+    }
+  },
+  "menu-item#terminos": {
+    "props": {
+      "id": "menu-item-terminos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Terminosycondiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+  "menu-item#aviso": {
+    "props": {
+      "id": "menu-item-aviso",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Aviso de privacidad",
+        "text": "Aviso de privacidad"
+      }
+    }
+  },
+  "menu-item#devolucion": {
+    "props": {
+      "id": "menu-item-devolucion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Política de devolución",
+        "text": "Política de devolución"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#Atencion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footerAtencion"
+    },
+    "children": [
+      "menu-item#tituloPagos",
+      "menu-item#entregas",
+      "menu-item#preguntas",
+      "menu-item#localizador",
+      "menu-item#contacto"
+    ]
+  },
+
+  "menu-item#tituloPagos":{
+    "props":{
+      "text": "Atención al cliente",
+      "blockClass":"titleMenu2"
+    }
+  },
+  "menu-item#entregas": {
+    "props": {
+      "id": "menu-item-entrega",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Entrega",
+        "text": "Entrega"
+      }
+    }
+  },
+
+  "menu-item#preguntas": {
+    "props": {
+      "id": "menu-item-preguntas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "preguntas",
+        "text": "Preguntas Frecuentes"
+      }
+    }
+  },
+
+  "menu-item#localizador": {
+    "props": {
+      "id": "menu-item-Localizador",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Localizador",
+        "text": "Localizador de tiendas"
+      }
+    }
+  },
+
+  "menu-item#contacto": {
+    "props": {
+      "id": "menu-item-contacto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/contacto",
+        "noFollow": true,
+        "tagTitle": "contacto",
+        "text": "Contacto"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#acercamob",
+      "menu-item#atencionmob"
+    ]
+  },
+
+  "menu-item#acercamob": {
+    "props": {
+      "id": "menu-item-acercamob",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Acerca de nosotros",
+        "text": "Acerca de nosotros"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#acercamob"]
+  },
+  "vtex.menu@2.x:submenu.accordion#acercamob": {
+    "children": ["vtex.menu@2.x:menu#acercamob-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#acercamob-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#acerca",
+      "menu-item#terminos",
+      "menu-item#aviso",
+      "menu-item#devolucion"
+    ]
+  },
+
+  "menu-item#atencionmob": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Atención al cliente",
+        "text": "Atención del cliente"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#atencion"]
+  },
+  "vtex.menu@2.x:submenu.accordion#atencion": {
+    "children": ["vtex.menu@2.x:menu#atencion-accordion-mob"]
+  },
+
+  "vtex.menu@2.x:menu#atencion-accordion-mob": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#entregas",
+      "menu-item#preguntas",
+      "menu-item#localizador",
+      "menu-item#contacto"
+    ]
+  }
+}

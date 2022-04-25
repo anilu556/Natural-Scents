@@ -1,0 +1,408 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop",
+      "back-to-top-button"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#footer-menu1",
+      "flex-layout.col#footer-menu2",
+      "flex-layout.col#footer-logo",
+      "flex-layout.col#footer-info"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+  "flex-layout.col#footer-menu1":{
+    "children":[
+      "vtex.menu@2.x:menu#Acerca"
+    ],
+  "props":{
+    "blockClass": "footerMenu1",
+    "width": "20%"
+    }
+  },
+  "flex-layout.col#footer-menu2":{
+    "children":[
+      "vtex.menu@2.x:menu#Atencion"
+    ],
+  "props":{
+    "blockClass": "footerMenu2",
+    "width": "20%"
+    }
+  },
+  "flex-layout.col#footer-logo":{
+    "children":[
+      "image#logofooter"
+    ],
+  "props":{
+    "blockClass": "footerLogo",
+    "width": "25%"
+    }
+  },
+  "flex-layout.col#footer-info":{
+    "children":[
+      "flex-layout.row#footer-info1",
+      "flex-layout.row#footer-info2"
+    ],
+    "props":{
+      "blockClass": "footerInfo",
+      "width": "35%"
+    }
+  },
+  "flex-layout.row#footer-info1":{
+    "children":[
+      "flex-layout.col#payments",
+      "flex-layout.col#socialnet"
+    ]
+  },
+  "flex-layout.col#payments":{
+    "children":[
+      "rich-text#paymentsTitle",
+      "flex-layout.row#payment-methods"
+    ],
+    "props":{
+      "blockClass": "paymentsCol",
+      "width": "40%"
+    }
+  },
+  "flex-layout.row#payment-methods":{
+    "children":[
+      "image#visa", 
+      "image#master", 
+      "image#google",
+      "image#apple"
+    ],
+    "props":{
+      "blockClass":"paymt"
+    }
+  },
+  "image#visa": {
+    "props": {
+      "src": "assets/visa.svg",
+      "maxHeight": 25
+    }
+  },
+  "image#master": {
+    "props": {
+      "src": "assets/master.svg",
+      "maxHeight": 25
+    }
+  },
+  "image#google": {
+    "props": {
+      "src": "assets/google.svg",
+      "maxHeight": 25
+    }
+  },
+  "image#apple": {
+    "props": {
+      "src": "assets/apple.svg",
+      "maxHeight": 25
+    }
+  },
+  "rich-text#paymentsTitle":{
+    "props": {
+        "text": "Pagos seguros",
+        "blockClass": "pagosTitle"
+    }
+  },
+  "flex-layout.col#socialnet":{
+    "children":[
+      "rich-text#socialnetTitle",
+      "flex-layout.row#socialnet"
+    ],
+    "props":{
+      "blockClass": "socialnetCol",
+      "width": "60%"
+    }
+  }, 
+  "rich-text#socialnetTitle":{
+    "props": {
+      "text": "Síguenos en redes",
+      "blockClass": "socialnetTitle"
+    }
+  },
+  "flex-layout.row#footer-info2":{
+    "children":[
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "flex-layout.row#newsletter":{
+    "children":[
+      "flex-layout.col#nl"
+    ],"props":{
+      "fullWidth":false,
+      "horizontalAlign":"center",
+      "blockClass":["rownl", "b-newsletter"]
+    }
+  },
+  "flex-layout.col#nl":{
+    "children":[
+      "rich-text#titnl",
+      "rich-text#txtnl",
+      "newsletter-form#nlgral"
+    ],"props":{
+      "width": "100%",
+      "horizontalAlign":"center",
+      "blockClass":"colnl"
+    }
+  },
+
+  "rich-text#titnl":{
+    "props":{
+      "text":"REGÍSTRATE Y DISFRUTA LOS BENEFICIOS",
+      "textPosition":"CENTER",
+      "textAlignment":"center",
+      "blockClass": "titnl"
+    }
+  },
+
+  "rich-text#txtnl":{
+    "props":{
+      "text":"Nos encanta ser parte de tu rutina y estar más cerca de ti.",
+      "textPosition":"CENTER",
+      "textAlignment": "center",
+      "blockClass":"txtnl"
+    }
+  },
+
+  "newsletter-form#nlgral":{
+    "children":[
+      "newsletter-input-email",
+      "newsletter-submit"
+    ],"props":{
+      "blockClass":"news",
+      "horizontalAlign": true
+    }
+  },
+
+  "newsletter-input-email":{
+    "props":{
+      "placeholderText": "hola@micorreo.com"
+    }
+  },
+  "back-to-top-button":{
+    "props":{
+      "displayThreshold": 800
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "flex-layout.col#footer-envio",
+      "flex-layout.col#footer-sitio"
+    ],
+    "props": {
+      "blockClass": "footer2"
+    }
+  },
+  "flex-layout.col#footer-envio":{
+    "children":[
+      "rich-text#envio"
+    ],
+    "props":{
+      "width": "20%"
+    }
+  },
+  "rich-text#envio":{
+    "props": {
+      "text": "Envío a domicilio",
+      "blockClass": "envio"
+    }
+  },
+  "flex-layout.col#footer-sitio":{
+    "children":[
+      "rich-text#sitio"
+    ],
+    "props":{
+      "width": "20%"
+    }
+  },
+  "rich-text#sitio":{
+    "props": {
+      "text": "Sitio 100% seguro",
+      "blockClass": "sitio"
+    }
+  },
+  "image#logofooter":{
+    "props": {
+      "title": "LogoFooter",
+      "href": "/",
+      "src": "assets/logowhite.png"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+    }
+  },
+
+  "flex-layout.row#footer-3-desktop": {
+    "children": ["rich-text#footer"],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "(C) 2022 Natural Scents . Todos los derechos reservados / Hecho con AMOR Punto Commerce",
+      "blockClass": "footer"
+    }
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile",
+      "flex-layout.row#3-footer-mobile",
+      "flex-layout.row#4-footer-mobile",
+      "flex-layout.row#5-footer-mobile",
+      "flex-layout.row#6-footer-mobile",
+      "flex-layout.row#7-footer-mobile"
+    ],
+    "props":{
+      "blockClass": "footer-mob"
+    }
+  },
+  "flex-layout.row#1-footer-mobile":{
+    "props": {
+      "blockClass": "logo-row",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    },
+    "children":[
+      "image#logofooterMob"
+    ]
+  },
+  "image#logofooterMob":{
+    "props": {
+      "title": "LogoFooter",
+      "href": "/",
+      "src": "assets/logowhite.png"
+    }
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "blockClass":"menuMob"
+    },
+    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+  },
+  "flex-layout.row#3-footer-mobile":{
+    "children": [
+      "flex-layout.col#footer-envio",
+      "flex-layout.col#footer-sitio"
+    ],
+    "props": {
+      "blockClass": "footer-info-mob"
+    }
+  },
+  "flex-layout.row#4-footer-mobile": {
+    "children": [
+      "flex-layout.col#socialnet-mob"
+    ],
+    "props": {
+      "blockClass": "footer-pay-mob",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#socialnet-mob":{
+    "children":[
+      "rich-text#socialnetTitle",
+      "flex-layout.row#socialnet-mob"
+    ],
+    "props":{
+      "blockClass": "socialnetColMob"
+    }
+  }, 
+  "flex-layout.row#5-footer-mobile": {
+    "children": [
+      "flex-layout.col#payments-mob"
+    ],
+    "props": {
+      "blockClass": "footer-pay-mob",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#payments-mob":{
+    "children":[
+      "rich-text#paymentsTitle",
+      "flex-layout.row#payment-methods-mob"
+    ],
+    "props":{
+      "blockClass": "paymentsCol"
+    }
+  },
+  "flex-layout.row#payment-methods-mob":{
+    "children":[
+      "image#visa", 
+      "image#master", 
+      "image#google",
+      "image#apple"
+    ],
+    "props":{
+      "blockClass":"paymt-mob",
+      "preserveLayoutOnMobile":true,
+      "verticalAlign":"middle",
+      "fullWidth":true
+    }
+  },
+  "flex-layout.row#6-footer-mobile":{
+    "children":[
+      "flex-layout.row#newsletter"
+    ],
+    "props":{
+      "blockClass": "nlMob"
+    }
+  },
+  "flex-layout.row#7-footer-mobile":{
+    "children": [
+      "rich-text#footer-mobile"
+    ],
+    "props":{
+      "blockClass":"credits-mob" 
+    }
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "(C) 2022 Natural Scents . Todos los derechos reservados / Hecho con AMOR Punto Commerce",
+      "blockClass": "footer"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+    "flex-layout.row#socialnet": {
+      "children": [
+        "flex-layout.col#redess1",
+        "flex-layout.col#redess2",
+        "flex-layout.col#redess3",
+        "flex-layout.col#redess4"
+      ],
+      "props": {
+        "blockClass": "socialnet"
+      }
+    },
+
+    "flex-layout.col#redess1": {
+      "children": [
+        "image#redes1"
+      ],
+      "props": {
+        "blockClass": "redess"
+      }
+    },
+    "image#redes1": {
+      "props": {
+        "src": "assets/facebook.svg",
+        "link":{
+          "url":"https://www.facebook.com/naturalscentsmx",
+          "newTab":true
+        },
+        "blockClass" : "imgSocial"
+      }
+    },
+    "flex-layout.col#redess2": {
+      "children": [
+        "image#redes2"
+      ]
+    },
+    "image#redes2": {
+      "props": {
+        "src": "assets/instagram.svg",
+        "link":{
+          "url":"https://www.instagram.com/naturalscentsmx/",
+          "newTab":true
+        },
+        "blockClass" : "imgSocial"
+      }
+    },
+    "flex-layout.col#redess3": {
+      "children": [
+        "image#redes3"
+      ]
+    },
+    "image#redes3": {
+      "props": {
+        "src": "assets/youtube.svg",
+        "link":{
+          "url":"https://www.youtube.com/c/NaturalScentsMXNS",
+          "newTab":true
+        },
+        "blockClass" : "imgSocial"
+      }
+    },
+    "flex-layout.col#redess4": {
+      "children": [
+        "image#redes4"
+      ]
+    },
+    "image#redes4": {
+      "props": {
+        "src": "assets/pinterest.svg",
+        "link":{
+          "url":"https://www.pinterest.com.mx/naturalscentsmx/_created/",
+          "newTab":true
+        },
+        "blockClass" : "imgSocial"
+      }
+    },
+    "flex-layout.row#socialnet-mob":{
+      "children": [
+        "flex-layout.col#redess1",
+        "flex-layout.col#redess2",
+        "flex-layout.col#redess3",
+        "flex-layout.col#redess4"
+      ],
+      "props": {
+        "blockClass": "socialnetMob",
+        "preserveLayoutOnMobile":true
+      }
+    }
+  }

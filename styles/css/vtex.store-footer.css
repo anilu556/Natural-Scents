@@ -1,0 +1,338 @@
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+
+/* Estilos Natural Scents */
+
+:global(.vtex-store-footer-2-x-footerLayout){
+  background-image: url(https://naturalscents.vteximg.com.br/arquivos/ondas.png);
+  background-repeat: round;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout)
+  :global(.vtex-menu-2-x-styledLinkContent ){
+    color: #ffffff;
+    font-family: "MontserratLight";
+    font-size: 14px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--credits),
+:global(.vtex-flex-layout-0-x-flexRow--credits-mob){
+  background-color: #56C271;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--footer){
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  font-family: "MontserratLight";
+  padding: 6px 0;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--footer){
+  margin: 0 auto;
+}
+
+:global(.vtex-store-components-3-x-backToTopButtonContainer)
+  :global(.vtex-button){
+  background-color: #D3F4D0;
+  border-radius: 50%;
+  border: none;
+}
+
+:global(.vtex-store-components-3-x-backToTopButtonContainer)
+  :global(.vtex-button){
+  background-color: #D3F4D0;
+  border-radius: 50%;
+  border: none;
+  font-size: 0;
+}
+
+
+:global(.vtex-store-components-3-x-backToTopButtonContainer)
+:global(.vtex-button)::after{
+  content: url(https://naturalscents.vteximg.com.br/arquivos/top.svg);
+  font-size: 10px;
+}
+
+:global(.vtex-menu-2-x-menuContainer--footerMenu1)
+  :global(.vtex-menu-2-x-styledLinkContent),
+:global(.vtex-menu-2-x-menuContainer--footerMenu2)
+  :global(.vtex-menu-2-x-styledLinkContent) {
+  font-family: "MontserratLight";
+  font-size: 14px;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexColChild--footerLogo){
+  position: relative;
+  left: 20%;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout)
+  :global(.vtex-menu-2-x-styledLinkContent--titleMenu1),
+:global(.vtex-store-footer-2-x-footerLayout)
+  :global(.vtex-menu-2-x-styledLinkContent--titleMenu2) {
+    font-size: 14px;
+    font-family: "MontserratSemiBold";
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--pagosTitle),
+:global(.vtex-rich-text-0-x-paragraph--socialnetTitle){
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #ffffff;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout)
+  :global(.vtex-flex-layout-0-x-flexRowContent--menu-row){
+    padding: 77px 76px 0 76px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--socialnetCol){
+    padding-left: 50px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--colnl){
+  align-items: flex-start;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--titnl){
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Montserrat";
+  margin-bottom: 0;
+  text-align: center;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--txtnl){
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "MontserratLight";
+  margin: 10px 0;
+  text-align: center;
+}
+
+:global(.vtex-store-newsletter-1-x-emailInputContainer)
+  :global(.vtex-input-prefix__group){
+    border-radius: 0;
+    border: 1px solid #ECC0A2;
+    height: 32px;
+}
+
+:global(.vtex-store-newsletter-1-x-emailInputContainer)
+  :global(.vtex-styleguide-9-x-input){
+    background: transparent;
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: "MontserratLight";
+    width: 246px;
+}
+
+:global(.vtex-store-newsletter-1-x-emailInputContainer)
+  :global(.vtex-styleguide-9-x-input)::placeholder{
+    color:#ffffff;
+    font-size: 12px;
+    font-family: "MontserratLight";
+    text-align: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--nlMob)
+  :global(.vtex-store-newsletter-1-x-formSubmitContainer)
+    :global(.vtex-button){
+  background-color: #ECC0A2;
+  border: none;
+  border-radius: 0;
+  font-size: 0;
+  width: 250px;
+  min-height: 32px;
+  margin-top: 10px;
+}
+
+:global(.vtex-store-newsletter-1-x-formSubmitContainer)
+  :global(.vtex-button){
+    background-color: #ECC0A2;
+    border: none;
+    border-radius: 0;
+    font-size: 0;
+    width: 144px;
+    min-height: 32px;
+}
+
+:global(.vtex-store-newsletter-1-x-formSubmitContainer)
+  :global(.vtex-button)::before{
+    font-size: 14px;
+    content: "SUSCRÍBETE";
+    font-family: "Montserrat";
+    color: #000000;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout)
+  :global(.vtex-flex-layout-0-x-flexRowContent--footer2){
+    padding: 0 76px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--envio){
+  color:#ffffff;
+  font-size: 12px;
+  font-family: "MontserratLight";
+  margin-left: 22px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--envio)::before{
+  content: url(assets/envio.svg);
+  position: relative;
+  top: 7px;
+  margin-right: 5px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--sitio){
+  color:#ffffff;
+  font-size: 12px;
+  font-family: "MontserratLight";
+}
+
+:global(.vtex-rich-text-0-x-paragraph--sitio)::before{
+  content: url(assets/sitio.svg);
+  position: relative;
+  top: 7px;
+  margin-right: 5px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--menuMob)
+  :global(.vtex-menu-2-x-styledLinkContent){
+    font-family: "MontserratSemiBold";
+    font-size: 14px;
+}
+
+:global(.vtex-menu-2-x-accordionIcon--isClosed){
+  font-size: 0;
+}
+
+:global(.vtex-menu-2-x-accordionIcon--isClosed)::before{
+  font-size: 10px;
+  content: url(assets/arrow.svg);
+}
+
+:global(.vtex-menu-2-x-accordionIcon--isOpen)::before{
+  font-size: 10px;
+  content: url(assets/arrow_up.png);
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--footer-info-mob)
+  :global(.vtex-rich-text-0-x-container--envio),
+:global(.vtex-flex-layout-0-x-flexRow--footer-info-mob)  
+  :global(.vtex-rich-text-0-x-container--sitio){
+  justify-content: center !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-info-mob){
+  justify-content: center !important; 
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--footer-info-mob)
+  :global(.vtex-rich-text-0-x-paragraph--envio){
+    margin-left: 0;
+}
+
+:global(.vtex-menu-2-x-submenuAccordion)
+  :global(.vtex-menu-2-x-styledLinkContent){
+    font-size: 14px;
+    font-family: "Montserrat";
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menuMob)
+  :global(.vtex-store-components-3-x-container){
+    margin: 0px 60px;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout--footer-mob){
+  background-color: #5F5F5F; 
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-pay-mob){
+  justify-content: center !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--socialnetColMob)
+  :global(.vtex-rich-text-0-x-container--socialnetTitle),
+:global(.vtex-flex-layout-0-x-flexCol--paymentsCol)
+  :global(.vtex-rich-text-0-x-container--pagosTitle){
+    justify-content: center !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--socialnetMob)
+  :global(.vtex-flex-layout-0-x-flexColChild){
+    margin: 0 auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--socialnetMob),
+:global(.vtex-flex-layout-0-x-flexRow--paymt-mob){
+  margin: 0 110px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--nlMob) {
+  justify-content: center!important;
+  margin: 10px 0 50px 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--nlMob)
+  :global(.vtex-flex-layout-0-x-flexCol--colnl){
+    align-items: center;
+    margin: 0px 85px;
+}
+
+@media (min-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexRow--menuMob)
+  :global(.vtex-store-components-3-x-container){
+    margin: 0px 200px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--socialnetMob),
+  :global(.vtex-flex-layout-0-x-flexRow--paymt-mob){
+    margin: 0 230px;  
+  }
+}
+
+@media  (min-width: 1024px) {
+  :global(.vtex-flex-layout-0-x-flexRow--menuMob)
+  :global(.vtex-store-components-3-x-container){
+    margin: 0px 275px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexColChild--footerLogo){
+    position: initial;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--socialnetMob),
+  :global(.vtex-flex-layout-0-x-flexRow--paymt-mob){
+    margin: 0 330px;
+  }
+  
+}
+
+@media (min-width: 1440px){
+  :global(.vtex-store-newsletter-1-x-newsletterForm--news){
+    display: flex;
+  }
+
+  :global(.vtex-rich-text-0-x-paragraph--pagosTitle),
+  :global(.vtex-rich-text-0-x-paragraph--socialnetTitle){
+    font-family: "MontserratSemiBold";
+  }
+}
+
+

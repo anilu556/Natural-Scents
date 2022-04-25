@@ -1,0 +1,97 @@
+{
+    // Carousel Ingredientes
+    "rich-text#slider-title-ingredientes": {
+      "props": {
+        "text": "## INGREDIENTES PARA CONSENTIRTE",
+        "blockClass": "shelfTitle-ingred"
+      }
+    },
+    "slider-layout#ingredientes": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 2,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "always",
+        "showPaginationDots": "never",
+        "blockClass": "carousel-ingredientes"
+      },
+      "children": [
+        "flex-layout.row#ingredientes-1",
+        "flex-layout.row#ingredientes-2",
+        "flex-layout.row#ingredientes-3",
+        "flex-layout.row#ingredientes-4"
+      ]
+    },
+    "flex-layout.row#ingredientes-1":{
+      "children":[
+        "image#ingredientes-1"
+      ],
+      "props":{
+        "blockClass": "ingredientes-container"
+      }
+    },
+    "image#ingredientes-1": {
+      "props": {
+        "title": "imagen ing 1",
+        "src": "assets/coco-ing.png",
+        "maxHeight": 155,
+        "alt": "ingredientes Image",
+        "link": {"url": "/#"}
+      }
+    },
+    "flex-layout.row#ingredientes-2":{
+      "children":[
+        "image#ingredientes-2"
+      ],
+      "props":{
+        "blockClass": "ingredientes-container"
+      }
+    },
+    "image#ingredientes-2": {
+      "props": {
+        "title": "imagen ing 2",
+        "src": "assets/manza-ing.png",
+        "maxHeight": 155,
+        "alt": "ingredientes Image",
+        "link": {"url": "/#"}
+      }
+    },
+    "flex-layout.row#ingredientes-3":{
+      "children":[
+        "image#ingredientes-3"
+      ],
+      "props":{
+        "blockClass": "ingredientes-container"
+      }
+    },
+    "image#ingredientes-3": {
+      "props": {
+        "title": "imagen ing 3",
+        "src": "assets/coco-ing.png",
+        "maxHeight": 155,
+        "alt": "ingredientes Image",
+        "link": {"url": "/#"}
+      }
+    },
+    "flex-layout.row#ingredientes-4":{
+      "children":[
+        "image#ingredientes-4"
+      ],
+      "props":{
+        "blockClass": "ingredientes-container"
+      }
+    },
+    "image#ingredientes-4": {
+      "props": {
+        "title": "imagen ing 4",
+        "src": "assets/manza-ing.png",
+        "maxHeight": 155,
+        "alt": "ingredientes Image",
+        "link": {"url": "/#"}
+      }
+    }
+}
+  

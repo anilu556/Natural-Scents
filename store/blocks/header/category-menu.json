@@ -1,0 +1,274 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#cat1",
+      "menu-item#cat2",
+      "menu-item#cat3",
+      "menu-item#cat4",
+      "menu-item#cat5",
+      "menu-item#cat6",
+      "menu-item#cat7"
+    ]
+  },
+
+  "menu-item#cat1": {
+    "props": {
+      "id": "menu-item-cat1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Fragancias",
+        "text": "Fragancias"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#cat1"
+    ]
+  },
+  "vtex.menu@2.x:submenu#cat1": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-cat1"
+    ]
+  },
+  "flex-layout.row#menu-cat1": {
+    "children": [
+      "flex-layout.col#menu-subcat-1",
+      "flex-layout.col#menu-subcat-2"
+    ]
+  },
+  "flex-layout.col#menu-subcat-1": {
+    "children": [
+      "vtex.menu@2.x:menu#subcat1"
+    ]
+  },
+  "flex-layout.col#menu-subcat-2": {
+    "children": [
+      "info-card#homeMenu"
+    ]
+  },
+  "info-card#homeMenu":{
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  "vtex.menu@2.x:menu#subcat1": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#about-us",
+      "menu-item#faq"
+    ]
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "About us",
+        "text": "About us"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+  "menu-item#contact-us": {
+    "props": {
+      "id": "menu-item-contact-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
+      }
+    }
+  },
+
+  
+  "menu-item#cat2": {
+    "props": {
+      "id": "menu-item-cat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Antibacterial",
+        "text": "Antibacterial"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#cat2"
+    ]
+  },
+  "vtex.menu@2.x:submenu#cat2": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-cat2"
+    ]
+  },
+  "flex-layout.row#menu-cat2": {
+    "children": [
+      "flex-layout.col#menu-subcat-1",
+      "flex-layout.col#menu-subcat-2"
+    ]
+  },
+
+  "menu-item#cat3": {
+    "props": {
+      "id": "menu-item-cat3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Cuidado Corporal",
+        "text": "Cuidado Corporal"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#cat3"
+    ]
+  },
+  "vtex.menu@2.x:submenu#cat3": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-cat3"
+    ]
+  },
+  "flex-layout.row#menu-cat3": {
+    "children": [
+      "flex-layout.col#menu-subcat-1",
+      "flex-layout.col#menu-subcat-2"
+    ]
+  },
+
+
+  "menu-item#cat4": {
+    "props": {
+      "id": "menu-item-cat4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Cuidado Facial",
+        "text": "Cuidado Facial"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#cat4"
+    ]
+  },
+  "vtex.menu@2.x:submenu#cat4": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-cat4"
+    ]
+  },
+  "flex-layout.row#menu-cat4": {
+    "children": [
+      "flex-layout.col#menu-subcat-1",
+      "flex-layout.col#menu-subcat-2"
+    ]
+  },
+
+
+  "menu-item#cat5": {
+    "props": {
+      "id": "menu-item-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Hogar",
+        "text": "Hogar"
+      }
+    }
+  },
+  "menu-item#cat6": {
+    "props": {
+      "id": "menu-item-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Regalos",
+        "text": "Regalos"
+      }
+    }
+  },
+  "menu-item#cat7": {
+    "props": {
+      "id": "menu-item-category-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "OUTLET",
+        "text": "OUTLET"
+      }
+    }
+  }
+}
