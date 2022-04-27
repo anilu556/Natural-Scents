@@ -37,3 +37,10 @@
     font-family: "BreveSansBold";
     src: url(assets/fonts/BreveSansTextBold.otf);
 }
+
+@font-face {
+    font-family: "MontserratBlack";
+    src: url(assets/fonts/Montserrat-Black.ttf);
+}
+
+

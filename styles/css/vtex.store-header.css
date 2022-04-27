@@ -347,12 +347,18 @@
   padding: 10px 0;
 }
 
+:global(.vtex-store-drawer-0-x-drawer)
 :global(.vtex-menu-2-x-styledLinkContainer--itemPrinSing){
   padding: 10px 0;
 }
 
 :global(.vtex-menu-2-x-menuItem--itemPrin){
   border-bottom: 0.3px solid #ECC0A2;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemPrinSingOut){
+  text-decoration: underline;
+  font-family: "MontserratBold" !important;
 }
 
 :global(.vtex-store-drawer-0-x-overlay){
