@@ -120,12 +120,12 @@
   font-size: 44px;
 }
 
-:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf1)
+:global(.vtex-flex-layout-0-x-flexRow--btncart)
   :global(.vtex-button){
   background-color: #ffffff;
   border: 1px solid #56C271;
   border-radius: 3px;
-  color: #56C271;
+  color: #000000;
   width: 128px;
   height: 25px;
   margin: 0 auto;
@@ -140,6 +140,11 @@
 :global(.vtex-add-to-cart-button-0-x-buttonText){
   text-transform: capitalize;
   font-size: 16px;
+  font-family: "Montserrat";
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--listpriceCont){
+  min-height: 25px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--infocards){
@@ -236,7 +241,7 @@
 
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
   position: absolute;
-  top: 2060px;
+  top: 2160px;
 }
 
 :global(.vtex-rich-text-0-x-container--instagramText){
@@ -290,12 +295,30 @@
 
 :global(.vtex-product-summary-2-x-brandName){
   font-size: 16px;
-  font-family: "Montserrat";
+  font-family: "BreveSansBook";
+  font-weight: 200;
 }
 
 :global(.vtex-product-price-1-x-currencyContainer--summary){
   font-size: 20px;
-  font-family: "MontserratBold";
+ font-family: "BreveSansBold";
+}
+
+:global(.vtex-product-price-1-x-listPrice){
+    text-align: center;
+    color: #000000;
+    font-family: "BreveSansLight";
+}
+
+:global(.vtex-product-price-1-x-listPriceValue)
+  :global(.vtex-product-price-1-x-currencyContainer--summary){
+    color: #000000;
+    font-family: "Montserrat";
+}
+
+:global(.vtex-product-price-1-x-savings--summary){
+  background-color: #56C271;
+  border-radius: 0;
 }
 
 :global(.vtex-slider-layout-0-x-caretIcon){
@@ -532,7 +555,7 @@
 
 :global(.vtex-minicart-2-x-minicartCheckoutButton){
   width: 283px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 :global(.vtex-checkout-summary-0-x-summaryItemLabel){
@@ -588,4 +611,64 @@
 
 :global(.vtex-product-list-0-x-productImageContainer){
   border: 1px solid #000000;
+}
+
+:global(.vtex-dropdown__arrow){
+  color: #000000;
+}
+
+/* Wishlist */
+
+:global(.vtex-wish-list-1-x-wishlistIconContainer)
+  :global(.vtex-button){
+    border: none;
+}
+
+:global(.vtex-wish-list-1-x-wishlistIconContainer)
+  :global(.vtex-button):hover{
+    background: #faf5f2;
+}
+
+:global(.vtex-wish-list-1-x-outline){
+  background: url(assets/heart.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+:global(.vtex-store-icons-0-x-expandIcon){
+  color: #ECC0A2 !important;
+}
+
+:global(.vtex-wish-list-1-x-wishlistIconContainer){
+  display: flex;
+  justify-content: flex-end;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--btn-wishlist-container)
+  :global(.vtex-flex-layout-0-x-flexRowContent--btn-wishlist-container) {
+  justify-content: flex-end;
+}
+
+:global(.vtex-stack-layout-0-x-stackItem--btnwish){
+  right: 0;
+}
+
+:global(.vtex-toast) {
+  background-color: #56C271;
+}
+
+:global(.vtex-store-components-3-x-container--descProduct){
+  height: 50px;
+}
+
+:global(.vtex-product-highlights-2-x-productHighlightText){
+  background-image: url(https://naturalscents.vteximg.com.br/arquivos/high.png);
+  background-color: transparent;
+  background-repeat:no-repeat;
+  color: #ffffff;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  height: 40px;
+  padding: 15px 10px;
 }

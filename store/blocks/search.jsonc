@@ -62,6 +62,8 @@
 
   "search-result-layout.desktop": {
     "children": [
+      "flex-layout.row#imageCat",
+      "flex-layout.row#textCat",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
@@ -72,11 +74,41 @@
       "defaultGalleryLayout": "grid"
     }
   },
+  "flex-layout.row#imageCat":{
+    "children":[
+      "image#categoryImage"
+    ],
+    "props":{
+      "blockClass": "imageCat",
+      "fullWidth": true
+    }
+  },
+  "image#categoryImage":{
+    "props":{
+      "src": "assets/category.png",
+      "blockClass": "imgcat"
+    }
+  },
+  "flex-layout.row#textCat":{
+    "children":[
+      "rich-text#categoryText"
+    ],
+    "props":{
+      "blockClass": "textCat"
+    }
+  },
+  "rich-text#categoryText":{
+    "props":{
+      "text": "CUIDADO FACIAL",
+      "blockClass": "txtcat"
+    }
+  },
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "breadCont"
     }
   },
   "flex-layout.row#searchtitle": {
@@ -86,7 +118,8 @@
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
     "props": {
       "preventHorizontalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "resultCont"
     }
   },
   "flex-layout.col#filter": {
@@ -108,7 +141,10 @@
     }
   },
   "flex-layout.row#searchinfo": {
-    "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"]
+    "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"],
+    "props":{
+      "blockClass": "counterandorder"
+    }
   },
   "flex-layout.row#orderByAndSwitcher": {
     "children": ["order-by.v2", "gallery-layout-switcher"],
@@ -254,7 +290,7 @@
           "itemsPerRow": 1
         }
       ],
-      "ListSummary": "product-summary.shelf#listLayout",
+      "ListSummary": "product-summary.shelf",
       "GridSummary": "product-summary.shelf"
     }
   },

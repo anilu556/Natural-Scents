@@ -23,3 +23,17 @@
     src: url(assets/fonts/Montserrat-Italic.ttf);
 }
 
+@font-face {
+    font-family: "BreveSansBook";
+    src: url(assets/fonts/BreveSansTextBook.otf);
+}
+
+@font-face {
+    font-family: "BreveSansLight";
+    src: url(assets/fonts/BreveSansTextLight.otf);
+}
+
+@font-face {
+    font-family: "BreveSansBold";
+    src: url(assets/fonts/BreveSansTextBold.otf);
+}

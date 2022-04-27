@@ -1,7 +1,8 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
     "props": {
-      "experimentalOptimizeRendering": true
+      "experimentalOptimizeRendering": true,
+           "blockClass":"menprincontenedor"
     },
     "children": [
       "menu-item#cat1",
@@ -15,6 +16,7 @@
   },
 
   "menu-item#cat1": {
+
     "props": {
       "id": "menu-item-cat1",
       "type": "custom",
@@ -26,7 +28,8 @@
         "noFollow": true,
         "tagTitle": "Fragancias",
         "text": "Fragancias"
-      }
+      },
+      "blockClass": "itemPrin"
     },
     "blocks": [
       "vtex.menu@2.x:submenu#cat1"
@@ -34,7 +37,8 @@
   },
   "vtex.menu@2.x:submenu#cat1": {
     "props": {
-      "width": "100%"
+      "width": "100%",
+      "blockclass": "submenus"
     },
     "children": [
       "flex-layout.row#menu-cat1"
@@ -42,90 +46,245 @@
   },
   "flex-layout.row#menu-cat1": {
     "children": [
-      "flex-layout.col#menu-subcat-1",
-      "flex-layout.col#menu-subcat-2"
-    ]
+      "flex-layout.col#menucat-1",
+      "flex-layout.col#menucat-2",
+      "flex-layout.col#menucat-3",
+      "flex-layout.col#menucat4"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "100%"
+    }   
   },
-  "flex-layout.col#menu-subcat-1": {
+  "flex-layout.col#menucat-1":{
     "children": [
-      "vtex.menu@2.x:menu#subcat1"
-    ]
+      "menu-item#titcat1",
+      "menu-item#itemcat1",
+      "menu-item#itemcat2"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "15%"
+    }   
   },
-  "flex-layout.col#menu-subcat-2": {
-    "children": [
-      "info-card#homeMenu"
-    ]
-  },
-  "info-card#homeMenu":{
+  "menu-item#titcat1": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    }
-  },
-  "vtex.menu@2.x:menu#subcat1": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#about-us",
-      "menu-item#faq"
-    ]
-  },
-  "menu-item#about-us": {
-    "props": {
-      "id": "menu-item-about-us",
+      "blockClass":"titcats",
+      "id": "titcat1",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-us",
+        "href": "/category",
         "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
+        "tagTitle": "Productos",
+        "text":"PRODUCTOS" 
       }
     }
   },
-  "menu-item#faq": {
+  "menu-item#itemcat1":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Perfume de mujer",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat2":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Perfume de hombre",
+      "blockClass": "itemsubcat"
+    }
+  },
+
+  "flex-layout.col#menucat-2":{
+    "children": [
+      "menu-item#titcat2",
+      "menu-item#itemcat4",
+      "menu-item#itemcat5",
+      "menu-item#itemcat6"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "15%"
+    }       
+  },
+  "menu-item#titcat2": {
     "props": {
-      "id": "menu-item-faq",
+      "blockClass":"titcats",
+      "id": "titcat2",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/faq",
+        "href": "/category",
         "noFollow": true,
-        "tagTitle": "FAQ",
-        "text": "FAQ"
+        "tagTitle": "Lineas",
+        "text":"LíNEAS" 
       }
     }
   },
-  "menu-item#contact-us": {
+  "menu-item#itemcat4":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Hombre",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat5":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Mujer",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat6":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Niños",
+      "blockClass": "itemsubcat"
+    }
+  },
+
+
+  "flex-layout.col#menucat-3":{
+    "children": [
+      "menu-item#titcat3",
+      "menu-item#itemcat7",
+      "menu-item#itemcat8",
+      "menu-item#itemcat9",
+      "menu-item#itemcat10",
+      "menu-item#itemcat11",
+      "menu-item#itemcat12"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "15%"
+    }      
+  },
+  "menu-item#titcat3": {
     "props": {
-      "id": "menu-item-contact-us",
+      "blockClass":"titcats",
+      "id": "titcat2",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/contact-us",
+        "href": "/category",
         "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
+        "tagTitle": "Collection",
+        "text":"COLLECTION" 
+      }
+    }
+  },
+  "menu-item#itemcat7":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Subcategory",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat8":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Subcategory",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat9":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Subcategory",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat10":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Subcategory",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat11":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Subcategory",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat12":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Subcategory",
+      "blockClass": "itemsubcat"
+    }
+  },
+
+
+  "flex-layout.col#menucat4": {
+    "children": [
+      "flex-layout.row#menucat4"
+    ],
+    "props":{
+      "blockClass": "colImgs",
+      "width": "55%"
+    }
+  },
+  "flex-layout.row#menucat4":{
+    "children":[
+      "flex-layout.col#menuImg1",
+      "flex-layout.col#menuImg2"
+    ]
+  },
+  "flex-layout.col#menuImg1":{
+    "children":[
+      "image#menu1"
+    ], "props":{
+      "blockclass": "menuImg1"
+    }
+  },
+  "image#menu1":{
+    "props":{
+      "src":"assets/menu1.png",
+      "blockClass": "menu-image-1",
+      "link": {
+        "url": "/"
+      }
+    }
+  },
+  "flex-layout.col#menuImg2":{
+    "children":[
+      "image#menu2"
+    ], "props":{
+      "blockclass": "menuImg2"
+    }
+  },
+  "image#menu2":{
+    "props":{
+      "src":"assets/menu1.png",
+      "blockClass": "menu-image-2",
+      "link": {
+        "url": "/"
       }
     }
   },
 
-  
   "menu-item#cat2": {
+
     "props": {
       "id": "menu-item-cat2",
       "type": "custom",
@@ -137,28 +296,16 @@
         "noFollow": true,
         "tagTitle": "Antibacterial",
         "text": "Antibacterial"
-      }
+      },
+      "blockClass": "itemPrin"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#cat2"
-    ]
-  },
-  "vtex.menu@2.x:submenu#cat2": {
-    "props": {
-      "width": "100%"
-    },
-    "children": [
-      "flex-layout.row#menu-cat2"
-    ]
-  },
-  "flex-layout.row#menu-cat2": {
-    "children": [
-      "flex-layout.col#menu-subcat-1",
-      "flex-layout.col#menu-subcat-2"
+      "vtex.menu@2.x:submenu#cat1"
     ]
   },
 
   "menu-item#cat3": {
+
     "props": {
       "id": "menu-item-cat3",
       "type": "custom",
@@ -168,31 +315,18 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Cuidado Corporal",
-        "text": "Cuidado Corporal"
-      }
+        "tagTitle": "Cuidado corporal",
+        "text": "Cuidado corporal"
+      },
+      "blockClass": "itemPrin"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#cat3"
+      "vtex.menu@2.x:submenu#cat1"
     ]
   },
-  "vtex.menu@2.x:submenu#cat3": {
-    "props": {
-      "width": "100%"
-    },
-    "children": [
-      "flex-layout.row#menu-cat3"
-    ]
-  },
-  "flex-layout.row#menu-cat3": {
-    "children": [
-      "flex-layout.col#menu-subcat-1",
-      "flex-layout.col#menu-subcat-2"
-    ]
-  },
-
 
   "menu-item#cat4": {
+
     "props": {
       "id": "menu-item-cat4",
       "type": "custom",
@@ -202,73 +336,213 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Cuidado Facial",
-        "text": "Cuidado Facial"
-      }
+        "tagTitle": "Cuidado facial",
+        "text": "Cuidado facial"
+      },
+      "blockClass": "itemPrin"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#cat4"
+      "vtex.menu@2.x:submenu#cat1"
     ]
   },
-  "vtex.menu@2.x:submenu#cat4": {
-    "props": {
-      "width": "100%"
-    },
-    "children": [
-      "flex-layout.row#menu-cat4"
-    ]
-  },
-  "flex-layout.row#menu-cat4": {
-    "children": [
-      "flex-layout.col#menu-subcat-1",
-      "flex-layout.col#menu-subcat-2"
-    ]
-  },
-
 
   "menu-item#cat5": {
     "props": {
-      "id": "menu-item-category-5",
+      "id": "menu-item-cat5",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
-        "noFollow": false,
+        "href": "/category",
+        "noFollow": true,
         "tagTitle": "Hogar",
         "text": "Hogar"
-      }
+      },
+      "blockClass": "itemPrinSing"
     }
   },
   "menu-item#cat6": {
     "props": {
-      "id": "menu-item-category-6",
+      "id": "menu-item-cat6",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
-        "noFollow": false,
+        "href": "/category",
+        "noFollow": true,
         "tagTitle": "Regalos",
         "text": "Regalos"
-      }
+      },
+      "blockClass": "itemPrinSing"
     }
   },
   "menu-item#cat7": {
     "props": {
-      "id": "menu-item-category-7",
+      "id": "menu-item-cat7",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/",
-        "noFollow": false,
+        "href": "/category",
+        "noFollow": true,
         "tagTitle": "OUTLET",
         "text": "OUTLET"
+      },
+      "blockClass": "itemPrinSing"
+    }
+  },
+
+
+  "flex-layout.row#menuImg":{
+    "children":[
+      "image#menuMob"
+    ],
+    "props":{
+      "blockClass":"imgMenuMob"
+    }
+  },
+  "image#menuMob":{
+    "props":{
+      "src":"assets/menucatmob.png",
+      "blockClass": "menu-mob",
+      "link": {
+        "url": "/"
       }
     }
+  },
+  "menu-item#cat1mob":{
+    "props": {
+      "id": "menu-item-cat1mob",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Fragancias",
+        "text": "Fragancias"
+      },
+      "blockClass": "itemPrin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#catsmob"
+    ]    
+  },
+  "vtex.menu@2.x:submenu.accordion#catsmob": {
+    "children": ["vtex.menu@2.x:menu#catsmobile"],
+    "props":{
+      "blockClass":"submenudraw"
+    }
+  },
+
+  "vtex.menu@2.x:menu#catsmobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "submenusMob"
+    },
+    "children": [
+      "menu-item#itemcat1",
+      "menu-item#itemcat2"
+    ]
+  },
+  "menu-item#cat2mob":{
+    "props": {
+      "id": "menu-item-cat2mob",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Antibacterial",
+        "text": "Antibacterial"
+      },
+      "blockClass": "itemPrin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#catsmob2"
+    ] 
+  },
+    "vtex.menu@2.x:submenu.accordion#catsmob2": {
+      "children": ["vtex.menu@2.x:menu#catsmobile2"],
+      "props":{
+        "blockClass":"submenudraw"
+    }
+  },
+  
+  "vtex.menu@2.x:menu#catsmobile2": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "submenusMob"
+    },
+    "children": [
+      "menu-item#itemcat4",
+      "menu-item#itemcat5",
+      "menu-item#itemcat6"
+    ]
+  },
+  "menu-item#cat3mob":{
+    "props": {
+      "id": "menu-item-cat3mob",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Cuidado corporal",
+        "text": "Cuidado corporal"
+      },
+      "blockClass": "itemPrin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#catsmob3"
+    ] 
+  },
+    "vtex.menu@2.x:submenu.accordion#catsmob3": {
+      "children": ["vtex.menu@2.x:menu#catsmobile3"],
+      "props":{
+        "blockClass":"submenudraw"
+    }
+  },
+  
+  "vtex.menu@2.x:menu#catsmobile3": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "submenusMob"
+    },
+    "children": [
+      "menu-item#itemcat7",
+      "menu-item#itemcat8",
+      "menu-item#itemcat9",
+      "menu-item#itemcat10",
+      "menu-item#itemcat11",
+      "menu-item#itemcat12"
+    ]
+  },
+  "menu-item#cat4mob":{
+    "props": {
+      "id": "menu-item-cat4mob",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Cuidado facial",
+        "text": "Cuidado facial"
+      },
+      "blockClass": "itemPrin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#catsmob3"
+    ] 
   }
 }

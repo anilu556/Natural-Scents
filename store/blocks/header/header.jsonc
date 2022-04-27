@@ -59,6 +59,18 @@
       //"vtex.menu@2.x:menu#institutional"
     ]
   },
+
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf"]
+  },
+
+
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
@@ -123,12 +135,15 @@
     }
   },
   "header-layout.mobile": {
-    "children": [  "flex-layout.row#1-mobile","sticky-layout#1-mobile"]
+    "children": [  
+      "flex-layout.row#1-mobile",
+      "sticky-layout#1-mobile",     
+      "flex-layout.row#3-mobile"
+    ]
   },
   "sticky-layout#1-mobile": {
     "children": [
-      "flex-layout.row#2-mobile",
-      "flex-layout.row#3-mobile"
+      "flex-layout.row#2-mobile"
     ]
   },
   "flex-layout.row#3-mobile":{
@@ -166,16 +181,18 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#cat1",
-      "menu-item#cat2",
-      "menu-item#cat3",
-      "menu-item#cat4",
+      "flex-layout.row#menuImg",
+      "menu-item#cat1mob",
+      "menu-item#cat2mob",
+      "menu-item#cat3mob",
+      "menu-item#cat4mob",
       "menu-item#cat5",
       "menu-item#cat6",
       "menu-item#cat7"
     ],
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "menuMob"
     }
   },
 

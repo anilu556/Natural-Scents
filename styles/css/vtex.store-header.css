@@ -153,6 +153,80 @@
   font-size: 14px;
 }
 
+:global(.vtex-login-2-x-accessCodeOptionBtn)
+:global(.vtex-button__label),
+:global(.vtex-login-2-x-emailPasswordOptionBtn)
+:global(.vtex-button__label),
+:global(.vtex-login-2-x-buttonSocial)
+:global(.vtex-button__label){
+  color:#56C271;
+  text-transform: capitalize;
+  font-family: 'Montserrat';
+  font-size: 14px;
+}
+
+:global(.vtex-login-2-x-buttonSocial){
+  background-color: #ffffff;
+  border-radius: .25rem;
+}
+
+:global(.vtex-login-2-x-oauthLabel){
+  text-transform: capitalize;
+}
+
+:global(.vtex-login-2-x-oauthProvider){
+  font-weight: 200;
+}
+
+:global(.vtex-login-2-x-formFooter)
+ :global(.vtex-login-2-x-backButton)
+  :global(.vtex-button__label){
+  color: #ffffff;
+}
+
+:global(.vtex-login-2-x-inputContainer)
+:global(.vtex-styleguide-9-x-input){
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+
+:global(.vtex-login-2-x-accountOptions)
+:global(.vtex-login-2-x-button){
+  background: #D0F1CD;
+  color: #000;
+  width: 100%;
+}
+
+:global(.vtex-login-2-x-accountOptions)
+  :global(.vtex-login-2-x-button)
+  {
+      font-size: 14px;
+      font-family: 'Montserrat';
+      text-transform: capitalize;
+}
+
+:global(.vtex-login-2-x-accountOptions)
+  :global(.vtex-button){
+    background: #ffffff;
+    color: #56C271;
+    width: 100%;
+}
+
+
+:global(.vtex-login-2-x-arrowBackIcon),
+:global(.vtex-login-2-x-forgotPasswordLink),
+:global(.vtex-login-2-x-dontHaveAccount) {
+  color: #ffffff;
+}
+
+:global(.vtex-login-2-x-content)
+  :global(.vtex-login-2-x-sendButton)
+    :global(.vtex-button){
+    background: #fff;
+    color: #000000;
+    border: none;
+}
+
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header)
   :global(.vtex-menu-2-x-menuContainerNav)
     :global(.vtex-menu-2-x-styledLinkContent){
@@ -168,10 +242,34 @@
       font-family: "Montserrat";
       font-size: 14px;
 }
-  
+
+:global(.vtex-menu-2-x-submenu)
+:global(.vtex-flex-layout-0-x-flexRowContent){
+  align-items: flex-start;
+}
+
+:global(.vtex-menu-2-x-submenu)
+  :global(.vtex-flex-layout-0-x-flexRow){
+    width: 100%;
+    margin: 0 60px;
+}  
+
+:global(.vtex-menu-2-x-styledLink--titcats){
+  font-family: 'MontserratSemiBold';
+  font-weight: 800;
+  color: #000000;
+  font-size: 14px;
+}
+
+:global(.vtex-menu-2-x-menuContainer--menuMob)
+  :global(.vtex-menu-2-x-submenu)
+    :global(.vtex-flex-layout-0-x-flexRow){
+    margin: 0 10px;
+}
+
 :global(.vtex-store-components-3-x-logoLink){
   position: relative;
-  left: -20%;
+  left: -18%;
 }
 
 :global(.vtex-minicart-2-x-openIconContainer)
@@ -217,19 +315,194 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
   :global(.vtex-store-components-3-x-logoLink){
     position: relative;
-    left: 10%;
+    left: 15%;
     width: 193px;
+}
+
+:global(.vtex-store-drawer-0-x-drawer){
+  width: 100% !important;
+  top: 35px;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemPrin),
+:global(.vtex-menu-2-x-styledLinkContent--itemPrinSing){
+  color: #000000;
+  font-family: 'MontserratSemiBold';
+  font-size: 14px;
+}
+
+:global(.vtex-menu-2-x-accordionIcon--itemPrin--isClosed)::before{
+    content: url(assets/arrow-r.png);
+}
+
+:global(.vtex-menu-2-x-accordionIcon--itemPrin--isOpen){
+  font-size: 0;
+}
+
+:global(.vtex-menu-2-x-accordionIcon--itemPrin--isOpen)::before{
+    content: url(assets/arrow_down.png);
+}
+
+:global(.vtex-menu-2-x-menuItemInnerDiv--itemPrin){
+  padding: 10px 0;
+}
+
+:global(.vtex-menu-2-x-styledLinkContainer--itemPrinSing){
+  padding: 10px 0;
+}
+
+:global(.vtex-menu-2-x-menuItem--itemPrin){
+  border-bottom: 0.3px solid #ECC0A2;
+}
+
+:global(.vtex-store-drawer-0-x-overlay){
+  opacity: 0 !important;
+}
+
+:global(.vtex-store-drawer-0-x-closeIconButton){
+  color: #ECC0A2;
 }
 
 :global(.vtex-store-drawer-0-x-openIconContainer){
   color: #ffffff;
 }
 
-@media (min-width:1024px){
+/* Search */
+
+:global(.vtex-store-components-3-x-searchBarInnerContainer)
+  :global(.vtex-styleguide-9-x-input){
+    background-color: #ECC0A2;
+    color: #ffffff;
+}
+
+:global(.vtex-store-components-3-x-searchBarInnerContainer)
+  :global(.vtex-input-prefix__group){
+    border: none;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer)
+  :global(.vtex-input)
+    :global(.vtex-input-prefix__group)
+      :global(.vtex-styleguide-9-x-input):focus{
+        border-bottom: 2px solid #ffffff;
+}
+
+:global(.vtex-store-components-3-x-searchBarInnerContainer)
+  :global(.vtex-styleguide-9-x-input)::placeholder{
+    font-size: 0;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer)
+  :global(.vtex-input__suffix){
+    background-color: #ECC0A2;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer)
+  :global(.vtex-input)::before{
+  content: url(https://naturalscents.vteximg.com.br/arquivos/search.png);
+  position: absolute;
+  left: -8px;
+  top: 6px;
+}
+
+:global(.vtex-store-components-3-x-searchBarIcon){
+  display: none;
+}
+
+:global(.vtex-store-components-3-x-searchBarInnerContainer)
+  :global(.vtex-input-prefix__group)::before:hover {
+  cursor: pointer;
+}
+
+:global(.vtex-search-2-x-biggy-autocomplete){
+  left: 530px;
+  width: 900px;
+}
+
+:global(.vtex-search-2-x-tileListList)
+  :global(.vtex-product-summary-2-x-buyButton)
+    :global(.vtex-button){
+    background-color: #ffffff;
+    border: 1px solid #56C271;
+    font-size: 12px;
+    color: #000000;
+    border-radius: 3px;
+}
+
+/* Search Responsive */
+
+:global(.vtex-flex-layout-0-x-flexRowContent--searchRow)
+  :global(.vtex-store-components-3-x-searchBarInnerContainer)
+    :global(.vtex-styleguide-9-x-input){
+    background-color: #ffffff;
+    color: #000000;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--searchRow)
+  :global(.vtex-store-components-3-x-searchBarContainer)
+    :global(.vtex-input__suffix){
+    background-color: #ffffff;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--searchRow)
+  :global(.vtex-store-components-3-x-searchBarContainer)
+    :global(.vtex-input)::before{
+  content: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--searchRow)
+:global(.vtex-store-components-3-x-searchBarIcon){
+  display: block;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--searchRow)
+  :global(.vtex-store-components-3-x-searchIcon){
+  color: #969696;
+}
+
+@media  only screen and (min-width:425px) and (max-width:768px){
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
   :global(.vtex-store-components-3-x-logoLink){
-    position: initial;
-    width: 193px;
+    position: relative;
+    left: 24%;
+  }
+
+  :global(.vtex-search-2-x-biggy-autocomplete){
+    left: -190px;
+    width: 400px;
+  }
+
+}
+
+@media  only screen and (min-width:768px) and (max-width:1024px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
+  :global(.vtex-store-components-3-x-logoLink){
+    left: 115%;
+  }
+
+  :global(.vtex-search-2-x-biggy-autocomplete){
+    left: -200px;
+    width: 400px;
   }
 }
 
+@media  only screen and (min-width:1024px) and (max-width:1440px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
+  :global(.vtex-store-components-3-x-logoLink){
+    left: 185%;
+  }
+}
+
+@media  only screen and (min-width:1630px) and (max-width:2000px) {
+
+  :global(.vtex-search-2-x-biggy-autocomplete){
+    left: 630px;
+  }
+}
+
+@media  only screen and (min-width:1850px) and (max-width:2560px) {
+
+  :global(.vtex-search-2-x-biggy-autocomplete){
+    left: 1030px;
+  }
+}
