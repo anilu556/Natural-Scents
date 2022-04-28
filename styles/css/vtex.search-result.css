@@ -190,6 +190,7 @@
 
 :global(.vtex-product-summary-2-x-nameContainer){
   justify-content: center;
+  padding: 6px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--resultCont)
@@ -246,7 +247,7 @@
   }
 
   :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf1){
-    right: -6px !important;
+    left: -6px !important;
   }
 }
 

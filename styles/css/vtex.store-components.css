@@ -675,20 +675,6 @@
   font-weight: 200 !important;
 }
 
-:global(.vtex-checkout-summary-0-x-summarySmallContent):first-child
-:global(.vtex-checkout-summary-0-x-price){
-  color: #000000 ;
-  font-family: "Montserrat" ;
-  font-size: 14px ;
-}
-
-:global(.vtex-checkout-summary-0-x-summarySmallContent):last-child
-:global(.vtex-checkout-summary-0-x-price){
-  color: #000000;
-  font-family: "MontserratSemiBold";
-  font-size: 16px;
-}
-
 :global(.vtex-product-list-0-x-removeButton){
   color: #56C271 !important;
 }
@@ -802,6 +788,8 @@
   right: 0;
 }
 
+/* Wishlist */
+
 :global(.vtex-toast) {
   background-color: #56C271;
 }
@@ -820,4 +808,12 @@
   top: 0;
   height: 40px;
   padding: 15px 10px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--productRating){
+  text-align: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--productRating){
+  margin-bottom: 5px !important;
 }

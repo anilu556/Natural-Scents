@@ -121,7 +121,9 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf1",
-      "showPaginationDots": "never"
+      "showPaginationDots": "never",
+      "slideTransition": "{speed: 400, delay: 0, timing: ''}"
+
     }
   },
   // Carrusel productos

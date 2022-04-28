@@ -173,6 +173,20 @@
   font-size: 14px;
 }
 
+:global(.vtex-login-2-x-googleOptionBtn)
+  :global(.vtex-button__label)::before{
+    content: url(assets/gmail.png);
+    position: absolute;
+    left: 55px;
+}
+
+:global(.vtex-login-2-x-facebookOptionBtn)
+  :global(.vtex-button__label)::before{
+    content: url(assets/face.png);
+    position: absolute;
+    left: 55px;
+}
+
 :global(.vtex-login-2-x-buttonSocial){
   background-color: #ffffff;
   border-radius: .25rem;
@@ -334,6 +348,12 @@
 :global(.vtex-store-drawer-0-x-drawer){
   width: 100% !important;
   top: 0;
+  margin-top: 33px;
+  background-color: transparent;
+}
+
+:global(.vtex-store-drawer-0-x-drawerContent){
+  background-color: #ffffff;
 }
 
 :global(.vtex-menu-2-x-styledLinkContent--itemPrin),
@@ -421,6 +441,7 @@
 
 :global(.vtex-store-drawer-0-x-closeIcon){
   height: 22px;
+  color: #000000;
 }
 
 :global(.vtex-store-drawer-0-x-openIconContainer){
