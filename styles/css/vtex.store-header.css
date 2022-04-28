@@ -118,6 +118,14 @@
   content: url(https://naturalscents.vteximg.com.br/arquivos/location.svg);
 }
 
+:global(.vtex-login-2-x-contentContainer){
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+:global(.vtex-login-2-x-content){
+  border-radius: 5px;
+}
 
 :global(.vtex-login-2-x-container)
   :global(.vtex-button)
@@ -272,6 +280,10 @@
   left: -18%;
 }
 
+:global(.vtex-store-components-3-x-logoImage){
+  width: 235px;
+}
+
 :global(.vtex-minicart-2-x-openIconContainer)
   :global(.vtex-button)
     :global(.vtex-button__label)::before{
@@ -321,7 +333,7 @@
 
 :global(.vtex-store-drawer-0-x-drawer){
   width: 100% !important;
-  top: 35px;
+  top: 0;
 }
 
 :global(.vtex-menu-2-x-styledLinkContent--itemPrin),
@@ -343,22 +355,59 @@
     content: url(assets/arrow_down.png);
 }
 
+:global(.vtex-store-drawer-0-x-drawer)
+:global(.vtex-menu-2-x-submenuAccordion--submenudraw){
+  margin: 0 10px 0 49px;
+}
+
+:global(.vtex-store-drawer-0-x-drawer)
+:global(.vtex-menu-2-x-styledLinkContent--itemPrin){
+  margin: 0 10px 0 60px;
+}
+
+:global(.vtex-store-drawer-0-x-drawer)
+:global(.vtex-menu-2-x-styledLinkContainer--itemPrinSing){
+  margin: 0 10px 0 84px;
+}
+
+:global(.vtex-store-drawer-0-x-drawer)
+:global(.vtex-menu-2-x-styledLinkContent--itemPrinSingOut){
+  margin: 0 10px 0 59px;
+}
+
+:global(.vtex-store-drawer-0-x-drawer)
+:global(.vtex-menu-2-x-styledLinkContent--itemPrinSingOut){
+  font-family: 'MontserratSemiBold' !important;
+  text-decoration: none !important;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemPrinSingOut){
+  text-decoration: underline;
+  font-family: "MontserratBlack" !important;
+}
+
 :global(.vtex-menu-2-x-menuItemInnerDiv--itemPrin){
   padding: 10px 0;
 }
 
 :global(.vtex-store-drawer-0-x-drawer)
 :global(.vtex-menu-2-x-styledLinkContainer--itemPrinSing){
+  padding: 14px 0;
+}
+
+:global(.vtex-store-drawer-0-x-drawer)
+:global(.vtex-menu-2-x-styledLinkContent--itemPrinSingOut){
   padding: 10px 0;
 }
 
-:global(.vtex-menu-2-x-menuItem--itemPrin){
+:global(.vtex-store-drawer-0-x-drawer)
+  :global(.vtex-menu-2-x-menuItem--itemPrin),
+:global(.vtex-store-drawer-0-x-drawer)
+  :global(.vtex-menu-2-x-menuItem--itemPrinSing),
+:global(.vtex-store-drawer-0-x-drawer)
+  :global(.vtex-menu-2-x-menuItem--itemPrinSingOut)
+{
   border-bottom: 0.3px solid #ECC0A2;
-}
-
-:global(.vtex-menu-2-x-styledLinkContent--itemPrinSingOut){
-  text-decoration: underline;
-  font-family: "MontserratBold" !important;
 }
 
 :global(.vtex-store-drawer-0-x-overlay){
@@ -366,7 +415,12 @@
 }
 
 :global(.vtex-store-drawer-0-x-closeIconButton){
-  color: #ECC0A2;
+  position: absolute;
+  right: 10px;
+}
+
+:global(.vtex-store-drawer-0-x-closeIcon){
+  height: 22px;
 }
 
 :global(.vtex-store-drawer-0-x-openIconContainer){

@@ -118,6 +118,11 @@
   color: #FDC1CB;
   font-family: "MontserratBold";
   font-size: 44px;
+  margin-top: 0;
+}
+
+:global(.vtex-rich-text-0-x-container--shelfTitle){
+  margin-top: 72px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--btncart)
@@ -241,7 +246,7 @@
 
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
   position: absolute;
-  top: 2160px;
+  top: 2130px;
 }
 
 :global(.vtex-rich-text-0-x-container--instagramText){
@@ -337,6 +342,7 @@
   text-align: center;
 }
 
+
 @media only screen and (min-width:425px) and (max-width: 1024px){
   :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel-ingredientes){
     margin: 0 20px;
@@ -362,7 +368,7 @@
 
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
     position: absolute;
-    top:4200px
+    top:3755px
   }
 
   :global(.vtex-rich-text-0-x-paragraph--instagramText){
@@ -405,6 +411,7 @@
 }
 
 @media only screen and (max-width: 425px) {
+
   :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf1){
     left: 0;
   }
@@ -431,11 +438,6 @@
     top: 175px;
   }
   
-  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
-    position: absolute;
-    top:3680px
-  }
-
   :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel-ingredientes){
     margin: 0 ;
   }
@@ -475,38 +477,141 @@
     margin: 0;
   }
 
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+    top: 3215px;
+  }
+
   :global(.vtex-flex-layout-0-x-flexRow--logos){
     margin: 0 10px 30px 10px;
   }
   
 }  
 
+
+@media only screen and (max-width: 390px) {
+
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+    top: 3175px;
+  }
+
+
+  :global(.vtex-slider-layout-0-x-sliderRightArrow--carousel-ingredientes){
+    right: 0px;
+  }
+  
+  :global(.vtex-slider-layout-0-x-sliderLeftArrow--carousel-ingredientes){
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+    top: 3160px;
+  }
+
+}
+
+@media only screen and (min-width: 1650px){
+
+  
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel-ingredientes){
+    margin: 0 360px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderRightArrow--carousel-ingredientes){
+    right: 370px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderLeftArrow--carousel-ingredientes){
+    left: 370px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carrusel-insta){
+    margin: 0 195px;
+  }
+  
+  :global(.vtex-flex-layout-0-x-flexRow--logos){
+    margin: 0 250px 70px 250px;
+  }
+
+}
+
+@media only screen and (min-width: 1760px){
+
+  
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel-ingredientes){
+    margin: 0 470px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderRightArrow--carousel-ingredientes){
+    right: 430px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderLeftArrow--carousel-ingredientes){
+    left: 430px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carrusel-insta){
+    margin: 0 250px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--logos){
+    margin: 0 280px 70px 280px;
+  }
+}
+
+@media only screen and (min-width: 2000px){
+
+  
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel-ingredientes){
+    margin: 0 570px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderRightArrow--carousel-ingredientes){
+    right: 530px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderLeftArrow--carousel-ingredientes){
+    left: 530px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carrusel-insta){
+    margin: 0 370px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--logos){
+    margin: 0 480px 70px 480px;
+  }
+}
+
+
 /* Infocards mobile */
 
 :global(.vtex-store-components-3-x-infoCardContainer--info-card-home6Mob){
-  height: 518px;
+  height: 414px;
 }
 
 :global(.vtex-store-components-3-x-infoCardContainer--info-card-home5Mob){
-  height: 518px;
+  height: 414px;
 }
 
 :global(.vtex-store-components-3-x-infoCardContainer--info-card-home4Mob){
-  height: 518px;
+  height: 414px;
 }
 
 :global(.vtex-store-components-3-x-infoCardContainer--info-card-home3Mob){
   background-color: #ECC0A2;
-  height: 518px;
+  height: 414px;
 }
 
 :global(.vtex-store-components-3-x-infoCardContainer--info-card-home2Mob){
   background-color: #B8D0E8;
-  height: 518px;
+  height: 414px;
 }
 
 :global(.vtex-store-components-3-x-infoCardContainer--info-card-home1Mob){
-  height: 518px;
+  height: 414px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--infocardsMob)
@@ -570,8 +675,18 @@
   font-weight: 200 !important;
 }
 
-:global(.vtex-checkout-summary-0-x-summaryItemContainer){
+:global(.vtex-checkout-summary-0-x-summarySmallContent):first-child
+:global(.vtex-checkout-summary-0-x-price){
+  color: #000000 ;
+  font-family: "Montserrat" ;
+  font-size: 14px ;
+}
+
+:global(.vtex-checkout-summary-0-x-summarySmallContent):last-child
+:global(.vtex-checkout-summary-0-x-price){
   color: #000000;
+  font-family: "MontserratSemiBold";
+  font-size: 16px;
 }
 
 :global(.vtex-product-list-0-x-removeButton){
@@ -617,6 +732,40 @@
   color: #000000;
 }
 
+:global(.vtex-minicart-2-x-overlay) {
+  background-color: transparent;
+}
+
+:global(.vtex-minicart-2-x-drawer) {
+  background-color: transparent;
+  height: auto;
+  width: 334px !important;
+  max-width: 334px !important;
+}
+
+:global(.vtex-minicart-2-x-drawerContent) {
+  background-color: #ffffff;
+  position: relative;
+}
+:global(.vtex-minicart-2-x-minicartContentContainer) {
+  height: auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--minicart-footer) {
+  box-shadow: 0 0 0 0;
+  width: 100%;
+}
+:global(.vtex-minicart-2-x-minicartSideBarContentWrapper) {
+  width: 100%;
+  height: auto;
+}
+:global(.vtex-minicart-2-x-minicartSideBarContentWrapper) {
+  height: auto !important;
+}
+
+:global(.vtex-minicart-2-x-minicartContentContainer) {
+  height: auto;
+}
 /* Wishlist */
 
 :global(.vtex-wish-list-1-x-wishlistIconContainer)

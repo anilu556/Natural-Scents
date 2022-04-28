@@ -222,3 +222,31 @@
 :global(.vtex-store-components-3-x-container--descProduct){
   height: 50px !important;
 }
+
+@media only screen and (max-width: 425px) {
+  :global(.vtex-product-summary-2-x-imageNormal){
+    transform: rotate(0deg);
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf1){
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  :global(.vtex-product-highlights-2-x-productHighlightText){
+    left: -6px;
+  }
+
+  :global(.vtex-stack-layout-0-x-stackItem--btnwish){
+    right: -20px;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf1){
+    right: -6px !important  ;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf1){
+    right: -6px !important;
+  }
+}
+
