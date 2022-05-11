@@ -122,7 +122,7 @@
 }
 
 :global(.vtex-rich-text-0-x-container--shelfTitle){
-  margin-top: 72px;
+  margin-top: 52px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--btncart)
@@ -153,7 +153,7 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--infocards){
-  margin-top: 50px;
+  margin-top: 75px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--infocard2){
@@ -246,11 +246,11 @@
 
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
   position: absolute;
-  top: 2130px;
+  top: 2085px;
 }
 
 :global(.vtex-rich-text-0-x-container--instagramText){
-  margin-top: 250px;
+  margin-top: 240px;
 }
 
 :global(.vtex-rich-text-0-x-wrapper--instagramText){
@@ -264,7 +264,7 @@
 }
 
 :global(.vtex-rich-text-0-x-paragraph--instagramText){
-  margin: 0 475px;
+  margin: 0 420px;
   text-align: center;
 }
 
@@ -286,6 +286,11 @@
 
 :global(.vtex-slider-layout-0-x-paginationDot){
   background: #5f5f5f;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf1){
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf1)
@@ -342,6 +347,10 @@
   text-align: center;
 }
 
+:global(.vtex-flex-layout-0-x-flexRow--productShelf){
+  margin-bottom: 52px;
+}
+
 
 @media only screen and (min-width:425px) and (max-width: 1024px){
   :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel-ingredientes){
@@ -368,7 +377,7 @@
 
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
     position: absolute;
-    top:3755px
+    top:3745px
   }
 
   :global(.vtex-rich-text-0-x-paragraph--instagramText){
@@ -453,8 +462,9 @@
   }
 
   :global(.vtex-rich-text-0-x-container--shelfTitle-ingred){
-    background-image: url(https://naturalscents.vteximg.com.br/arquivos/back-in-mob.png);
-    height: 156px;
+    background-image: url(https://naturalscents.vteximg.com.br/arquivos/ondasmobok.png);
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
   }
   
   :global(.vtex-rich-text-0-x-wrapper--shelfTitle-ingred){
@@ -462,7 +472,7 @@
   }
 
   :global(.vtex-rich-text-0-x-container--instagramText){
-    margin-top: 330px;
+    margin-top: 145px;
   }
 
   :global(.vtex-rich-text-0-x-strong--instagramText){
@@ -478,7 +488,7 @@
   }
 
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
-    top: 3215px;
+    top: 3270px;
   }
 
   :global(.vtex-flex-layout-0-x-flexRow--logos){
@@ -488,10 +498,10 @@
 }  
 
 
-@media only screen and (max-width: 390px) {
+@media only screen and  (min-width: 390px)  and (max-width: 424px) {
 
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
-    top: 3175px;
+    top: 3215px;
   }
 
 
@@ -504,10 +514,17 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and  (min-width: 360px)  and (max-width: 389px) {
 
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
-    top: 3160px;
+    top: 3195px;
+  }
+}  
+
+@media only screen and (min-width: 1550px) and (max-width: 1650px){
+
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+    top: 2105px;
   }
 
 }
@@ -535,6 +552,9 @@
     margin: 0 250px 70px 250px;
   }
 
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+    top: 2150px;
+  }
 }
 
 @media only screen and (min-width: 1760px){
@@ -559,6 +579,18 @@
   :global(.vtex-flex-layout-0-x-flexRow--logos){
     margin: 0 280px 70px 280px;
   }
+
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+    top: 2250px;
+  }
+}
+
+@media only screen and (min-width: 1760px) and (max-width: 1900px){
+
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+    top: 2220px;
+  }
+
 }
 
 @media only screen and (min-width: 2000px){
@@ -583,9 +615,28 @@
   :global(.vtex-flex-layout-0-x-flexRow--logos){
     margin: 0 480px 70px 480px;
   }
+
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+    top: 2255px;
+  }
+  
 }
 
+@media only screen and (min-width: 2065px){
 
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+    top: 2255px;
+  }
+
+}
+
+@media only screen and (min-width: 2115px){
+
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
+    top: 2305px;
+  }
+
+}
 /* Infocards mobile */
 
 :global(.vtex-store-components-3-x-infoCardContainer--info-card-home6Mob){
@@ -660,7 +711,7 @@
 
 :global(.vtex-minicart-2-x-minicartCheckoutButton){
   width: 283px;
-  margin: 10px auto;
+  margin: 16px auto;
 }
 
 :global(.vtex-checkout-summary-0-x-summaryItemLabel){
@@ -673,6 +724,7 @@
   font-family: "Montserrat";
   font-size: 12px;
   font-weight: 200 !important;
+  margin: 0;
 }
 
 :global(.vtex-product-list-0-x-removeButton){
@@ -761,12 +813,31 @@
 
 :global(.vtex-wish-list-1-x-wishlistIconContainer)
   :global(.vtex-button):hover{
-    background: #faf5f2;
+    background: none;
+    background: url(assets/heart_20.png);
+    background-repeat: no-repeat;   
+    background-position: 50%;
+}
+
+:global(.vtex-wish-list-1-x-wishlistIconContainer)
+  :global(.vtex-button):focus{
+    background: none;
+}
+
+:global(.vtex-wish-list-1-x-wishlistIconContainer)
+  :global(.vtex-button):hover :global(.vtex-wish-list-1-x-outline){
+   display: none;
 }
 
 :global(.vtex-wish-list-1-x-outline){
-  background: url(assets/heart.png);
-  background-repeat: no-repeat;
+  background: url(assets/heart.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 50%;
+}
+
+:global(.vtex-wish-list-1-x-fill){
+  background: url(assets/heart_20.png) !important;
+  background-repeat: no-repeat !important;   
   background-position: 50%;
 }
 
@@ -786,6 +857,18 @@
 
 :global(.vtex-stack-layout-0-x-stackItem--btnwish){
   right: 0;
+}
+
+:global(.vtex-store-link-0-x-link--wishlist-return-link){
+  color: #000000;
+  text-decoration: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--titleWishlist)
+  :global(.vtex-rich-text-0-x-heading-level-3){
+    font-family: "Montserrat";
+    font-size: 40px;
+    font-weight: 400;
 }
 
 /* Wishlist */
@@ -816,4 +899,161 @@
 
 :global(.vtex-flex-layout-0-x-flexCol--productRating){
   margin-bottom: 5px !important;
+}
+
+/* My account */
+
+:global(.vtex-account_menu-link),
+:global(.vtex-my-account-1-x-menuLink){
+  color: #000000;
+  font-family: "Montserrat";
+  font-size: 18px;
+}
+
+:global(.vtex-account_menu-link):hover,
+:global(.vtex-my-account-1-x-menuLink):hover{
+  color: #56C271;
+  font-weight: 700;
+}
+
+:global(.vtex-account_menu-link):active{
+  color: #56C271;
+  font-weight: 700;
+}
+
+:global(.vtex-account_menu-link):visited{
+  border-color: #56C271;
+}
+
+:global(.vtex-account__page)
+  :global(.vtex-button__label),
+:global(.vtex-account__page)
+  :global(.vtex-button){
+    background-color: #56C271; 
+    color: #ffffff;
+    border-radius: 3px;
+    height: 27px;
+    border: none;
+    font-family: "Montserrat";
+}
+
+:global(.vtex-account__page)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button){
+  background-color: #ffffff; 
+  color: #000000;
+  height: 27px;
+  border: none;
+  font-family: "Montserrat";
+  display: flex;
+  text-transform: capitalize;
+}
+
+:global(.vtex-account__page)
+  :global(.vtex__icon-arrow-back){
+    display: none;
+}
+
+:global(.vtex-account__page)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button)::before{
+    content: url(https://naturalscents.vteximg.com.br/arquivos/return.png);
+    margin-top: 6px;
+}
+
+:global(.vtex-account__page )
+  :global(.vtex-button__label):hover{
+    border: none;
+}
+
+:global(.vtex-my-account-1-x-userGreeting),:global(.vtex-my-account-1-x-userName){
+  font-family: "Montserrat";
+  font-size: 33px;
+  font-weight: 500;
+  color: #000000;
+}
+
+:global(.vtex-account__page)
+  :global(.vtex-pageHeader__title){
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 500;
+  color: #000000;
+}
+
+:global(.vtex-my-account-1-x-boxContainer){
+  background-color: #F8F8F8;
+  border: none;
+}
+
+:global(.vtex-my-account-1-x-dataEntryLabel), :global(.vtex-my-account-1-x-newsletterContainerTitle),  :global(.vtex-account__create-card) :global(.vtex-input__label){
+  font-family: "Montserrat";
+  color: #000000;
+  font-weight: 700;
+}
+
+:global(.vtex-my-account-1-x-dataEntryChildren), :global(.vtex-my-account-1-x-newsletterContainerMessage), :global(.vtex-checkbox__label), 
+:global(.vtex-account__page-body), :global(.vtex-account__create-card) :global(.vtex-input-prefix__group){
+  font-family: "Montserrat";
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+:global(.vtex-profile-form-3-x-profileContainer)
+  :global(.vtex-input__label),  :global(.vtex-input__label){
+  font-family: "Montserrat";
+  color: #000000;
+}
+
+:global(.vtex-modal__confirmation)
+  :global(.vtex-button__label){
+    font-family: "Montserrat";   
+}
+
+:global(.vtex-my-account-1-x-newsletterBoxContainer){
+  display: none;
+}
+
+:global(.vtex-my-cards-1-x-newCardButton)
+  :global(.vtex-button)::before{
+    display: none;
+}
+
+:global(.vtex-account__create-card)
+  :global(.vtex-button){
+    background-color: green !important;
+  }
+
+:global(.vtex-dropdown__label){
+  font-family: "Montserrat";
+}  
+
+:global(.vtex-dropdown__caption){
+  font-family: "Montserrat"; 
+}
+
+:global(.vtex-address-form__postalCode){
+  font-family: "Montserrat";
+}
+
+:global(.vtex-my-cards-1-x-newCardButton){
+  text-decoration: none;
+}
+
+:global(.vtex-radio__label){
+  font-family: "Montserrat";
+}
+
+:global(.vtex-my-orders-app-3-x-orderProductName){
+  color: #000000;
+}
+
+:global(.vtex-my-orders-app-3-x-font){
+  font-family: "Montserrat";
+  color: #56C271;
+}
+
+:global(.vtex-my-orders-app-3-x-detailsBtn){
+  color: #ffffff;
 }

@@ -57,13 +57,13 @@
         "background": {
           "base": "#ffffff",
           "base--inverted": "#03044e",
-          "action-primary": "#0F3E99",
-          "action-secondary": "#eef3f7",
+          "action-primary": "#56C271",
+          "action-secondary": "#56C271",
           "emphasis": "#f71963",
           "disabled": "#f2f4f5",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
-          "danger": "#ff4c4c",
+          "danger": "#56C271",
           "danger--faded": "#ffe6e6",
           "warning": "#ffb100",
           "warning--faded": "#fff6e0",
@@ -74,13 +74,13 @@
           "muted-5": "#f2f4f5"
         },
         "hover-background": {
-          "action-primary": "#072c75",
-          "action-secondary": "#dbe9fd",
+          "action-primary": "#56C271",
+          "action-secondary": "#ffffff",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
-          "danger": "#e13232",
-          "danger--faded": "#ffe6e6",
+          "danger": "#ffffff",
+          "danger--faded": "#ffffff",
           "warning": "#ffb100",
           "warning--faded": "#fff6e0",
           "muted-1": "#727273",
@@ -90,7 +90,7 @@
           "muted-5": "#f2f4f5"
         },
         "active-background": {
-          "action-primary": "#0c389f",
+          "action-primary": "#56C271",
           "action-secondary": "#d2defc",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
@@ -106,15 +106,15 @@
           "muted-5": "#f2f4f5"
         },
         "text": {
-          "action-primary": "#0F3E99",
+          "action-primary": "#56C271",
           "action-secondary": "#eef3f7",
-          "link": "#0F3E99",
+          "link": "#56C271",
           "emphasis": "#f71963",
           "disabled": "#979899",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
-          "danger": "#ff4c4c",
-          "danger--faded": "#ffe6e6",
+          "danger": "#56C271",
+          "danger--faded": "#56C271",
           "warning": "#ffb100",
           "warning--faded": "#fff6e0",
           "muted-1": "#727273",
@@ -128,13 +128,13 @@
         },
         "hover-text": {
           "action-primary": "#072c75",
-          "action-secondary": "#dbe9fd",
-          "link": "#0c389f",
+          "action-secondary": "#000000",
+          "link": "#56C271",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
-          "danger": "#e13232",
-          "danger--faded": "#ffe6e6",
+          "danger": "#ffffff",
+          "danger--faded": "#ffffff",
           "warning": "#ffb100",
           "warning--faded": "#fff6e0"
         },
@@ -149,7 +149,7 @@
           "warning--faded": "#fff6e0"
         },
         "border": {
-          "action-primary": "#0F3E99",
+          "action-primary": "#56C271",
           "action-secondary": "#eef3f7",
           "emphasis": "#f71963",
           "disabled": "#e3e4e6",
@@ -166,13 +166,13 @@
           "muted-5": "#f2f4f5"
         },
         "hover-border": {
-          "action-primary": "#072c75",
-          "action-secondary": "#dbe9fd",
+          "action-primary": "#56C271",
+          "action-secondary": "#56C271",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
-          "danger": "#e13232",
-          "danger--faded": "#ffe6e6",
+          "danger": "#56C271",
+          "danger--faded": "#56C271",
           "warning": "#ffb100",
           "warning--faded": "#fff6e0",
           "muted-1": "#727273",
@@ -274,7 +274,7 @@
             "letterSpacing": "0"
           },
           "heading-4": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Montserrat",
             "fontWeight": "normal",
             "fontSize": "1.5rem",
             "textTransform": "initial",
@@ -316,14 +316,14 @@
             "letterSpacing": "0"
           },
           "action": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Montserrat",
             "fontWeight": "500",
             "fontSize": "1rem",
             "textTransform": "uppercase",
             "letterSpacing": "0"
           },
           "action--small": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Montserrat",
             "fontWeight": "500",
             "fontSize": "0.875rem",
             "textTransform": "uppercase",

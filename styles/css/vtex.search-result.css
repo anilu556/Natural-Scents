@@ -47,10 +47,19 @@
   position: relative;
   content: "Inicio";
   bottom: 2px;
+  color: #5f5f5f;
+  font-family: "BreveSansBook";
+  font-size: 14px;  
 }
 
 :global(.vtex-breadcrumb-1-x-link--1){
-  color: #000000;
+  color: #5f5f5f;
+  font-family: "BreveSansBook";
+  font-size: 14px;  
+}
+
+:global(.vtex-breadcrumb-1-x-link--1):hover{
+  color: #56C271; 
 }
 
 :global(.vtex-search-result-3-x-totalProductsMessage){
@@ -224,14 +233,18 @@
   height: 50px !important;
 }
 
+:global(.vtex-search-result-3-x-container--layout){
+  margin-bottom: 75px;
+}
+
 @media only screen and (max-width: 425px) {
   :global(.vtex-product-summary-2-x-imageNormal){
     transform: rotate(0deg);
   }
 
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf1){
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   :global(.vtex-product-highlights-2-x-productHighlightText){

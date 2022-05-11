@@ -91,14 +91,14 @@
 }
 
 :global(.vtex-store-components-3-x-notificationBarContainer){
-  color: #ffffff;
+  color: #ffffff !important;
   text-decoration: none;
   font-family: "MontserratBold";
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--menu-link){
   background-color: #ECC0A2;
-  padding: 0 76px;
+  padding: 16px 76px 0px 76px ;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header){
@@ -108,6 +108,7 @@
 :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover) 
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header){
     background-color: #ECC0A2;
+    box-shadow: none;
 }
 
 :global(.vtex-rich-text-0-x-paragraph--sucursalesBtn){
@@ -137,6 +138,16 @@
   :global(.vtex-button):hover{
     background-color: transparent;
   }
+
+:global(.vtex-login-2-x-accessCodeOptionBtn)
+  :global(.vtex-button){
+    background-color: #ffffff !important;
+}
+
+:global(.vtex-login-2-x-emailPasswordOptionBtn)
+  :global(.vtex-button){
+  background-color: #ffffff !important;
+}
 
 :global(.vtex-login-2-x-container)
   :global(.vtex-button)
@@ -192,12 +203,23 @@
   border-radius: .25rem;
 }
 
+:global(.vtex-login-2-x-buttonSocial)
+  :global(.vtex-button):hover{
+  background-color: #ffffff;
+}
+
 :global(.vtex-login-2-x-oauthLabel){
   text-transform: capitalize;
+  font-weight: 200;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 :global(.vtex-login-2-x-oauthProvider){
   font-weight: 200;
+  font-family: "Montserrat";
+  font-size: 14px;
+  
 }
 
 :global(.vtex-login-2-x-formFooter)
@@ -217,14 +239,16 @@
   background: #D0F1CD;
   color: #000;
   width: 100%;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  text-transform: capitalize;
 }
 
 :global(.vtex-login-2-x-accountOptions)
-  :global(.vtex-login-2-x-button)
+  :global(.vtex-login-2-x-button):hover
   {
-      font-size: 14px;
-      font-family: 'Montserrat';
-      text-transform: capitalize;
+    background-color: #ffffff;
+    color: #56C271;
 }
 
 :global(.vtex-login-2-x-accountOptions)
@@ -247,6 +271,18 @@
     background: #fff;
     color: #000000;
     border: none;
+}
+
+:global(.vtex-login-2-x-formSubtitle){
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+
+:global(.vtex-login-2-x-formError){
+  background: none;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header)
@@ -336,6 +372,7 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile),
 :global(.vtex-flex-layout-0-x-flexRow--searchRow){
   background-color: #ECC0A2;
+  box-shadow: none !important;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
@@ -568,6 +605,7 @@
 }
 
 @media  only screen and (min-width:1024px) and (max-width:1440px) {
+  
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
   :global(.vtex-store-components-3-x-logoLink){
     left: 185%;

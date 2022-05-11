@@ -1,0 +1,35 @@
+{
+    "store.custom#sucursales": {
+    //   "blocks": ["flex-layout.row#title", "flex-layout.row#container"],
+      "props":{
+        "blockClass" : "storelocator"
+      },
+      "children": ["storeMap"]
+    }
+    // "flex-layout.row#title": {
+    //   "children": ["flex-layout.col#title"],
+    //   "props":{
+    //     "blockClass" : "storelocator"
+    //   }
+    // },
+    // "flex-layout.row#container": {
+    //   "children": ["storeMap"],
+    //   "props": {
+    //     "blockClass" : "stroreLocator"
+    //   }
+    // },
+    // "flex-layout.col#title": {
+    //   "children": ["rich-text#title"],
+    //   "props": {
+    //     "blockClass": "title",
+    //     "preventVerticalStretch": true
+    //   }
+    // },
+    // "rich-text#title": {
+    //   "props": {
+    //     "text": " ",
+    //     "blockClass" : "tituloStroreLocator"
+    //   }
+    // }
+  }
+  

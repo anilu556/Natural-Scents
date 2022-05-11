@@ -7,7 +7,7 @@
       //"product-description",
       "flex-layout.row#listPrice",
       "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
+      //"product-installments#summary",
       "flex-layout.row#cartbtn"
     ]
   },

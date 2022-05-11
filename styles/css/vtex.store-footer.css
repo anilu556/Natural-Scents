@@ -42,6 +42,11 @@
   margin: 0 auto;
 }
 
+:global(.vtex-store-components-3-x-backToTopButtonContainer){
+  bottom: 95px;
+  right: 20px;
+}
+
 :global(.vtex-store-components-3-x-backToTopButtonContainer)
   :global(.vtex-button){
   background-color: #D3F4D0;
@@ -260,8 +265,19 @@
 }
 
 :global(.vtex-store-footer-2-x-footerLayout--footer-mob){
-  background-color: #5F5F5F; 
+  background-image: url(https://naturalscents.vteximg.com.br/arquivos/ondasm.png);
 }
+
+:global(.vtex-store-footer-2-x-footerLayoutSpacer--footer-mob){
+  margin-top: 68px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--logo-row)
+  :global(.vtex-store-components-3-x-imageElement){
+    margin-top: 54px;
+}
+
+
 
 :global(.vtex-flex-layout-0-x-flexRowContent--footer-pay-mob){
   justify-content: center !important;

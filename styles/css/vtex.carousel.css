@@ -3,5 +3,10 @@
 }
 
 .containerImg .img {
-  max-width: 1520px;
+  max-width: 100%;
+  /* max-width: 1520px; */
+}
+
+:global(.vtex-slider-layout-0-x-sliderTrackContainer){
+  max-width: 100% !important;
 }

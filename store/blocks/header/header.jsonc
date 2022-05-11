@@ -93,7 +93,8 @@
   },
   "flex-layout.col#logo-desktop": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "blockClass": "logoCont"
     },
     "children": ["logo#desktop"]
   },
@@ -113,12 +114,22 @@
     "props":{
       "verticalAlign": "middle"
     },
-    "children": ["rich-text#sucursales"]
+    "children": ["image#sucursales"]
+  },
+  "image#sucursales": {
+    "props": {
+      "src": "assets/location.svg",
+      "link":{
+        "url":"/sucursales"
+      },
+      "blockClass" : "imgSuc"
+    }
   },
   "rich-text#sucursales": {
     "props": {
       "text": "Sucursales",
-      "blockClass": "sucursalesBtn"
+      "blockClass": "sucursalesBtn",
+      "href": "/sucursales"
     }
   },
   "flex-layout.col#category-menu": {

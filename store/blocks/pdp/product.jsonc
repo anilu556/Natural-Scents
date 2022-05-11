@@ -3,13 +3,14 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "flex-layout.row#description",
-      "flex-layout.row#specifications-title",
-      "product-specification-group#table",
+      // "flex-layout.row#specifications-title",
+      // "product-specification-group#table",
       "shelf.relatedProducts",
       "product-reviews",
       "product-questions-and-answers"
-    ]
+    ], "props":{
+      "blockClass": "productPage"
+    }
   },
   "flex-layout.row#specifications-title": {
     "children": ["rich-text#specifications"]
@@ -25,11 +26,10 @@
     },
     "children": ["breadcrumb"]
   },
-  "flex-layout.row#description": {
-    "props": {
-      "marginBottom": 7
-    },
-    "children": ["product-description"]
+  "breadcrumb":{
+    "props":{
+      "blockClass": "productbread"
+    }
   },
   "condition-layout.product#availability": {
     "props": {
@@ -49,7 +49,8 @@
       "marginTop": 4,
       "marginBottom": 7,
       "paddingTop": 7,
-      "paddingBottom": 7
+      "paddingBottom": 7,
+      "blockClass": "productCont"
     },
     "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
   },
@@ -77,8 +78,9 @@
   "flex-layout.col#stack": {
     "children": ["stack-layout"],
     "props": {
-      "width": "60%",
-      "rowGap": 0
+      "width": "70%",
+      "rowGap": 0,
+      "blockClass": "stackCont"
     }
   },
   "flex-layout.row#product-image": {
@@ -86,57 +88,215 @@
   },
   "product-images": {
     "props": {
+      "blockClass":"thumbproduct",
+      "thumbnailsOrientation":"vertical",
+      "thumbnailMaxHeight": 189,
+      "maxHeight":631,
       "aspectRatio": {
         "desktop": "auto",
         "phone": "16:9"
       },
-      "displayThumbnailsArrows": true
+       "displayThumbnailsArrows": false,
+       "showPaginationDots": false
     }
   },
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
-      "rowGap": 0
+      "rowGap": 0,
+      "blockClass": "prodrightcol",
+      "width": "30%"
     },
     "children": [
       "flex-layout.row#product-name",
-      "product-rating-summary",
+      "flex-layout.row#ratingprod",
+      "flex-layout.row#skuId",
       "flex-layout.row#list-price-savings",
-      "flex-layout.row#selling-price",
-      "product-installments",
-      "product-separator",
-      "product-identifier.product",
+      "flex-layout.row#priceqty",
+      //"product-installments",
+      //"product-separator",
       "sku-selector",
-      "product-quantity",
-      "product-assembly-options",
-      "product-gifts",
+      //"product-assembly-options",
+      //"product-gifts",
       "flex-layout.row#buy-button",
-      "availability-subscriber",
-      "shipping-simulator",
+      "flex-layout.row#wlbtnprod",
+      "disclosure-layout-group#infoProd",
+      // "availability-subscriber",
+      // "shipping-simulator",
       "share#default"
     ]
   },
 
   "flex-layout.row#product-name": {
     "props": {
-      "marginBottom": 3
+      "marginBottom": 3,
+      "blockClass": "prodnamerow"
     },
     "children": ["vtex.store-components:product-name"]
   },
-
+  "flex-layout.row#ratingprod":{
+    "children":[
+      "product-rating-summary"
+    ], "props":{
+      "blockClass": "ratingProd"
+    }
+  },
+  "flex-layout.row#skuId":{
+    "children":[
+      "product-identifier.product"
+    ],
+    "props":{
+      "blockClass": "skuRow",
+      "title": "skuId"
+    }
+  },
+  "flex-layout.row#priceqty":{
+    "children":[
+      "flex-layout.row#selling-price",
+      "product-quantity"
+    ], "props":{
+      "blockClass": "priceqty"
+      }
+  },
   "sku-selector": {
     "props": {
-      "variationsSpacing": 3,
-      "showValueNameForImageVariation": true
+     "blockClass":"sku-selector-styles"
     }
   },
 
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
-      "marginBottom": 7
+      "marginBottom": 4,
+      "blockClass": "buybtnprod"
     },
     "children": ["add-to-cart-button"]
+  },
+  "flex-layout.row#wlbtnprod":{
+    "children":[
+      "add-to-list-btn"
+    ],"props":{
+      "blockClass":"btnwishprod",
+      "marginBottom": 8
+    }
+  },
+
+  "disclosure-layout-group#infoProd": {
+    "children": [
+      "disclosure-layout#first",
+      "disclosure-layout#second",
+      "disclosure-layout#third"
+    ], "props":{
+      "blockClass": "infoProd"
+    }
+  },
+
+  "disclosure-layout#first": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#first", "disclosure-content#first"]
+  },
+  "disclosure-trigger#first": {
+    "props": {
+      "blockClass": ["question", "infoprodtit"],
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question1"]
+  },
+  "disclosure-content#first": {
+    "props": {
+      "blockClass": ["answer", "infoprodtxt"]
+    },
+    "children": ["product-description#infoProd"]
+  },
+  "rich-text#question1": {
+    "props": {
+      "text": "Descripción"
+    }
+  },
+  "product-description#infoProd":{
+    "props":{
+      "showTitle": false
+    }
+  },
+
+  "disclosure-layout#second": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#second", "disclosure-content#second"]
+  },
+  "disclosure-trigger#second": {
+    "props": {
+      "blockClass": ["question", "infoprodtit"],
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question2"]
+  },
+  "disclosure-content#second": {
+    "props": {
+      "blockClass": ["answer", "infoprodtxt"]
+    },
+    "children": ["rich-text#answer2"]
+  },
+  "rich-text#question2": {
+    "props": {
+      "text": "Uso"
+    }
+  },
+  "rich-text#answer2": {
+    "props": {
+      "text": "In this field you should write the use of the product."
+    }
+  },
+
+
+  "disclosure-layout#third": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#third", "disclosure-content#third"]
+  },
+  "disclosure-trigger#third": {
+    "props": {
+      "blockClass": ["question", "infoprodtit"],
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question3"]
+  },
+  "disclosure-content#third": {
+    "props": {
+      "blockClass": ["answer", "infoprodtxt"]
+    },
+    "children": ["rich-text#answer3"]
+  },
+  "rich-text#question3": {
+    "props": {
+      "text": "Ingredientes"
+    }
+  },
+  "rich-text#answer3": {
+    "props": {
+      "text": "In this field you should write the ingredients of the product."
+    }
+  },
+
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "icon-caret#right",
+      "Hide": "icon-caret#down"
+    }
+  },
+  "icon-caret#right": {
+    "props": {
+      "orientation": "right"
+    }
+  },
+  "icon-caret#down": {
+    "props": {
+      "orientation": "down"
+    }
   },
 
   "flex-layout.row#product-availability": {
@@ -173,11 +333,12 @@
 
   "share#default": {
     "props": {
+      "blockClass": "shareSocial",
       "social": {
         "Facebook": true,
+        "Pinterest": true,
         "WhatsApp": true,
-        "Twitter": false,
-        "Pinterest": true
+        "Twitter": false
       }
     }
   }
