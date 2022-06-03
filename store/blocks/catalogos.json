@@ -1,0 +1,348 @@
+{
+    "store.custom#catalogos": {
+    "blocks": [
+      "flex-layout.row#cats"
+    ]
+  },
+"flex-layout.row#cats":{
+    "children":[
+        "flex-layout.col#colcats"
+    ]
+},
+"flex-layout.col#colcats":{
+    "props":{
+        "blockClass" : "rowCats"
+    },
+    "children":[
+        "rich-text#catTitle",
+        "rich-text#catText",
+        "flex-layout.row#catalogos1",
+        "flex-layout.row#catalogos2",
+        "flex-layout.row#catalogos3"
+    ]
+}, 
+"rich-text#catTitle":{
+    "props": {
+        "text": "## CATÁLOGOS DIGITALES",
+        "blockClass": "catTitle",
+        "textAlignment" : "CENTER",
+        "textPosition" : "CENTER",
+        "fullWidth": true
+    }
+},
+"rich-text#catText":{
+    "props": {
+        "text": "Descarga los catálogos de nuestras diferentes líneas y descubre nuestra oferta de productos de cuidado personal y belleza para consentir y consentirse.",
+        "blockClass": "catDesc",
+        "textAlignment" : "CENTER",
+        "textPosition" : "CENTER",
+        "fullWidth": true
+    }
+},
+"flex-layout.row#catalogos1":{  
+    "children":[
+        "flex-layout.col#colcat1",
+        "flex-layout.col#colcat2",
+        "flex-layout.col#colcat3"
+    ]
+},
+"flex-layout.col#colcat1":{
+    "children":[
+        "flex-layout.row#imgcat1",
+        "flex-layout.row#textcat1"
+        
+    ],"props":{
+        "blockClass":"contcat"
+    }
+},
+"flex-layout.row#imgcat1":{
+    "children":[
+        "image#catalogo1"
+    ],"props":{
+        "blockClass":"imgcolcat"
+    }
+},
+"image#catalogo1":{
+    "props":{
+        "src":"assets/cat1.png",
+        "maxHeight":319
+    }
+},
+"flex-layout.row#textcat1":{
+    "children":[
+        "rich-text#contcat1"
+    ],"props":{
+        "blockClass": "contcatext"
+    }
+},
+"rich-text#contcat1":{
+    "props":{
+        "text":"### tiutlo \n #### descropción \n [DESCARGAR]()",
+        "blockClass":"textCats"
+    }
+},
+
+"flex-layout.col#colcat2":{
+    "children":[
+        "flex-layout.row#imgcat2",
+        "flex-layout.row#textcat2"
+    ],"props":{
+        "blockClass":"contcat"
+    }
+},
+"flex-layout.row#imgcat2":{
+    "children":[
+        "image#catalogo2"
+    ],"props":{
+        "blockClass":"imgcolcat"
+    }
+},
+"image#catalogo2":{
+    "props":{
+        "src":"assets/cat2.png",
+        "maxHeight":319
+    }
+},
+"flex-layout.row#textcat2":{
+    "children":[
+        "rich-text#contcat2"
+    ],"props":{
+        "blockClass": "contcatext"
+    }
+},
+"rich-text#contcat2":{
+    "props":{
+        "text":"### tiutlo \n #### descripción \n [DESCARGAR]()",
+        "blockClass":"textCats"
+    }
+},
+
+"flex-layout.col#colcat3":{
+    "children":[
+        "flex-layout.row#imgcat3",
+        "flex-layout.row#textcat3"
+        
+    ],"props":{
+        "blockClass":"contcat"
+    }
+},
+"flex-layout.row#imgcat3":{
+    "children":[
+        "image#catalogo3"
+    ],"props":{
+        "blockClass":"imgcolcat"
+    }
+},
+"image#catalogo3":{
+    "props":{
+        "src":"assets/cat3.png",
+        "maxHeight":319
+    }
+},
+"flex-layout.row#textcat3":{
+    "children":[
+        "rich-text#contcat3"
+    ],"props":{
+        "blockClass": "contcatext"
+    }
+},
+"rich-text#contcat3":{
+    "props":{
+        "text":"### tiutlo \n #### descripción \n [DESCARGAR]()",
+        "blockClass":"textCats"
+    }
+},
+
+"flex-layout.row#catalogos2":{  
+    "children":[
+        "flex-layout.col#colcat4",
+        "flex-layout.col#colcat5",
+        "flex-layout.col#colcat6"
+    ]
+},
+"flex-layout.col#colcat4":{
+    "children":[
+        "flex-layout.row#imgcat4",
+        "flex-layout.row#textcat4"
+        
+    ],"props":{
+        "blockClass":"contcat"
+    }
+},
+"flex-layout.row#imgcat4":{
+    "children":[
+        "image#catalogo4"
+    ],"props":{
+        "blockClass":"imgcolcat"
+    }
+},
+"image#catalogo4":{
+    "props":{
+        "src":"assets/cat4.png",
+        "maxHeight":319
+    }
+},
+"flex-layout.row#textcat4":{
+    "children":[
+        "rich-text#contcat4"
+    ],"props":{
+        "blockClass": "contcatext"
+    }
+},
+"rich-text#contcat4":{
+    "props":{
+        "text":"### tiutlo \n #### descropción \n [DESCARGAR]()",
+        "blockClass":"textCats"
+    }
+},
+
+"flex-layout.col#colcat5":{
+    "children":[
+        "flex-layout.row#imgcat5",
+        "flex-layout.row#textcat5"
+    ],"props":{
+        "blockClass":"contcat"
+    }
+},
+"flex-layout.row#imgcat5":{
+    "children":[
+        "image#catalogo5"
+    ],"props":{
+        "blockClass":"imgcolcat"
+    }
+},
+"image#catalogo5":{
+    "props":{
+        "src":"assets/cat5.png",
+        "maxHeight":319
+    }
+},
+"flex-layout.row#textcat5":{
+    "children":[
+        "rich-text#contcat5"
+    ],"props":{
+        "blockClass": "contcatext"
+    }
+},
+"rich-text#contcat5":{
+    "props":{
+        "text":"### tiutlo \n #### descripción \n [DESCARGAR]()",
+        "blockClass":"textCats"
+    }
+},
+
+"flex-layout.col#colcat6":{
+    "children":[
+        "flex-layout.row#imgcat6",
+        "flex-layout.row#textcat6"
+        
+    ],"props":{
+        "blockClass":"contcat"
+    }
+},
+"flex-layout.row#imgcat6":{
+    "children":[
+        "image#catalogo6"
+    ],"props":{
+        "blockClass":"imgcolcat"
+    }
+},
+"image#catalogo6":{
+    "props":{
+        "src":"assets/cat6.png",
+        "maxHeight":319
+    }
+},
+"flex-layout.row#textcat6":{
+    "children":[
+        "rich-text#contcat6"
+    ],"props":{
+        "blockClass": "contcatext"
+    }
+},
+"rich-text#contcat6":{
+    "props":{
+        "text":"### tiutlo \n #### descripción \n [DESCARGAR]()",
+        "blockClass":"textCats"
+    }
+},
+
+
+"flex-layout.row#catalogos3":{  
+    "children":[
+        "flex-layout.col#colcat7",
+        "flex-layout.col#colcat8"
+    ]
+},
+"flex-layout.col#colcat7":{
+    "children":[
+        "flex-layout.row#imgcat7",
+        "flex-layout.row#textcat7"
+        
+    ],"props":{
+        "blockClass":"contcat"
+    }
+},
+"flex-layout.row#imgcat7":{
+    "children":[
+        "image#catalogo7"
+    ],"props":{
+        "blockClass":"imgcolcat"
+    }
+},
+"image#catalogo7":{
+    "props":{
+        "src":"assets/cat7.png",
+        "maxHeight":319
+    }
+},
+"flex-layout.row#textcat7":{
+    "children":[
+        "rich-text#contcat7"
+    ],"props":{
+        "blockClass": "contcatext"
+    }
+},
+"rich-text#contcat7":{
+    "props":{
+        "text":"### tiutlo \n #### descropción \n [DESCARGAR]()",
+        "blockClass":"textCats"
+    }
+},
+
+"flex-layout.col#colcat8":{
+    "children":[
+        "flex-layout.row#imgcat8",
+        "flex-layout.row#textcat8"
+    ],"props":{
+        "blockClass":"contcat"
+    }
+},
+"flex-layout.row#imgcat8":{
+    "children":[
+        "image#catalogo8"
+    ],"props":{
+        "blockClass":"imgcolcat"
+    }
+},
+"image#catalogo8":{
+    "props":{
+        "src":"assets/cat8.png",
+        "maxHeight":319
+    }
+},
+"flex-layout.row#textcat8":{
+    "children":[
+        "rich-text#contcat8"
+    ],"props":{
+        "blockClass": "contcatext"
+    }
+},
+"rich-text#contcat8":{
+    "props":{
+        "text":"### tiutlo \n #### descripción \n [DESCARGAR]()",
+        "blockClass":"textCats"
+    }
+}
+
+} 

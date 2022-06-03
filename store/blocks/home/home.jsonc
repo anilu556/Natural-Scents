@@ -12,7 +12,7 @@
       "list-context.image-list#demo",
       "__fold__.experimentalLazyAssets",
       "rich-text#shelf-title1",
-      "flex-layout.row#shelf1",
+      "flex-layout.row#shelf1", 
       "flex-layout.row#infocards",
       "rich-text#slider-title-ingredientes",
       "slider-layout#ingredientes",
@@ -27,7 +27,7 @@
       "list-context.image-list#demo",
       "__fold__.experimentalLazyAssets",
       "rich-text#shelf-title1",
-      "flex-layout.row#shelf1",
+      "flex-layout.row#shelf1", 
       "flex-layout.row#infocardCol6Mob",
       "flex-layout.row#infocardCol5Mob",
       "flex-layout.row#infocardCol4Mob",
@@ -46,7 +46,7 @@
       "list-context.image-list#demo",
       "__fold__.experimentalLazyAssets",
       "rich-text#shelf-title1",
-      "flex-layout.row#shelf1",
+      "flex-layout.row#shelf1", 
       "flex-layout.row#infocardCol6Mob",
       "flex-layout.row#infocardCol5Mob",
       "flex-layout.row#infocardCol4Mob",
@@ -102,14 +102,16 @@
   "flex-layout.row#shelf1": {
     "children": ["list-context.product-list#demo1"],
     "props":{
-      "blockClass": "productShelf"
+      "blockClass": "productShelf",
+      "fullWidth": false
     }
   },
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "productCont"
     }
   },
   "slider-layout#demo-products": {
@@ -123,7 +125,6 @@
       "fullWidth": false,
       "blockClass": "shelf1",
       "showPaginationDots": "never"
-      // "slideTransition": "{speed: 100, delay: 0, timing: ''}"
 
     }
   },

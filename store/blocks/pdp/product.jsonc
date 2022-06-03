@@ -1,13 +1,52 @@
 {
   "store.product": {
     "children": [
+      "responsive-layout.desktop#pdp",
+      "responsive-layout.tablet#pdp",
+      "responsive-layout.phone#pdp"
+    ]
+  },  
+  "responsive-layout.desktop#pdp":{
+    "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       // "flex-layout.row#specifications-title",
       // "product-specification-group#table",
       "shelf.relatedProducts",
       "product-reviews",
-      "product-questions-and-answers"
+      "product-questions-and-answers",
+      "rich-text#shelf-title1",
+      "flex-layout.row#shelf2"
+    ], "props":{
+      "blockClass": "productPage"
+    }
+  },
+  "responsive-layout.tablet#pdp":{
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability",
+      // "flex-layout.row#specifications-title",
+      // "product-specification-group#table",
+      "shelf.relatedProducts",
+      "product-reviews",
+      "product-questions-and-answers",
+      "rich-text#shelf-title1",
+      "flex-layout.row#shelf2"
+    ], "props":{
+      "blockClass": "productPage"
+    }
+  },
+  "responsive-layout.phone#pdp":{
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availabilityMob",
+      // "flex-layout.row#specifications-title",
+      // "product-specification-group#table",
+      "shelf.relatedProducts",
+      "product-reviews",
+      "product-questions-and-answers",
+      "rich-text#shelf-title1",
+      "flex-layout.row#shelf2"
     ], "props":{
       "blockClass": "productPage"
     }
@@ -94,10 +133,11 @@
       "maxHeight":631,
       "aspectRatio": {
         "desktop": "auto",
-        "phone": "16:9"
+        "phone": "1920:1080"
       },
        "displayThumbnailsArrows": false,
-       "showPaginationDots": false
+       "showPaginationDots": false,
+       "zoomMode": "in-place-hover"
     }
   },
   "flex-layout.col#right-col": {
@@ -238,16 +278,48 @@
     "props": {
       "blockClass": ["answer", "infoprodtxt"]
     },
-    "children": ["rich-text#answer2"]
+    "children": ["flex-layout.row#contTextUso"]
   },
   "rich-text#question2": {
     "props": {
       "text": "Uso"
     }
   },
-  "rich-text#answer2": {
+  "flex-layout.row#contTextUso":{
+    "props":{
+      "blockClass": "contText"
+    },
+    "children":[
+      "product-specification-group#uso"
+    ]
+  },
+  "product-specification-group#uso": {
+    "props":{
+      "filter":{
+        "specificationGroups": "Uso",
+        "type": "show"
+      }
+    },
+    "children": ["product-specification#uso"]
+  },
+  "product-specification#uso": {
+    "children": [
+      "product-specification-text#specificationUso",
+      "product-specification-values#uso"
+    ]
+  },
+  "product-specification-values#uso": {
+    "children": ["product-specification-text#valueUso"]
+  },
+
+  "product-specification-text#specificationUso": {
     "props": {
-      "text": "In this field you should write the use of the product."
+      "message": "{specificationName}"
+    }
+  },
+  "product-specification-text#valueUso": {
+    "props": {
+      "message": "{specificationValue}"
     }
   },
 
@@ -269,16 +341,49 @@
     "props": {
       "blockClass": ["answer", "infoprodtxt"]
     },
-    "children": ["rich-text#answer3"]
+    "children": ["flex-layout.row#contTextIngre"]
   },
   "rich-text#question3": {
     "props": {
       "text": "Ingredientes"
     }
   },
-  "rich-text#answer3": {
+
+  "flex-layout.row#contTextIngre":{
+    "props":{
+      "blockClass": "contText"
+    },
+    "children":[
+      "product-specification-group#ingre"
+    ]
+  },
+  "product-specification-group#ingre": {
+    "props":{
+      "filter":{
+        "specificationGroups": "Ingredientes",
+        "type": "show"
+      }
+    },
+    "children": ["product-specification#ingre"]
+  },
+  "product-specification#ingre": {
+    "children": [
+      "product-specification-text#specificationIngre",
+      "product-specification-values#ingre"
+    ]
+  },
+  "product-specification-values#ingre": {
+    "children": ["product-specification-text#valueIngre"]
+  },
+
+  "product-specification-text#specificationIngre": {
     "props": {
-      "text": "In this field you should write the ingredients of the product."
+      "message": "{specificationName}"
+    }
+  },
+  "product-specification-text#valueIngre": {
+    "props": {
+      "message": "{specificationValue}"
     }
   },
 
@@ -341,5 +446,79 @@
         "Twitter": false
       }
     }
+  },
+
+
+  //Mobile
+  "condition-layout.product#availabilityMob": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#product-mainMob",
+      "Else": "flex-layout.row#product-availability"
+    }
+  },
+  "flex-layout.row#product-mainMob": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": "productCont"
+    },
+    "children": ["flex-layout.col#stackMob", "flex-layout.col#right-col"]
+  },
+
+  "stack-layout#stackMob": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-imageMob",
+      "product-bookmark",
+      "product-specification-badges"
+    ]
+  },
+
+  "flex-layout.col#stackMob": {
+    "children": ["stack-layout#stackMob"],
+    "props": {
+      "width": "70%",
+      "rowGap": 0,
+      "blockClass": "stackCont"
+    }
+  },
+  "flex-layout.row#product-imageMob": {
+    "children": ["product-images#productImgMob"]
+  },
+  "product-images#productImgMob": {
+    "props": {
+      "blockClass":"thumbproduct",
+      "thumbnailsOrientation":"vertical",
+      "thumbnailMaxHeight": 189,
+      "maxHeight":631,
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      },
+       "displayThumbnailsArrows": false,
+       "showPaginationDots": false,
+       "zoomMode": "disabled"
+    }
+  },
+  //Mobile
+
+  //Carrusel
+  "flex-layout.row#shelf2": {
+    "children": ["list-context.product-list#demo1"],
+    "props":{
+      "blockClass": "productShelf2"
+    }
   }
+  
 }

@@ -37,7 +37,8 @@
   font-size: 28px;
 }
 
-:global(.vtex-reviews-and-ratings-2-x-star--filled){
+:global(.vtex-reviews-and-ratings-2-x-star--filled),
+:global(.vtex-reviews-and-ratings-2-x-star--empty){
  color: #ECC0A2;
 }
 
@@ -61,6 +62,11 @@
   margin-bottom: 24px;
 }
 
+:global(.vtex-store-components-3-x-skuSelectorOptionsList){
+  margin-left: 25px;
+  width: 100%;
+}
+
 :global(.vtex-flex-layout-0-x-flexCol--prodrightcol)
   :global(.vtex-product-price-1-x-listPriceValue){
     font-family: "MontserratLight";
@@ -82,7 +88,7 @@
 :global(.vtex-flex-layout-0-x-flexCol--prodrightcol)
   :global(.vtex-product-price-1-x-sellingPrice)
     :global(.vtex-product-price-1-x-currencyContainer){
-      font-size: 28px !important;
+      font-size: 26px !important;
 }
 
 :global(.vtex-product-quantity-1-x-quantitySelectorTitle){
@@ -147,6 +153,11 @@
 
 :global(.vtex-store-components-3-x-caretIcon--thumbproduct){
   color: #ECC0A2;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--btnwishprod){
+  height: 32px;
+  margin-bottom: 38px !important;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--btnwishprod)
@@ -216,6 +227,18 @@
 
 :global(.vtex-disclosure-layout-1-x-content--infoprodtxt--visible){
   border-bottom: 1px solid #ECC0A2;
+  width: 90%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--contText){
+  margin: 30px 0;
+}
+
+:global(.vtex-product-specifications-1-x-specificationName){
+  color: #000000;
+  font-family: "Montserrat";
+  font-weight: 400 !important;
+  font-size: 14px;
 }
 
 :global(.vtex-store-components-3-x-productDescriptionText){
@@ -263,7 +286,7 @@
 }
 
 :global(.vtex-store-components-3-x-shareSocialButton--whatsapp)::after{
-  content: url(https://naturalscents.vteximg.com.br/arquivos/whats.png);
+  content: url(https://naturalscents.vteximg.com.br/arquivos/whats25.png);
 }
 
 :global(.vtex-reviews-and-ratings-2-x-summaryTotalReviews){
@@ -274,7 +297,8 @@
 
 :global(.vtex-reviews-and-ratings-2-x-container){
   border-top: 1px solid #000000;
-  margin: 0 100px;
+  border-bottom: 1px solid #000000;
+  margin: 0 100px 192px 100px;
 }
 
 :global(.vtex-reviews-and-ratings-2-x-reviewsHeading){
@@ -346,6 +370,11 @@
 
 :global(.vtex-reviews-and-ratings-2-x-writeReviewButton):hover{
   color: #56C271;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--productShelf2){
+  margin-top: 38px;
+  margin-bottom: 87px;
 }
 
 :global(.vtex-reviews-and-ratings-2-x-formContainer)
@@ -434,7 +463,63 @@
   margin-top: 0;
 }
 
+:global(.vtex-store-components-3-x-caretIcon--thumbproduct){
+  display: none;
+}
+
+:global(.vtex-store-components-3-x-swiperCaretPrev)::before{
+  content: url(https://naturalscents.vteximg.com.br/arquivos/arrowL.png);
+}
+
+:global(.vtex-store-components-3-x-swiperCaretNext)::before{
+  content: url(https://naturalscents.vteximg.com.br/arquivos/arrowR.png);
+}
+
+@media only screen and (max-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexRow--productCont){
+    margin: 0;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--productShelf2){
+    margin-top: 25px;
+    margin-bottom: 27px;
+  }
+
+  :global(.vtex-reviews-and-ratings-2-x-container){
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    margin: 0 100px 49px 100px;
+  }
+
+  :global(.vtex-disclosure-layout-1-x-trigger--infoprodtit--visible){
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  :global(.vtex-disclosure-layout-1-x-content--infoprodtxt--visible){
+    width: 85%;
+    margin: 0 auto;
+  }
+
+}
 @media only screen and (max-width: 425px) {
+
+  :global(.vtex-product-quantity-1-x-quantitySelectorStepper){
+    position: relative;
+    top: 15px;
+  }
+
+  :global(.vtex-product-quantity-1-x-quantitySelectorContainer){
+    margin-left: 50px;
+  }
+
+  :global(.vtex-disclosure-layout-1-x-trigger--infoprodtit)
+  :global(.vtex-store-icons-0-x-caretIcon){
+    position: absolute;
+    right: 25px;
+    color: #ECC0A2;
+  }
+
   :global(.vtex-flex-layout-0-x-flexRow--productCont){
     margin: 0;
   }
@@ -449,8 +534,17 @@
   }
 
   :global(.vtex-flex-layout-0-x-flexRow--productCont) :global(.vtex-flex-layout-0-x-flexRow--ratingProd),:global(.vtex-flex-layout-0-x-flexRow--productCont) :global(.vtex-flex-layout-0-x-flexRow--skuRow),:global(.vtex-flex-layout-0-x-flexRow--productCont) :global(.vtex-product-price-1-x-listPrice),
-  :global(.vtex-flex-layout-0-x-flexRow--productCont) :global(.vtex-product-price-1-x-sellingPrice),   :global(.vtex-flex-layout-0-x-flexRow--productCont) :global(.vtex-store-components-3-x-skuSelectorContainer){
+  :global(.vtex-flex-layout-0-x-flexRow--productCont) :global(.vtex-product-price-1-x-sellingPrice){
     margin-left: 56px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--productCont) :global(.vtex-store-components-3-x-skuSelectorContainer){
+    margin-left: 57px;
+  }
+
+  :global(.vtex-store-components-3-x-skuSelectorOptionsList){
+    margin-left: 0;
+    width: 100%;
   }
 
   :global(.vtex-flex-layout-0-x-flexRowContent--priceqty){

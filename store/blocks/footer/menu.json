@@ -86,10 +86,13 @@
     },
     "children": [
       "menu-item#tituloPagos",
+      "menu-item#catalogos",
       "menu-item#entregas",
       "menu-item#preguntas",
       "menu-item#localizador",
-      "menu-item#contacto"
+      "menu-item#contacto",
+      "menu-item#facturas",
+      "menu-item#ventas"
     ]
   },
 
@@ -97,6 +100,21 @@
     "props":{
       "text": "Atención al cliente",
       "blockClass":"titleMenu2"
+    }
+  },
+  "menu-item#catalogos": {
+    "props": {
+      "id": "menu-item-entrega",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/catalogos",
+        "noFollow": true,
+        "tagTitle": "Catálogos",
+        "text": "Catálogos"
+      }
     }
   },
   "menu-item#entregas": {
@@ -145,8 +163,38 @@
         "text": "Localizador de tiendas"
       }
     }
+  },  
+    "menu-item#facturas": {
+      "props": {
+        "id": "menu-item-facturas",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/facturacion",
+          "noFollow": true,
+          "tagTitle": "Facturación",
+          "text": "Facturación"
+        }
+      }
   },
 
+  "menu-item#ventas": {
+    "props": {
+      "id": "menu-item-ventas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ventas-corporativas",
+        "noFollow": true,
+        "tagTitle": "Ventas Corportivas",
+        "text": "Ventas Corportivas"
+      }
+    }
+  },
   "menu-item#contacto": {
     "props": {
       "id": "menu-item-contacto",
@@ -223,10 +271,13 @@
       "orientation": "vertical"
     },
     "children": [
+      "menu-item#catalogos",
       "menu-item#entregas",
       "menu-item#preguntas",
       "menu-item#localizador",
-      "menu-item#contacto"
+      "menu-item#contacto",
+      "menu-item#facturas",
+      "menu-item#ventas"
     ]
   }
 }

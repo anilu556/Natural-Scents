@@ -44,7 +44,7 @@
 
 :global(.vtex-store-components-3-x-backToTopButtonContainer){
   bottom: 95px;
-  right: 20px;
+  right: 25px;
 }
 
 :global(.vtex-store-components-3-x-backToTopButtonContainer)
@@ -60,12 +60,20 @@
   border-radius: 50%;
   border: none;
   font-size: 0;
+  height: 60px;
+  width: 60px;
+}
+
+:global(.vtex-store-components-3-x-backToTopButtonContainer)
+  :global(.vtex-button)
+    :global(.vtex-button__label){
+      height: auto;
 }
 
 
 :global(.vtex-store-components-3-x-backToTopButtonContainer)
 :global(.vtex-button)::after{
-  content: url(https://naturalscents.vteximg.com.br/arquivos/top.svg);
+  content: url(https://naturalscents.vteximg.com.br/arquivos/top60.svg);
   font-size: 10px;
 }
 
@@ -269,7 +277,7 @@
 }
 
 :global(.vtex-store-footer-2-x-footerLayoutSpacer--footer-mob){
-  margin-top: 68px;
+  margin-top: 50px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--logo-row)

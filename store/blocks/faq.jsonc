@@ -22,105 +22,105 @@
   },
   "rich-text#faq": {
     "props": {
-      "text": "## FAQ"
+      "text": "## Preguntas Frecuentes"
     }
   },
 
   "disclosure-layout-group#group": {
     "children": [
-      "disclosure-layout#first",
-      "disclosure-layout#second",
-      "disclosure-layout#third",
+      "disclosure-layout#firstFaq",
+      "disclosure-layout#secondFaq",
+      "disclosure-layout#thirdFaq",
       "disclosure-layout#fourth"
     ]
   },
 
-  "disclosure-layout#first": {
+  "disclosure-layout#firstFaq": {
     "props": {
       "animated": true
     },
-    "children": ["disclosure-trigger#first", "disclosure-content#first"]
+    "children": ["disclosure-trigger#firstFaq", "disclosure-content#firstFaq"]
   },
-  "disclosure-trigger#first": {
+  "disclosure-trigger#firstFaq": {
     "props": {
-      "blockClass": "question",
+      "blockClass": ["question", "infoprodtit"],
       "as": "div"
     },
-    "children": ["disclosure-state-indicator", "rich-text#question1"]
+    "children": ["disclosure-state-indicator", "rich-text#question1Faq"]
   },
-  "disclosure-content#first": {
+  "disclosure-content#firstFaq": {
     "props": {
-      "blockClass": "answer"
+      "blockClass": ["answer", "infoprodtxt"]
     },
-    "children": ["rich-text#answer1"]
+    "children": ["rich-text#answer1Faq"]
   },
-  "rich-text#question1": {
+  "rich-text#question1Faq": {
     "props": {
       "text": "How can I change my shipping address?"
     }
   },
-  "rich-text#answer1": {
+  "rich-text#answer1Faq": {
     "props": {
       "text": "Call us at the number (212) 1234-1234."
     }
   },
 
-  "disclosure-layout#second": {
+  "disclosure-layout#secondFaq": {
     "props": {
       "animated": true
     },
-    "children": ["disclosure-trigger#second", "disclosure-content#second"]
+    "children": ["disclosure-trigger#secondFaq", "disclosure-content#secondFaq"]
   },
-  "disclosure-trigger#second": {
+  "disclosure-trigger#secondFaq": {
     "props": {
-      "blockClass": "question",
+      "blockClass": ["question", "infoprodtit"],
       "as": "div"
     },
-    "children": ["disclosure-state-indicator", "rich-text#question2"]
+    "children": ["disclosure-state-indicator", "rich-text#question2Faq"]
   },
-  "disclosure-content#second": {
+  "disclosure-content#secondFaq": {
     "props": {
-      "blockClass": "answer"
+      "blockClass": ["answer", "infoprodtxt"]
     },
-    "children": ["rich-text#answer2"]
+    "children": ["rich-text#answer2Faq"]
   },
-  "rich-text#question2": {
+  "rich-text#question2Faq": {
     "props": {
       "text": "How can I track my order?"
     }
   },
-  "rich-text#answer2": {
+  "rich-text#answer2Faq": {
     "props": {
       "text": "After logging into your account, you can find this info at the link Orders."
     }
   },
 
 
-  "disclosure-layout#third": {
+  "disclosure-layout#thirdFaq": {
     "props": {
       "animated": true
     },
-    "children": ["disclosure-trigger#third", "disclosure-content#third"]
+    "children": ["disclosure-trigger#thirdFaq", "disclosure-content#thirdFaq"]
   },
-  "disclosure-trigger#third": {
+  "disclosure-trigger#thirdFaq": {
     "props": {
-      "blockClass": "question",
+      "blockClass": ["question", "infoprodtit"],
       "as": "div"
     },
-    "children": ["disclosure-state-indicator", "rich-text#question3"]
+    "children": ["disclosure-state-indicator", "rich-text#question3Faq"]
   },
-  "disclosure-content#third": {
+  "disclosure-content#thirdFaq": {
     "props": {
-      "blockClass": "answer"
+      "blockClass": ["answer", "infoprodtxt"]
     },
-    "children": ["rich-text#answer3"]
+    "children": ["rich-text#answer3Faq"]
   },
-  "rich-text#question3": {
+  "rich-text#question3Faq": {
     "props": {
       "text": "How can I change my shipping address?"
     }
   },
-  "rich-text#answer3": {
+  "rich-text#answer3Faq": {
     "props": {
       "text": "Call us at the number (212) 1234-1234."
     }
@@ -135,16 +135,16 @@
   },
   "disclosure-trigger#fourth": {
     "props": {
-      "blockClass": "question",
+      "blockClass": ["question", "infoprodtit"],
       "as": "div"
     },
     "children": ["disclosure-state-indicator", "rich-text#question4"]
   },
   "disclosure-content#fourth": {
     "props": {
-      "blockClass": "answer"
+      "blockClass": ["answer", "infoprodtxt"]
     },
-    "children": ["rich-text#answer2"]
+    "children": ["rich-text#answer4"]
   },
   "rich-text#question4": {
     "props": {

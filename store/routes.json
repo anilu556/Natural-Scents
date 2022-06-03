@@ -10,6 +10,17 @@
   },
   "store.custom#sucursales": {
     "path": "/sucursales"
+  },
+  "store.custom#institucionales":{
+    "path": "/institucionales"
+  },
+  "store.custom#catalogos":{
+    "path": "/catalogos"
+  },
+  "store.custom#ventas":{
+    "path": "/ventas"  
+  },
+  "store.custom#facturacion":{
+    "path": "/facturacion"
   }
-
 }

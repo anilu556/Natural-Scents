@@ -35,9 +35,18 @@
     "children": ["flex-layout.col#confirmation-buttons"]
   },
   "flex-layout.col#confirmation-buttons": {
-    "children": ["op-print-button"]
+    "children": [
+      "op-print-button",
+      "rich-text#link-fact"]
   },
-  "op-section#notices": {
+
+  "rich-text#link-fact": {
+    "props": {
+      "text": "[Solicitar factura](/facturacion)",
+      "blockClass": "link-facturar"
+    }  
+  },  
+    "op-section#notices": {
     "props": {
       "name": "notices",
       "marginBottom": 9,

@@ -1,0 +1,215 @@
+{
+    "store.custom#facturacion": {
+        "children": [
+          "flex-layout.row#facturacion"
+        ]
+    },
+
+    "flex-layout.row#facturacion": {
+        "children": [
+          "flex-layout.col#text-facturacion"
+        ],
+        "props": {
+          "blockClass": [ "facturacionPage"]
+        }
+    },
+      
+    "flex-layout.col#text-facturacion": {
+        "children": [
+          "rich-text#facturacion-titulo",
+          "rich-text#facturacion-parrafo-1",
+          "flex-layout.row#formFact"
+        ],
+        "props": {
+          "preventVerticalStretch": true
+        }
+    },
+
+    "rich-text#facturacion-titulo": {
+        "props": {
+            "blockClass": "ventas-titulo",
+            "text": "Solicita tu factura"
+        }
+    },
+
+    "rich-text#facturacion-parrafo-1": {
+        "props": {
+            "blockClass": "ventas-parrafo",
+            "text": "**Por favor llena el siguiente formulario:**"
+        }
+    },
+
+    "flex-layout.row#formFact": {
+        "children": [
+            "flex-layout.col#formFact"
+        ],
+        "props":{
+            "blockClass": "formNatural"
+        }
+    },
+
+    "flex-layout.col#formFact": {
+        "children": [
+            "form#factura"
+        ]
+    },
+      
+    
+    "form#factura": {
+      "props": {
+        "entity": "datosfact",
+        "schema": "datosfact"
+      },
+      "children": [
+        "form-input.text#rfc",
+        "form-input.text#razon",
+        "form-input.text#correo",
+        "form-input.text#calle",
+        "form-input.text#ext",
+        "form-input.text#int",
+        "form-input.text#col",
+        "form-input.text#muni",
+        "form-input.text#ciudad",
+        "form-input.text#cp",
+        "form-input.text#edo",
+        "form-input.dropdown#cfdi",
+        "form-input.dropdown#metpag", 
+        "form-input.dropdown#forpag",
+        "form-input.text#pedido",
+        "form-input.text#total",
+        "form-submit#factura"
+      ],
+      "blocks": ["form-success#fact"]
+    },
+    "form-success#fact": {
+      "children": [
+        "rich-text#successSubmit-fact"
+      ]
+    },
+    "rich-text#successSubmit-fact": {
+      "props": {
+        "text": "Mensaje enviado correctamente!",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+    "form-input.text#rfc": {
+      "props": {
+        "pointer": "#/properties/rfc",
+        "label": "RFC:",
+        "blockClass": "rfc"
+      }
+    },
+    "form-input.text#razon": {
+      "props": {
+        "pointer": "#/properties/razon",
+        "label": "Razón social:",
+        "blockclass": "razon" 
+      }
+    },
+    
+    "form-input.text#correo": {
+      "props": {
+        "pointer": "#/properties/email",
+        "label": "Correo:",
+        "blockClass": "correo"
+      }
+    },
+    "form-input.text#calle": {
+        "props": {
+          "pointer": "#/properties/calle",
+          "label": "Calle:",
+          "blockClass": "calle"
+        }
+    },
+    "form-input.text#ext": {
+        "props": {
+          "pointer": "#/properties/ext",
+          "label": "Ext:",
+          "blockClass": "ext"
+        }
+    },
+    "form-input.text#int": {
+        "props": {
+          "pointer": "#/properties/int",
+          "label": "Int:",
+          "blockClass": "int"
+        }
+    },
+    "form-input.text#col": {
+        "props": {
+          "pointer": "#/properties/col",
+          "label": "Col:",
+          "blockClass": "col"
+        }
+    },
+    "form-input.text#muni": {
+        "props": {
+          "pointer": "#/properties/muni",
+          "label": "Municipio:",
+          "blockClass": "municipio"
+        }
+    },
+    "form-input.text#ciudad": {
+        "props": {
+          "pointer": "#/properties/ciudad",
+          "label": "Ciudad:",
+          "blockClass": "ciudad"
+        }
+    },
+    "form-input.text#cp": {
+        "props": {
+          "pointer": "#/properties/cp",
+          "label": "CP:",
+          "blockClass": "cp"
+        }
+    },
+    "form-input.text#edo": {
+        "props": {
+          "pointer": "#/properties/edo",
+          "label": "Estado:",
+          "blockClass": "estado"
+        }
+    },
+    "form-input.dropdown#cfdi":{
+        "props":{
+            "label": "CFDI:",
+            "pointer": "#/properties/cfdi",
+            "blockclass": "cfdi"
+          }
+    },
+    "form-input.dropdown#metpag":{
+        "props":{
+            "label": "Método de pago:",
+            "pointer": "#/properties/metpag",
+            "blockclass": "metpag"
+          }
+    },
+    "form-input.dropdown#forpag":{
+        "props":{
+            "label": "Forma de pago:",
+            "pointer": "#/properties/forpag",
+            "blockclass": "metpag"
+          }
+    },    
+    "form-input.text#pedido": {
+        "props": {
+          "pointer": "#/properties/pedido",
+          "label": "Número de pedido:",
+          "blockClass": "pedido"
+        }
+    },
+    "form-input.text#total": {
+        "props": {
+          "pointer": "#/properties/total",
+          "label": "Total pagado:",
+          "blockClass": "total"
+        }
+    },
+    "form-submit#factura": {
+      "props": {
+        "label": "Enviar",
+        "blockClass": "btnEnviarForm"
+      }
+    }
+}

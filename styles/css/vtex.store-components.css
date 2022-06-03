@@ -142,6 +142,7 @@
   color: #ffffff;
 }
 
+
 :global(.vtex-add-to-cart-button-0-x-buttonText){
   text-transform: capitalize;
   font-size: 16px;
@@ -181,7 +182,7 @@
 :global(.vtex-store-components-3-x-infoCardHeadline--info-card-home4),
 :global(.vtex-store-components-3-x-infoCardHeadline--info-card-home5){
   color: #ffffff;
-  font-family: "MontserratBold";
+  font-family: "MontserratSemiBold";
   font-size: 28px;
   text-align: center;
 }
@@ -189,7 +190,7 @@
 :global(.vtex-store-components-3-x-infoCardHeadline--info-card-home1),
 :global(.vtex-store-components-3-x-infoCardHeadline--info-card-home6){
   color: #ffffff;
-  font-family: "MontserratBold";
+  font-family: "MontserratSemiBold";
   font-size: 44px;
   text-align: center;
 }
@@ -246,7 +247,7 @@
 
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
   position: absolute;
-  top: 2085px;
+  top: 2150px;
 }
 
 :global(.vtex-rich-text-0-x-container--instagramText){
@@ -296,6 +297,7 @@
 :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf1)
   :global(.vtex-product-summary-2-x-nameContainer){
   justify-content: center;
+  margin-top: 25px;
 }
 
 :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf1)
@@ -336,21 +338,25 @@
 }
 
 :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf1){
-  left: 80px;
+  left: 5px;
 }
 
 :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf1){
-  right: 80px;
+  right: 5px;
 }
 
 :global(.vtex-product-summary-2-x-nameWrapper){
   text-align: center;
+  height: 48px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--productShelf){
   margin-bottom: 52px;
 }
 
+:global(.vtex-product-list-0-x-productBrandName){
+  display: none;
+}
 
 @media only screen and (min-width:425px) and (max-width: 1024px){
   :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel-ingredientes){
@@ -372,7 +378,7 @@
   }
 
   :global(.vtex-flex-layout-0-x-flexRow--logos){
-    margin: 0 10px 30px 10px;
+    margin: 0 10px 0 10px;
   }
 
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
@@ -395,11 +401,12 @@
     color: #ffffff;
     text-align: center;
     font-size: 40px;
+    font-family: "MontserratSemiBold";
   }
 
   :global(.vtex-flex-layout-0-x-flexRowContent--infocardsMob)
   :global(.vtex-store-components-3-x-infoCardTextContainer){
-    margin: 0 auto !important;
+    margin: 0 70px !important;
   }
 
   :global(.vtex-rich-text-0-x-headingLevel2--shelfTitle-ingred){
@@ -419,7 +426,38 @@
 
 }
 
+@media only screen and (min-width:1026px) and (max-width: 1439px){
+  :global(.vtex-rich-text-0-x-paragraph--txtcat){
+    left: 16% !important;
+    top: 20% !important;
+    font-size: 50px;
+   }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1024px){
+  :global(.vtex-rich-text-0-x-paragraph--txtcat){
+    left: 25%!important;
+    top: 25%!important;
+    font-size: 42px !important;
+  }
+}
+
+@media only screen and (min-width:425px) and (max-width: 767px){
+  
+  :global(.vtex-rich-text-0-x-paragraph--txtcat){
+    left: 5% !important;
+    font-size: 42px !important;
+    text-align: center !important;
+   }
+
+}
+
 @media only screen and (max-width: 425px) {
+
+  :global(.vtex-product-summary-2-x-nameWrapper){
+    text-align: center;
+    height: 60px;
+  }
 
   :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf1){
     left: 0;
@@ -438,12 +476,12 @@
   }
 
   :global(.vtex-slider-layout-0-x-sliderRightArrow--carousel-ingredientes){
-    right: 10px;
+    right: 2px;
     top: 175px;
   }
   
   :global(.vtex-slider-layout-0-x-sliderLeftArrow--carousel-ingredientes){
-    left: 10px;
+    left: 2px;
     top: 175px;
   }
   
@@ -480,7 +518,7 @@
   }
 
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carrusel-insta){
-    margin: 30px 0;
+    margin: 30px 0 50px 0;
   }
   
   :global(.vtex-slider-layout-0-x-sliderTrackContainer--carrusel-insta){
@@ -488,29 +526,38 @@
   }
 
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
-    top: 3270px;
+    top: 3300px;
   }
 
   :global(.vtex-flex-layout-0-x-flexRow--logos){
-    margin: 0 10px 30px 10px;
+    margin: 0 10px 0 10px;
   }
   
+  :global(.vtex-rich-text-0-x-paragraph--txtcat){
+    left: 5% !important;
+    font-size: 40px !important;
+    text-align: center !important;
+   }
 }  
 
 
-@media only screen and  (min-width: 390px)  and (max-width: 424px) {
+@media only screen and  (min-width: 300px)  and (max-width: 424px) {
 
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel-ingredientes){
-    top: 3215px;
+    top: 3280px;
   }
 
 
   :global(.vtex-slider-layout-0-x-sliderRightArrow--carousel-ingredientes){
     right: 0px;
+    padding: 0;
+    margin: 0;
   }
   
   :global(.vtex-slider-layout-0-x-sliderLeftArrow--carousel-ingredientes){
     left: 0px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -670,6 +717,7 @@
     color: #ffffff;
     text-align: center;
     font-size: 40px;
+    font-family: "MontserratSemiBold";
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--infocardsMob)
@@ -890,7 +938,7 @@
   position: absolute;
   top: 0;
   height: 40px;
-  padding: 15px 10px;
+  padding: 15px 8px;
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--productRating){
@@ -1056,4 +1104,355 @@
 
 :global(.vtex-my-orders-app-3-x-detailsBtn){
   color: #ffffff;
+}
+
+/* Institucionales */
+ :global(.vtex-rich-text-0-x-paragraph--txtcat){
+  position: absolute;
+  top: 30%;
+  left: 25%;
+ }
+
+ :global(.vtex-rich-text-0-x-paragraph--title){
+  font-family: "MontserratBold";
+  font-size: 44px;
+  color: #000000;
+ }
+
+ :global(.vtex-rich-text-0-x-paragraph--facturacionText){
+  font-family: "Montserrat";
+  font-size: 15px;
+  color: #000000;
+ }
+
+ :global(.vtex-rich-text-0-x-container--link-facturar){
+   justify-content: center;
+   border: 1px solid #56C271;
+   padding: 5px;
+   margin-top: 20px;
+   border-radius: .25rem;
+   width: 171px;
+   height: 32px;
+ }
+
+ :global(.vtex-rich-text-0-x-link--link-facturar){
+   color: #56C271;
+   text-decoration: none;
+   font-family: "Montserrat";
+   font-size: 16px;
+ }
+
+ :global(.vtex-rich-text-0-x-paragraph--link-facturar){
+   margin: 0;
+ }
+
+ :global(.vtex-flex-layout-0-x-flexRowContent--confirmationButtons)
+ :global(.vtex-button){
+  border: 1px solid #56C271;
+  background-color: #ffffff;
+  width: 171px;
+  height: 32px;
+ }
+
+ :global(.vtex-flex-layout-0-x-flexRowContent--confirmationButtons)
+ :global(.vtex-button__label){
+  text-transform: capitalize;
+  font-size: 16px; 
+  color: #56C271;
+}
+
+:global(.vtex-rich-text-0-x-container--instText){
+  margin: 120px 118px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--instText){
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #000000;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--faq){
+  margin: 50px 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--faq)
+:global(.vtex-disclosure-layout-1-x-trigger--infoprodtit)
+  :global(.vtex-store-icons-0-x-caretIcon){
+    position: initial;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--faq)
+:global(.vtex-rich-text-0-x-heading-level-2){
+  font-family: "MontserratBold";
+  color: #000000;
+}
+
+/* Catálogos */
+
+:global(.vtex-rich-text-0-x-container--catTitle){
+  margin: 72px 0 32px 0;
+}
+
+:global(.vtex-rich-text-0-x-heading--catTitle){
+  margin: 0;
+  font-family: "MontserratSemiBold";
+  font-size: 44px;
+  color: #FDC1CB;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--catDesc){
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  color: #000000;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--catDesc){
+  margin: 0 20px 75px 20px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--rowCats){
+  margin: 0 202px;
+}
+
+:global(.vtex-rich-text-0-x-container--textCats){
+  justify-content: center;
+}
+
+:global(.vtex-rich-text-0-x-heading--textCats){
+  text-align: center;
+  margin: 17px 0;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel3--textCats){
+  font-family: "MontserratSemiBold";
+  font-size: 24px;
+  color: #000000;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel4--textCats){
+  font-size: 16px;
+  color: #000000;
+  margin: 0 15%;
+  height: 50PX;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--textCats){
+  text-align: center;
+}
+
+:global(.vtex-rich-text-0-x-link--textCats){
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #56C271;
+  padding: 5px 75px;
+  font-family: "Montserrat";
+  border-radius: 3px;
+}
+
+:global(.vtex-rich-text-0-x-link--textCats):hover{
+  color: #fff;
+  background-color: #56C271 ;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--contcat){
+  margin-bottom: 55px;
+}
+
+@media only screen and (max-width: 1024px){
+  :global(.vtex-flex-layout-0-x-flexColChild--rowCats){
+    margin: 0;
+  }
+
+  :global(.vtex-rich-text-0-x-wrapper--catDesc){
+    margin: 0 20px 75px 20px;
+  }
+
+  :global(.vtex-rich-text-0-x-heading--catTitle){
+    margin: 0;
+    font-family: "MontserratSemiBold";
+    font-size: 24px;
+    color: #FDC1CB;
+  }
+  
+  :global(.vtex-rich-text-0-x-paragraph--catDesc){
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #000000;
+  }
+  
+}
+
+/* Vacantes */
+
+:global(.vtex-rich-text-0-x-container--vacanText){
+  margin: 40px 118px 20px 118px;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel3--vacanText){
+  font-family: 'MontserratBold';
+  font-size: 24px;
+  color: #56C271;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel4--vacanText){
+  font-family: 'Montserrat';
+  font-size: 18px;
+  color: #000000;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--vacancols){
+  margin: 0 118px 40px 118px;
+}
+
+:global(.vtex-rich-text-0-x-heading--vacanTitle){
+  font-family: 'MontserratBold';
+  font-size: 18px;
+  color: #56C271;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel3--vacanUbi){
+  font-family: 'MontserratBold';
+  font-size: 16px;
+  color: #56C271;
+  margin: 0;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel2--vacan1){
+  font-family: 'MontserratBold';
+  font-size: 18px;
+  color: #56C271;
+  margin: 15px 0;
+}
+
+:global(.vtex-rich-text-0-x-list--vacan1), :global(.vtex-rich-text-0-x-paragraph--vacan1){
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: #000000;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--ventasPage),
+:global(.vtex-flex-layout-0-x-flexRow--facturacionPage){
+  margin: 40px 80px 80px 80px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--ventas-titulo){
+  font-family: 'MontserratSemiBold';
+  font-size: 40px;
+  color: #56C271;
+}
+
+:global(.vtex-rich-text-0-x-strong--ventas-parrafo){
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--formNatural){
+  margin: 30px 300px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--formNatural)
+:global(.vtex-styleguide-9-x-input),
+:global(.vtex-flex-layout-0-x-flexRow--formNatural)
+:global(.vtex-dropdown__container){
+  border: 1px solid #000000;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--formNatural)
+:global(.vtex-input-prefix__group){
+  border: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--formNatural)
+:global(.vtex-input__label){
+  margin-top: 20px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--formNatural)
+  :global(.vtex-store-form-0-x-formSubmitContainer){
+margin-top: 30px;
+}
+
+:global(.vtex-order-placed-2-x-updateOrderButton)
+:global(.vtex-button__label),
+:global(.vtex-order-placed-2-x-myOrdersButton)
+:global(.vtex-button__label){
+  color: #ffffff !important;
+}
+
+:global(.vtex-order-placed-2-x-productInfoColumn){
+  justify-content: center;
+}
+
+:global(.vtex-order-placed-2-x-totalListWrapper){
+  margin-bottom: 105px;
+}
+
+:global(.vtex-order-placed-2-x-noticesList), :global(.vtex-order-placed-2-x-confirmationMessage), :global(.vtex-order-placed-2-x-orderDatetime),
+:global(.vtex-order-placed-2-x-orderSoldBy), :global(.vtex-order-placed-2-x-paymentGroup), :global(.vtex-order-placed-2-x-paymentValue), :global(.vtex-order-placed-2-x-packageDeliveryTitle)
+:global(.vtex-order-placed-2-x-packageShippingEstimate), :global(.vtex-order-placed-2-x-packageSLA), :global(.vtex-order-placed-2-x-productName),
+:global(.vtex-order-placed-2-x-productQuantity){
+  font-family: "Montserrat";
+  background-color: #ffffff;
+  color: #000;
+}
+
+:global(.vtex-order-placed-2-x-totalListItem--Discounts), :global(.vtex-order-placed-2-x-totalListItem--Shipping), :global(.vtex-order-placed-2-x-totalListItem--Items),
+:global(.vtex-order-placed-2-x-packageShippingEstimate) {
+  font-size: 14px !important;
+  color: #000000;
+  font-family: "Montserrat";
+}
+
+:global(.vtex-order-placed-2-x-productPrice){
+  font-family: "Montserrat";
+}
+
+:global(.vtex-order-placed-2-x-productQuantity){
+  font-size: 14px;
+}
+
+:global(.vtex-order-placed-2-x-totalListItem):last-child{
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #000;
+}
+
+:global(.vtex-order-placed-2-x-noticeListItem){
+  border-bottom: none;
+  padding: 0;
+}
+
+:global(.vtex-order-placed-2-x-orderNumber){
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+}
+
+:global(.vtex-order-placed-2-x-productPrice){
+  margin-top: 46px;
+}
+
+:global(.vtex-order-placed-2-x-productListItem){
+  margin-bottom: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+:global(.vtex-order-placed-2-x-package--delivery){
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1024px){
+
+  :global(.vtex-flex-layout-0-x-flexRow--ventasPage),
+  :global(.vtex-flex-layout-0-x-flexRow--facturacionPage){
+    margin: 0;
+  } 
+
+  :global(.vtex-flex-layout-0-x-flexRow--formNatural){
+    margin: 30px 300px;
+  }
+
 }

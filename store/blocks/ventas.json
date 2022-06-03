@@ -1,0 +1,129 @@
+{
+    "store.custom#ventas": {
+        "children": [
+          "flex-layout.row#ventas"
+        ]
+    },
+
+    "flex-layout.row#ventas": {
+        "children": [
+          "flex-layout.col#text-ventas"
+        ],
+        "props": {
+          "blockClass": [ "ventasPage"]
+        }
+    },
+      
+    "flex-layout.col#text-ventas": {
+        "children": [
+          "rich-text#ventas-titulo",
+          "rich-text#ventas-parrafo-1",
+          "flex-layout.row#form"
+        ],
+        "props": {
+          "preventVerticalStretch": true
+        }
+    },
+
+    "rich-text#ventas-titulo": {
+        "props": {
+            "blockClass": "ventas-titulo",
+            "text": "Ventas corporativas"
+        }
+    },
+
+    "rich-text#ventas-parrafo-1": {
+        "props": {
+            "blockClass": "ventas-parrafo",
+            "text": "**Por favor llena el siguiente formulario:**"
+        }
+    },
+
+    "flex-layout.row#form": {
+        "children": [
+            "flex-layout.col#form"
+        ],
+        "props":{
+            "blockClass": "formNatural"
+        }
+    },
+
+    "flex-layout.col#form": {
+        "children": [
+            "form#contacto"
+        ]
+    },      
+    
+    "form#contacto": {
+      "props": {
+        "entity": "datosvent",
+        "schema": "datosvent"
+      },
+      "children": [
+        "form-input.text#nombre",
+        "form-input.text#correo",
+        "form-input.text#tel",
+        "form-input.text#empresa",
+        "form-input.text#mensaje",
+        "form-submit#contacto"
+      ],
+      "blocks": ["form-success#contacto"]
+    },
+    "form-success#contacto": {
+      "children": [
+        "rich-text#successSubmit-contacto"
+      ]
+    },
+    
+    "rich-text#successSubmit-contacto": {
+      "props": {
+        "text": "¡Mensaje enviado correctamente!",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+    "form-input.text#nombre": {
+      "props": {
+        "pointer": "#/properties/nombre",
+        "label": "Nombre completo:",
+        "blockClass": "nombre"
+      }
+    },
+    "form-input.text#correo": {
+        "props": {
+          "pointer": "#/properties/email",
+          "label": "Correo electrónico:",
+          "placeholder": "ejemplo@aldoconti.com",
+          "blockClass": "correo"
+        }
+      },
+    "form-input.text#tel": {
+      "props": {
+        "pointer": "#/properties/telefono",
+        "label": "Teléfono:",
+        "placeholder": "Ingrese su número a 10 dígitos",
+        "blockclass": "telcont" 
+      }
+    },
+    "form-input.text#empresa": {
+        "props": {
+          "pointer": "#/properties/empresa",
+          "label": "Nombre de la empresa:",
+          "blockClass": "empresa"
+        }
+    },
+    "form-input.text#mensaje": {
+        "props": {
+          "pointer": "#/properties/mensaje",
+          "label": "Mensaje:",
+          "blockClass": "mensaje"
+        }
+    },
+    
+    "form-submit#contacto": {
+      "props": {
+        "label": "Enviar",
+        "blockClass": "btnEnviarForm"
+      }
+    }
+}

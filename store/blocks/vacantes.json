@@ -1,0 +1,84 @@
+{
+    "store.custom#vacantes": {
+      "blocks": [
+        "flex-layout.row#textVacan",
+        "flex-layout.row#colsVacan"
+      ]
+    },
+ 
+    "flex-layout.row#textVacan": {
+      "children": [
+        "flex-layout.col#text-vacan"
+      ]
+    },
+  
+    "flex-layout.col#text-vacan": {
+      "children": [
+        "rich-text#vacan"
+      ],
+      "props": {
+        "blockclass": "vacantes",
+        "preventVerticalStretch": true
+      }
+    },
+  
+    "rich-text#vacan": {
+      "props": {
+        "text":
+        "### titulo \n #### descropción",
+        "blockClass": "vacanText"
+      }
+    },
+    "flex-layout.row#colsVacan":{
+        "children": [
+            "flex-layout.col#colV1",
+            "flex-layout.col#colV2"
+        ],
+        "props":{
+            "blockClass": "vacancols"
+        }
+    },
+    "flex-layout.col#colV1":{
+        "children": [
+            "rich-text#vacanTitle",
+            "rich-text#vacanUbi",
+            "rich-text#vacanInfo"
+        ],
+        "props":{
+            "blockClass": "vacancol1",
+            "preventVerticalStretch": true
+        }    
+    },
+    "flex-layout.col#colV2":{
+        "children": [
+            "rich-text#vacanTitle",
+            "rich-text#vacanUbi",
+            "rich-text#vacanInfo"
+        ],
+        "props":{
+            "blockClass": "vacancol2",
+            "preventVerticalStretch": true
+        }   
+    },
+    "rich-text#vacanTitle":{
+        "props": {
+            "text": "### titulo",
+            "blockClass": "vacanTitle"
+          }   
+    },
+    "rich-text#vacanUbi":{
+        "props": {
+            "text": "### Ubicación",
+            "blockClass": "vacanUbi"
+          }   
+    },
+    "rich-text#vacanInfo": {
+        "props": {
+          "text":
+          " ## RequisitosTitle \n #### RequisitosDesc  \n ## ofrecemosTit  \n  #### ofreceDesc  \n  ## indoTit  \n  #### infoDesc" ,
+          "blockClass": "vacan1"
+        }
+      }
+
+  }
+  

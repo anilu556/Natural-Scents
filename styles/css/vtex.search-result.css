@@ -237,6 +237,17 @@
   margin-bottom: 75px;
 }
 
+:global(.vtex-search-result-3-x-container--layout)
+:global(.vtex-flex-layout-0-x-flexRowContent){
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  :global(.vtex-search-result-3-x-filterPopupTitle){
+    font-family: "Montserrat";
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 425px) {
   :global(.vtex-product-summary-2-x-imageNormal){
     transform: rotate(0deg);
@@ -257,10 +268,12 @@
 
   :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf1){
     right: -6px !important  ;
+    bottom: 230px;
   }
 
   :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf1){
     left: -6px !important;
+    bottom: 230px;
   }
 }
 

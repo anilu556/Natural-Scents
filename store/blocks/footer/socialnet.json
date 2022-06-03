@@ -4,7 +4,8 @@
         "flex-layout.col#redess1",
         "flex-layout.col#redess2",
         "flex-layout.col#redess3",
-        "flex-layout.col#redess4"
+        "flex-layout.col#redess4",
+        "flex-layout.col#redess5"
       ],
       "props": {
         "blockClass": "socialnet"
@@ -74,12 +75,28 @@
         "blockClass" : "imgSocial"
       }
     },
+    "flex-layout.col#redess5":{
+      "children": [
+        "image#redes5"
+      ]
+    },
+    "image#redes5": {
+      "props": {
+        "src": "assets/tiktok.svg",
+        "link":{
+          "url":"https://www.tiktok.com/@naturalscentsmx",
+          "newTab":true
+        },
+        "blockClass" : "imgSocial"
+      }
+    },
     "flex-layout.row#socialnet-mob":{
       "children": [
         "flex-layout.col#redess1",
         "flex-layout.col#redess2",
         "flex-layout.col#redess3",
-        "flex-layout.col#redess4"
+        "flex-layout.col#redess4",
+        "flex-layout.col#redess5"
       ],
       "props": {
         "blockClass": "socialnetMob",
