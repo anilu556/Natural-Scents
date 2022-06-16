@@ -94,7 +94,8 @@
 :global(.vtex-store-components-3-x-notificationBarContainer){
   color: #ffffff !important;
   text-decoration: none;
-  font-family: "MontserratBold";
+  font-family: "BreveSansBook";
+  font-size: 14px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--menu-link){
@@ -145,9 +146,21 @@
     background-color: #ffffff !important;
 }
 
+:global(.vtex-login-2-x-accessCodeOptionBtn)
+  :global(.vtex-button):hover{
+    background-color: #D0F1CD !important;
+    border: none !important;
+}
+
 :global(.vtex-login-2-x-emailPasswordOptionBtn)
   :global(.vtex-button){
   background-color: #ffffff !important;
+}
+
+:global(.vtex-login-2-x-emailPasswordOptionBtn)
+  :global(.vtex-button):hover{
+    background-color: #D0F1CD !important;
+    border: none !important;
 }
 
 :global(.vtex-login-2-x-container)
@@ -185,6 +198,20 @@
   font-size: 14px;
 }
 
+:global(.vtex-login-2-x-buttonSocial)
+:global(.vtex-button__label){
+  opacity: 1 !important;
+}
+
+:global(.vtex-login-2-x-accessCodeOptionBtn)
+:global(.vtex-button__label):hover,
+:global(.vtex-login-2-x-emailPasswordOptionBtn)
+:global(.vtex-button__label):hover,
+:global(.vtex-login-2-x-buttonSocial)
+:global(.vtex-button__label):hover{
+  color:#000000;
+}
+
 :global(.vtex-login-2-x-googleOptionBtn)
   :global(.vtex-button__label)::before{
     content: url(assets/gmail.png);
@@ -206,7 +233,8 @@
 
 :global(.vtex-login-2-x-buttonSocial)
   :global(.vtex-button):hover{
-  background-color: #ffffff;
+    background-color: #D0F1CD !important;
+    border: none !important;
 }
 
 :global(.vtex-login-2-x-oauthLabel){

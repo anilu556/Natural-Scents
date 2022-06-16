@@ -320,12 +320,14 @@
     text-align: center;
     color: #000000;
     font-family: "BreveSansLight";
+    font-size: 16px;
 }
 
 :global(.vtex-product-price-1-x-listPriceValue)
   :global(.vtex-product-price-1-x-currencyContainer--summary){
     color: #000000;
-    font-family: "Montserrat";
+    font-family: "BreveSansLight";
+    font-size: 16px;
 }
 
 :global(.vtex-product-price-1-x-savings--summary){
@@ -427,7 +429,7 @@
 }
 
 @media only screen and (min-width:1026px) and (max-width: 1439px){
-  :global(.vtex-rich-text-0-x-paragraph--txtcat){
+  :global(.vtex-rich-text-0-x-paragraph--txtInst){
     left: 16% !important;
     top: 20% !important;
     font-size: 50px;
@@ -435,7 +437,7 @@
 }
 
 @media only screen and (min-width:768px) and (max-width: 1024px){
-  :global(.vtex-rich-text-0-x-paragraph--txtcat){
+  :global(.vtex-rich-text-0-x-paragraph--txtInst){
     left: 25%!important;
     top: 25%!important;
     font-size: 42px !important;
@@ -444,7 +446,7 @@
 
 @media only screen and (min-width:425px) and (max-width: 767px){
   
-  :global(.vtex-rich-text-0-x-paragraph--txtcat){
+  :global(.vtex-rich-text-0-x-paragraph--txtInst){
     left: 5% !important;
     font-size: 42px !important;
     text-align: center !important;
@@ -453,6 +455,12 @@
 }
 
 @media only screen and (max-width: 425px) {
+
+  :global(.vtex-account__page)
+  :global(.vtex-pageHeader__title),
+  :global(.vtex-flex-layout-0-x-flexColChild--titleWishlist) :global(.vtex-rich-text-0-x-heading-level-3){
+    font-size: 33px !important;
+  }
 
   :global(.vtex-product-summary-2-x-nameWrapper){
     text-align: center;
@@ -472,6 +480,7 @@
   }
 
   :global(.vtex-product-summary-2-x-brandName){
+    font-family: "Montserrat";
     font-size: 15px;
   }
 
@@ -534,10 +543,30 @@
   }
   
   :global(.vtex-rich-text-0-x-paragraph--txtcat){
-    left: 5% !important;
-    font-size: 40px !important;
+    font-size: 24px !important;
     text-align: center !important;
+  }
+
+   :global(.vtex-search-result-3-x-filterBreadcrumbsText), :global(.vtex-search-result-3-x-filterBreadcrumbsItemName){
+    font-size: 22px;
+    font-family: "BreveSansBook" !important;
+    color: #000 !important;
    }
+
+   :global(.vtex-search-result-3-x-sidebar){
+    height: auto !important;
+   }
+
+   :global(.vtex-search-result-3-x-accordionFilterContent){
+    font-size: 18px;
+    font-family: "BreveSansBook";
+   }
+
+   :global(.vtex-search-result-3-x-filterApplyButtonWrapper)
+   :global(.vtex-button__label){
+    color: #ffffff;
+   }
+
 }  
 
 
@@ -1009,6 +1038,29 @@
     margin-top: 6px;
 }
 
+:global(.vtex-store-link-0-x-label--wishlist-return-link){
+  background-color: #ffffff; 
+font-size: 0;
+}
+
+
+:global(.vtex-store-link-0-x-label--wishlist-return-link)::before{
+  content: url(https://naturalscents.vteximg.com.br/arquivos/return.png);
+  margin-top: 6px;
+}
+
+:global(.vtex-store-link-0-x-label--wishlist-return-link)::after{
+  content: 'Regreso';
+  font-size: 14px;
+  position: absolute;
+  left: 25px;
+  font-family: 'Montserrat';
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--row-wishlist){
+  margin-top: 20px;
+}
+
 :global(.vtex-account__page )
   :global(.vtex-button__label):hover{
     border: none;
@@ -1107,9 +1159,9 @@
 }
 
 /* Institucionales */
- :global(.vtex-rich-text-0-x-paragraph--txtcat){
+ :global(.vtex-rich-text-0-x-paragraph--txtInst){
   position: absolute;
-  top: 30%;
+  top: 28%;
   left: 25%;
  }
 
@@ -1442,6 +1494,27 @@ margin-top: 30px;
 :global(.vtex-order-placed-2-x-package--delivery){
   margin-top: 20px;
   margin-bottom: 0px;
+}
+
+:global(.vtex-checkout-summary-0-x-price){
+  font-size: 14px;
+  font-family: "Montserrat";
+}
+
+:global(.vtex-slider__left-value), :global(.vtex-slider__right-value){
+  font-family: "Montserrat";
+}
+
+:global(.vtex-order-placed-2-x-customerInfoListName), :global(.vtex-order-placed-2-x-customerInfoListEmail), :global(.vtex-order-placed-2-x-customerInfoListPhone){
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: #000000;
+}
+
+:global(.vtex-product-list-0-x-currencyContainer){
+  font-family: 'Montserrat';
+  color: #000;
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 1024px){

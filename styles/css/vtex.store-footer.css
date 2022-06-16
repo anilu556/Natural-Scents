@@ -273,7 +273,9 @@
 }
 
 :global(.vtex-store-footer-2-x-footerLayout--footer-mob){
-  background-image: url(https://naturalscents.vteximg.com.br/arquivos/ondasm.png);
+  background-image: url(https://naturalscents.vteximg.com.br/arquivos/ondmob.svg);
+  background-repeat: repeat !important;
+  background-size: 100% 140%;
 }
 
 :global(.vtex-store-footer-2-x-footerLayoutSpacer--footer-mob){

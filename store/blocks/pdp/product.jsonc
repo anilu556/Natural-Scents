@@ -133,7 +133,7 @@
       "maxHeight":631,
       "aspectRatio": {
         "desktop": "auto",
-        "phone": "1920:1080"
+        "phone": "16:9"
       },
        "displayThumbnailsArrows": false,
        "showPaginationDots": false,

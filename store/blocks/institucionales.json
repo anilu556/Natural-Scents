@@ -54,7 +54,7 @@
       "rich-text#imgText":{
         "props":{
           "text": "AVISO DE PRIVACIDAD",
-          "blockClass": "txtcat"
+          "blockClass": "txtInst"
         }
       },
     "flex-layout.row#textInst": {

@@ -192,6 +192,8 @@
 
   "search-result-layout.mobile": {
     "children": [
+      "flex-layout.row#imageCatMob",
+      "flex-layout.row#textCat",
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#searchbread",
       "flex-layout.row#productCountMobile",
@@ -206,6 +208,21 @@
         "mode2": "normal"
       },
       "defaultGalleryLayout": "grid"
+    }
+  },
+  "flex-layout.row#imageCatMob":{
+    "children":[
+      "image#categoryImageMob"
+    ],
+    "props":{
+      "blockClass": "imageCat",
+      "fullWidth": true
+    }
+  },
+  "image#categoryImageMob":{
+    "props":{
+      "src": "assets/category-mob.png",
+      "blockClass": "imgcat"
     }
   },
   "flex-layout.row#contentmobile": {

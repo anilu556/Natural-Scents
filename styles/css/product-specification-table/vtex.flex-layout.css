@@ -380,7 +380,7 @@
 :global(.vtex-reviews-and-ratings-2-x-formContainer)
   :global(.vtex-card){
     background-color: #E9E9E9;
-    font-family: 'BreveSansBook';
+    font-family: 'Montserrat';
     font-size: 18px;
     box-shadow: none;
 }
@@ -393,14 +393,14 @@
   :global(.vtex-input__label),
 :global(.vtex-reviews-and-ratings-2-x-formSection)
   :global(.vtex-textarea__label){
-  font-family: 'BreveSansLight';
-  font-family: 18px;
+  font-family: 'Montserrat';
+  font-size: 14px;
 }
 
 :global(.vtex-reviews-and-ratings-2-x-starpicker)
   :global(.vtex-input__label){
-    font-family: 'BreveSansBook';
-    font-family: 18px;
+    font-family: 'Montserrat';
+    font-size: 18px;
 }
 
 :global(.vtex-reviews-and-ratings-2-x-starpicker)
@@ -421,14 +421,14 @@
 
 :global(.vtex-reviews-and-ratings-2-x-formSection)
   :global(.vtex-button__label){
-    font-family: 'BreveSansBook';
-    font-family: 18px;
+    font-family: 'Montserrat';
+    font-size: 14px;
     text-transform: initial;
 } 
 
 :global(.vtex-reviews-and-ratings-2-x-reviewCommentsContainer){
-  font-family: 'BreveSansBook';
-  font-family: 18px; 
+  font-family: 'Montserrat';
+  font-size: 18px; 
 }
 
 :global(.vtex-store-components-3-x-skuSelectorName){
@@ -581,5 +581,16 @@
 
 :global(.vtex-store-components-3-x-content){
   font-size: 13px;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-formContainer)
+  :global(.vtex-card){
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-starpicker)
+  :global(.vtex-input__label){
+    font-size: 14px;
 }
 }
