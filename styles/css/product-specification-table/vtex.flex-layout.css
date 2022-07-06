@@ -289,6 +289,11 @@
   content: url(https://naturalscents.vteximg.com.br/arquivos/whats25.png);
 }
 
+:global(.vtex-product-context-provider)
+  :global(.vtex-rich-text-0-x-container--shelfTitle){
+  margin-top: 0;
+}
+
 :global(.vtex-reviews-and-ratings-2-x-summaryTotalReviews){
   font-family: 'MontserratLight';
   font-size: 12px;
@@ -298,7 +303,7 @@
 :global(.vtex-reviews-and-ratings-2-x-container){
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
-  margin: 0 100px 192px 100px;
+  margin: 0 100px 100px 100px;
 }
 
 :global(.vtex-reviews-and-ratings-2-x-reviewsHeading){
@@ -374,7 +379,7 @@
 
 :global(.vtex-flex-layout-0-x-flexRow--productShelf2){
   margin-top: 38px;
-  margin-bottom: 87px;
+  margin-bottom: 100px;
 }
 
 :global(.vtex-reviews-and-ratings-2-x-formContainer)
