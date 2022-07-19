@@ -341,11 +341,22 @@
     margin: 0 60px;
 }  
 
+:global(.vtex-flex-layout-0-x-flexRow--fragRow){
+  margin: 0 !important;
+}
+
 :global(.vtex-menu-2-x-styledLink--titcats){
   font-family: 'MontserratSemiBold';
   font-weight: 800;
   color: #000000;
   font-size: 14px;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemsubcat){
+font-family: 'MontserratSemiBold';
+font-weight: 800;
+color: #000000;
+font-size: 14px;
 }
 
 :global(.vtex-menu-2-x-menuContainer--menuMob)
@@ -472,7 +483,7 @@
   font-family: "MontserratBlack" !important;
 }
 
-:global(.vtex-menu-2-x-menuItemInnerDiv--itemPrin){
+:global(.vtex-menu-2-x-menuItemInnerDiv--itemPrin), :global(.vtex-menu-2-x-styledLinkContainer--itemPrin){
   padding: 10px 0;
 }
 

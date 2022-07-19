@@ -192,9 +192,10 @@
       "menu-item#cat2mob",
       "menu-item#cat3mob",
       "menu-item#cat4mob",
-      "menu-item#cat5",
-      "menu-item#cat6",
-      "menu-item#cat7"
+      "menu-item#cat5mob",
+      "menu-item#cat6mob",
+      "menu-item#cat7mob",
+      "menu-item#cat8"
     ],
     "props": {
       "orientation": "vertical",

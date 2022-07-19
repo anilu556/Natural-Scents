@@ -11,7 +11,8 @@
       "menu-item#cat4",
       "menu-item#cat5",
       "menu-item#cat6",
-      "menu-item#cat7"
+      "menu-item#cat7",
+      "menu-item#cat8"
     ]
   },
 
@@ -26,16 +27,16 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Fragancias",
-        "text": "Fragancias"
+        "tagTitle": "Fragancia",
+        "text": "Fragancia"
       },
       "blockClass": "itemPrin"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#cat1"
+      "vtex.menu@2.x:submenu#fragancia"
     ]
   },
-  "vtex.menu@2.x:submenu#cat1": {
+  "vtex.menu@2.x:submenu#fragancia": {
     "props": {
       "width": "100%",
       "blockclass": "submenus"
@@ -59,12 +60,11 @@
   "flex-layout.col#menucat-1":{
     "children": [
       "menu-item#titcat1",
-      "menu-item#itemcat1",
-      "menu-item#itemcat2"
+      "flex-layout.row#menufragancia"
     ],
     "props":{
       "blocklass": "menucat",
-      "width": "15%"
+      "width": "30%"
     }   
   },
   "menu-item#titcat1": {
@@ -76,18 +76,51 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/category",
+        "href": "/mujer",
         "noFollow": true,
-        "tagTitle": "Productos",
-        "text":"PRODUCTOS" 
+        "tagTitle": "Mujer",
+        "text":"Mujer" 
       }
     }
+  },
+  "flex-layout.row#menufragancia":{
+    "children":[
+      "flex-layout.col#menufragancia1",
+      "flex-layout.col#menufragancia2"
+    ],
+    "props":{
+      "blockClass": "fragRow"
+    }
+  },
+  "flex-layout.col#menufragancia1":{
+    "children":[
+      "menu-item#itemcat1",
+      "flex-layout.col#submenu-1",
+      "menu-item#itemcat2",
+      "flex-layout.col#submenu-2"
+    ],
+    "props":{
+      "blocklass": "fragCol",
+      "width": "50%"
+    }   
+  },
+  "flex-layout.col#menufragancia2":{
+    "children":[
+      "menu-item#itemcat3",
+      "flex-layout.col#submenu-4",
+      "menu-item#itemcat4",
+      "flex-layout.col#submenu-3"
+    ],
+    "props":{
+      "blocklass": "fragCol",
+      "width": "50%"
+    }   
   },
   "menu-item#itemcat1":{
     "props":{
       "type":"category",
       "categoryId": 1,
-      "text":"Perfume de mujer",
+      "text":"Avainillado",
       "blockClass": "itemsubcat"
     }
   },
@@ -95,17 +128,207 @@
     "props":{
       "type":"category",
       "categoryId": 1,
-      "text":"Perfume de hombre",
+      "text":"Frutal",
       "blockClass": "itemsubcat"
     }
   },
-
+  "menu-item#itemcat3":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Frutal-Floral",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat4":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Floral",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "flex-layout.col#submenu-1":{
+    "children":[
+      "menu-item#subitem1",
+      "menu-item#subitem2",
+      "menu-item#subitem3",
+      "menu-item#subitem4"
+    ]
+  },
+  "menu-item#subitem1":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Cranberry Vanilla",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem2":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Dulce Alba",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem3":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Sweet Devotion",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem4":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"True Love",
+      "blockClass": "subitem"
+    }
+  },
+  "flex-layout.col#submenu-2":{
+    "children":[
+      "menu-item#subitem5",
+      "menu-item#subitem6",
+      "menu-item#subitem7",
+      "menu-item#subitem8",
+      "menu-item#subitem9"
+    ]
+  },
+  "menu-item#subitem5":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Watermelon Berry",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem6":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Infusión de venus",
+      "blockClass": "subitem"
+    }
+  }, 
+  "menu-item#subitem7":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Sweet Paradise",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem8":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Elixir de Luna",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem9":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Ibiza",
+      "blockClass": "subitem"
+    }
+  },
+  "flex-layout.col#submenu-3":{
+    "children":[
+      "menu-item#subitem10",
+      "menu-item#subitem11",
+      "menu-item#subitem12",
+      "menu-item#subitem13",
+      "menu-item#subitem14"
+    ]
+  },
+  "menu-item#subitem10":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Peony Bouquet",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem11":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Travesía Secreta",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem12":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Shiny Day",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem13":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Twist Cítrico",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem14":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Euforia Floral",
+      "blockClass": "subitem"
+    }
+  },
+  "flex-layout.col#submenu-4":{
+    "children":[
+      "menu-item#subitem15",
+      "menu-item#subitem16",
+      "menu-item#subitem17",
+      "menu-item#subitem18"
+    ]
+  },
+  "menu-item#subitem15":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Diario Botánico",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem16":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Brisa Divina",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem17":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"White Orchid",
+      "blockClass": "subitem"
+    }
+  },
+  "menu-item#subitem18":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Exquisit Magnolia",
+      "blockClass": "subitem"
+    }
+  },
   "flex-layout.col#menucat-2":{
     "children": [
-      "menu-item#titcat2",
-      "menu-item#itemcat4",
-      "menu-item#itemcat5",
-      "menu-item#itemcat6"
+      "menu-item#titcat2"
     ],
     "props":{
       "blocklass": "menucat",
@@ -121,48 +344,17 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/category",
+        "href": "/hombre",
         "noFollow": true,
-        "tagTitle": "Lineas",
-        "text":"LíNEAS" 
+        "tagTitle": "Hombre",
+        "text":"Hombre" 
       }
     }
   },
-  "menu-item#itemcat4":{
-    "props":{
-      "type":"category",
-      "categoryId": 1,
-      "text":"Hombre",
-      "blockClass": "itemsubcat"
-    }
-  },
-  "menu-item#itemcat5":{
-    "props":{
-      "type":"category",
-      "categoryId": 1,
-      "text":"Mujer",
-      "blockClass": "itemsubcat"
-    }
-  },
-  "menu-item#itemcat6":{
-    "props":{
-      "type":"category",
-      "categoryId": 1,
-      "text":"Niños",
-      "blockClass": "itemsubcat"
-    }
-  },
-
 
   "flex-layout.col#menucat-3":{
     "children": [
-      "menu-item#titcat3",
-      "menu-item#itemcat7",
-      "menu-item#itemcat8",
-      "menu-item#itemcat9",
-      "menu-item#itemcat10",
-      "menu-item#itemcat11",
-      "menu-item#itemcat12"
+      "menu-item#titcat3"
     ],
     "props":{
       "blocklass": "menucat",
@@ -178,62 +370,13 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/category",
+        "href": "/ninas",
         "noFollow": true,
-        "tagTitle": "Collection",
-        "text":"COLLECTION" 
+        "tagTitle": "Niñas",
+        "text":"Niñas" 
       }
     }
   },
-  "menu-item#itemcat7":{
-    "props":{
-      "type":"category",
-      "categoryId": 1,
-      "text":"Subcategory",
-      "blockClass": "itemsubcat"
-    }
-  },
-  "menu-item#itemcat8":{
-    "props":{
-      "type":"category",
-      "categoryId": 1,
-      "text":"Subcategory",
-      "blockClass": "itemsubcat"
-    }
-  },
-  "menu-item#itemcat9":{
-    "props":{
-      "type":"category",
-      "categoryId": 1,
-      "text":"Subcategory",
-      "blockClass": "itemsubcat"
-    }
-  },
-  "menu-item#itemcat10":{
-    "props":{
-      "type":"category",
-      "categoryId": 1,
-      "text":"Subcategory",
-      "blockClass": "itemsubcat"
-    }
-  },
-  "menu-item#itemcat11":{
-    "props":{
-      "type":"category",
-      "categoryId": 1,
-      "text":"Subcategory",
-      "blockClass": "itemsubcat"
-    }
-  },
-  "menu-item#itemcat12":{
-    "props":{
-      "type":"category",
-      "categoryId": 1,
-      "text":"Subcategory",
-      "blockClass": "itemsubcat"
-    }
-  },
-
 
   "flex-layout.col#menucat4": {
     "children": [
@@ -241,7 +384,7 @@
     ],
     "props":{
       "blockClass": "colImgs",
-      "width": "55%"
+      "width": "40%"
     }
   },
   "flex-layout.row#menucat4":{
@@ -300,9 +443,107 @@
       "blockClass": "itemPrin"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#cat1"
+      "vtex.menu@2.x:submenu#antibacterial"
     ]
   },
+
+  "vtex.menu@2.x:submenu#antibacterial": {
+    "props": {
+      "width": "100%",
+      "blockclass": "submenus"
+    },
+    "children": [
+      "flex-layout.row#menu-cat2"
+    ]
+  },
+  "flex-layout.row#menu-cat2": {
+    "children": [
+      "flex-layout.col#menucat-anti",
+      "flex-layout.col#menucat4"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "100%"
+    }   
+  },
+  "flex-layout.col#menucat-anti":{
+    "children": [
+      "menu-item#titcat4",
+      "menu-item#titcat5",
+      "menu-item#titcat6",
+      "menu-item#titcat7"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "45%"
+    }   
+  },
+
+  "menu-item#titcat4":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/spray",
+        "noFollow": true,
+        "tagTitle": "Spray Antibacterial",
+        "text":"Spray Antibacterial" 
+      }
+    }
+  },
+  "menu-item#titcat5":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/crema",
+        "noFollow": true,
+        "tagTitle": "Crema Antibacterial",
+        "text":"Crema Antibacterial" 
+      }
+    }
+  },
+  "menu-item#titcat6":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/jabon",
+        "noFollow": true,
+        "tagTitle": "Jabón Antibacterial",
+        "text":"Jabón Antibacterial" 
+      }
+    }
+  },
+  "menu-item#titcat7":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/espuma",
+        "noFollow": true,
+        "tagTitle": "Espuma Antibacterial",
+        "text":"Espuma Antibacterial" 
+      }
+    }
+  },
+
 
   "menu-item#cat3": {
 
@@ -321,9 +562,184 @@
       "blockClass": "itemPrin"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#cat1"
+      "vtex.menu@2.x:submenu#cuidado"
     ]
   },
+
+  "vtex.menu@2.x:submenu#cuidado": {
+    "props": {
+      "width": "100%",
+      "blockclass": "submenus"
+    },
+    "children": [
+      "flex-layout.row#menu-cat3"
+    ]
+  },
+  "flex-layout.row#menu-cat3": {
+    "children": [
+      "flex-layout.col#menucat-cuidado1",
+      "flex-layout.col#menucat-cuidado2",
+      "flex-layout.col#menucat4"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "100%"
+    }   
+  },
+  "flex-layout.col#menucat-cuidado1":{
+    "children": [
+      "menu-item#titcat8",
+      "menu-item#titcat9",
+      "menu-item#titcat10",
+      "menu-item#titcat11"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "20%"
+    }   
+  },
+  "flex-layout.col#menucat-cuidado2":{
+    "children": [
+      "menu-item#titcat12",
+      "menu-item#titcat13",
+      "menu-item#titcat14",
+      "menu-item#titcat15"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "20%"
+    }   
+  },
+
+  "menu-item#titcat8":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/limpieza",
+        "noFollow": true,
+        "tagTitle": "Limpieza",
+        "text":"Limpieza" 
+      }
+    }
+  },
+  "menu-item#titcat9":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/exfoliacion",
+        "noFollow": true,
+        "tagTitle": "Exfoliación",
+        "text":"Exfoliación" 
+      }
+    }
+  },
+  "menu-item#titcat10":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hidratacion",
+        "noFollow": true,
+        "tagTitle": "Hidratación",
+        "text":"Hidratación" 
+      }
+    }
+  },
+  "menu-item#titcat11":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/capilar",
+        "noFollow": true,
+        "tagTitle": "Capilar",
+        "text":"Capilar"
+      }
+    }
+  },
+  "menu-item#titcat12":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/repelentes",
+        "noFollow": true,
+        "tagTitle": "Repelentes",
+        "text":"Repelentes" 
+      }
+    }
+  },
+  "menu-item#titcat13":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/recuperacion",
+        "noFollow": true,
+        "tagTitle": "Recuperación",
+        "text":"Recuperación"
+      }
+    }
+  },
+  "menu-item#titcat14":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/meditacion",
+        "noFollow": true,
+        "tagTitle": "Meditación",
+        "text":"Meditación" 
+      }
+    }
+  },
+  "menu-item#titcat15":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/meditacion",
+        "noFollow": true,
+        "tagTitle": "Accesorios",
+        "text":"Accesorios" 
+      }
+    }
+  },
+
 
   "menu-item#cat4": {
 
@@ -336,19 +752,402 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Cuidado facial",
-        "text": "Cuidado facial"
+        "tagTitle": "Ingredientes",
+        "text": "Ingredientes"
       },
       "blockClass": "itemPrin"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#cat1"
+      "vtex.menu@2.x:submenu#ingredientes"
     ]
   },
 
-  "menu-item#cat5": {
+  "vtex.menu@2.x:submenu#ingredientes": {
     "props": {
-      "id": "menu-item-cat5",
+      "width": "100%",
+      "blockclass": "submenus"
+    },
+    "children": [
+      "flex-layout.row#menu-cat4"
+    ]
+  },
+  "flex-layout.row#menu-cat4": {
+    "children": [
+      "flex-layout.col#menucat-ingredientes1",
+      "flex-layout.col#menucat-ingredientes2",
+      "flex-layout.col#menucat4"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "100%"
+    }   
+  },
+  "flex-layout.col#menucat-ingredientes1":{
+    "children": [
+      "menu-item#titcat16",
+      "menu-item#titcat17",
+      "menu-item#titcat18",
+      "menu-item#titcat19",
+      "menu-item#titcat20",
+      "menu-item#titcat21",
+      "menu-item#titcat22"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "22%"
+    }   
+  },
+
+  "flex-layout.col#menucat-ingredientes2":{
+    "children": [
+      "menu-item#titcat23",
+      "menu-item#titcat24",
+      "menu-item#titcat25",
+      "menu-item#titcat26",
+      "menu-item#titcat27",
+      "menu-item#titcat28"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "22%"
+    }   
+  },
+
+  "menu-item#titcat16":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/romero",
+        "noFollow": true,
+        "tagTitle": "Romero",
+        "text":"Romero" 
+      }
+    }
+  },
+  "menu-item#titcat17":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/lavanda",
+        "noFollow": true,
+        "tagTitle": "Lavanda",
+        "text":"Lavanda" 
+      }
+    }
+  },
+  "menu-item#titcat18":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/menta",
+        "noFollow": true,
+        "tagTitle": "Menta",
+        "text":"Menta" 
+      }
+    }
+  },
+  "menu-item#titcat19":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/manzanilla",
+        "noFollow": true,
+        "tagTitle": "Manzanilla",
+        "text":"Manzanilla"
+      }
+    }
+  },
+  "menu-item#titcat20":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/coco",
+        "noFollow": true,
+        "tagTitle": "Coco",
+        "text":"Coco" 
+      }
+    }
+  },
+  "menu-item#titcat21":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bambu",
+        "noFollow": true,
+        "tagTitle": "Bambú",
+        "text":"Bambú"
+      }
+    }
+  },
+  "menu-item#titcat22":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/arnica",
+        "noFollow": true,
+        "tagTitle": "Árnica",
+        "text":"Árnica" 
+      }
+    }
+  },
+  "menu-item#titcat23":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/rosas",
+        "noFollow": true,
+        "tagTitle": "Rosas",
+        "text":"Rosas" 
+      }
+    }
+  },
+  "menu-item#titcat24":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/naranja",
+        "noFollow": true,
+        "tagTitle": "Naranja",
+        "text":"Naranja" 
+      }
+    }
+  },
+  "menu-item#titcat25":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/aloe-vera",
+        "noFollow": true,
+        "tagTitle": "Aloe Vera",
+        "text":"Aloe Vera" 
+      }
+    }
+  },
+  "menu-item#titcat26":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/manteca-de-karite",
+        "noFollow": true,
+        "tagTitle": "Manteca de Karite",
+        "text":"Manteca de Karite" 
+      }
+    }
+  },
+  "menu-item#titcat27":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/extracto-de-avena",
+        "noFollow": true,
+        "tagTitle": "Extracto de avena",
+        "text":"Extracto de avena" 
+      }
+    }
+  },
+  
+  "menu-item#titcat28":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/te-verde",
+        "noFollow": true,
+        "tagTitle": "Té verde",
+        "text":"Té verde" 
+      }
+    }
+  },
+
+  "menu-item#cat5": {
+
+    "props": {
+      "id": "menu-item-cat4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/category",
+        "noFollow": true,
+        "tagTitle": "Cuidado Facial",
+        "text": "Cuidado Facial"
+      },
+      "blockClass": "itemPrin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#cuidado-fac"
+    ]
+  },
+  "vtex.menu@2.x:submenu#cuidado-fac": {
+    "props": {
+      "width": "100%",
+      "blockclass": "submenus"
+    },
+    "children": [
+      "flex-layout.row#menu-cat5"
+    ]
+  },
+  "flex-layout.row#menu-cat5": {
+    "children": [
+      "flex-layout.col#menucat-cuidado-fac",
+      "flex-layout.col#menucat4"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "100%"
+    }   
+  },
+  "flex-layout.col#menucat-cuidado-fac":{
+    "children": [
+      "menu-item#titcat29",
+      "menu-item#titcat30",
+      "menu-item#titcat31",
+      "menu-item#titcat32"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "45%"
+    }   
+  },
+
+  "menu-item#titcat29":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/limpieza",
+        "noFollow": true,
+        "tagTitle": "Limpieza",
+        "text":"Limpieza" 
+      }
+    }
+  },
+  
+  "menu-item#titcat30":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hidratacion",
+        "noFollow": true,
+        "tagTitle": "Hidratación",
+        "text":"Hidratación" 
+      }
+    }
+  },
+  
+  "menu-item#titcat31":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mascarillas",
+        "noFollow": true,
+        "tagTitle": "Mascarillas",
+        "text":"Mascarillas" 
+      }
+    }
+  },
+  
+  "menu-item#titcat32":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/balsamos-labiales",
+        "noFollow": true,
+        "tagTitle": "Bálsamos labiales",
+        "text":"Bálsamos labiales" 
+      }
+    }
+  },
+
+  
+  "menu-item#cat6": {
+
+    "props": {
+      "id": "menu-item-cat4",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -359,12 +1158,116 @@
         "tagTitle": "Hogar",
         "text": "Hogar"
       },
-      "blockClass": "itemPrinSing"
+      "blockClass": "itemPrin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#hogar"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu#hogar": {
+    "props": {
+      "width": "100%",
+      "blockclass": "submenus"
+    },
+    "children": [
+      "flex-layout.row#menu-cat6"
+    ]
+  },
+  "flex-layout.row#menu-cat6": {
+    "children": [
+      "flex-layout.col#menucat-hogar",
+      "flex-layout.col#menucat4"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "100%"
+    }   
+  },
+
+  "flex-layout.col#menucat-hogar":{
+    "children": [
+      "menu-item#titcat33",
+      "menu-item#titcat34",
+      "menu-item#titcat35",
+      "menu-item#titcat36"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "45%"
+    }   
+  },
+
+  "menu-item#titcat33":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/aceites-para-difusor",
+        "noFollow": true,
+        "tagTitle": "Aceites para difusor",
+        "text":"Aceites para difusor" 
+      }
     }
   },
-  "menu-item#cat6": {
+  "menu-item#titcat34":{
     "props": {
-      "id": "menu-item-cat6",
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/aromatizantes",
+        "noFollow": true,
+        "tagTitle": "Aromatizantes",
+        "text":"Aromatizantes" 
+      }
+    }
+  },
+  "menu-item#titcat35":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bano-y-cocina",
+        "noFollow": true,
+        "tagTitle": "Baño y cocina",
+        "text":"Baño y cocina" 
+      }
+    }
+  },
+  "menu-item#titcat36":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/difusor",
+        "noFollow": true,
+        "tagTitle": "Difusor",
+        "text":"Difusor" 
+      }
+    }
+  },
+  
+  
+  "menu-item#cat7": {
+
+    "props": {
+      "id": "menu-item-cat4",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -375,10 +1278,95 @@
         "tagTitle": "Regalos",
         "text": "Regalos"
       },
-      "blockClass": "itemPrinSing"
+      "blockClass": "itemPrin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#regalos"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu#regalos": {
+    "props": {
+      "width": "100%",
+      "blockclass": "submenus"
+    },
+    "children": [
+      "flex-layout.row#menu-cat7"
+    ]
+  },
+  "flex-layout.row#menu-cat7": {
+    "children": [
+      "flex-layout.col#menucat-regalos",
+      "flex-layout.col#menucat4"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "100%"
+    }   
+  },
+
+  "flex-layout.col#menucat-regalos":{
+    "children": [
+      "menu-item#titcat37",
+      "menu-item#titcat38",
+      "menu-item#titcat39"
+    ],
+    "props":{
+      "blocklass": "menucat",
+      "width": "45%"
+    }   
+  },
+
+  "menu-item#titcat37":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/para-mujer",
+        "noFollow": true,
+        "tagTitle": "Para mujer",
+        "text":"Para mujer" 
+      }
     }
   },
-  "menu-item#cat7": {
+  "menu-item#titcat38":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/para-hombre",
+        "noFollow": true,
+        "tagTitle": "Para hombre",
+        "text":"Para hombre" 
+      }
+    }
+  },
+  "menu-item#titcat39":{
+    "props": {
+      "blockClass":"titcats",
+      "id": "titcat2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsas-de-regalo",
+        "noFollow": true,
+        "tagTitle": "Bolsas de regalo",
+        "text":"Bolsas de regalo" 
+      }
+    }
+  },
+
+  "menu-item#cat8": {
     "props": {
       "id": "menu-item-cat7",
       "type": "custom",
@@ -423,8 +1411,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Fragancias",
-        "text": "Fragancias"
+        "tagTitle": "Fragancia",
+        "text": "Fragancia"
       },
       "blockClass": "itemPrin"
     },
@@ -446,7 +1434,13 @@
     },
     "children": [
       "menu-item#itemcat1",
-      "menu-item#itemcat2"
+      "flex-layout.col#submenu-1",
+      "menu-item#itemcat2",
+      "flex-layout.col#submenu-2",
+      "menu-item#itemcat3",
+      "flex-layout.col#submenu-4",
+      "menu-item#itemcat4",
+      "flex-layout.col#submenu-3"
     ]
   },
   "menu-item#cat2mob":{
@@ -481,10 +1475,43 @@
       "blockClass": "submenusMob"
     },
     "children": [
-      "menu-item#itemcat4",
       "menu-item#itemcat5",
-      "menu-item#itemcat6"
+      "menu-item#itemcat6",
+      "menu-item#itemcat7",
+      "menu-item#itemcat8"
     ]
+  },
+  "menu-item#itemcat5":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Spray Antibacterial",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat6":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Crema Antibacterial",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat7":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Jabón Antibacterial",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat8":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Espuma Antibacterial",
+      "blockClass": "itemsubcat"
+    }
   },
   "menu-item#cat3mob":{
     "props": {
@@ -518,15 +1545,232 @@
       "blockClass": "submenusMob"
     },
     "children": [
-      "menu-item#itemcat7",
-      "menu-item#itemcat8",
       "menu-item#itemcat9",
       "menu-item#itemcat10",
       "menu-item#itemcat11",
-      "menu-item#itemcat12"
+      "menu-item#itemcat12",
+      "menu-item#itemcat13",
+      "menu-item#itemcat14",
+      "menu-item#itemcat15",
+      "menu-item#itemcat16"
     ]
   },
+  "menu-item#itemcat9":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Limpieza",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat10":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Exfoliación",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat11":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Hidratación",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat12":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Capilar",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat13":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Repelentes",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat14":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Recuperación",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat15":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Meditación",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat16":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Accesorios",
+      "blockClass": "itemsubcat"
+    }
+  },
   "menu-item#cat4mob":{
+    "props": {
+      "id": "menu-item-cat4mob",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Ingredientes",
+        "text": "Ingredientes"
+      },
+      "blockClass": "itemPrin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#catsmob4"
+    ] 
+  },
+  "vtex.menu@2.x:submenu.accordion#catsmob4": {
+    "children": ["vtex.menu@2.x:menu#catsmobile4"],
+    "props":{
+      "blockClass":"submenudraw"
+  }
+},
+
+"vtex.menu@2.x:menu#catsmobile4": {
+  "props": {
+    "orientation": "vertical",
+    "blockClass": "submenusMob"
+  },
+  "children": [
+    "menu-item#itemcat17",
+    "menu-item#itemcat18",
+    "menu-item#itemcat19",
+    "menu-item#itemcat20",
+    "menu-item#itemcat21",
+    "menu-item#itemcat22",
+    "menu-item#itemcat23",
+    "menu-item#itemcat24",
+    "menu-item#itemcat25",
+    "menu-item#itemcat26",
+    "menu-item#itemcat27",
+    "menu-item#itemcat28",
+    "menu-item#itemcat29"
+  ]
+},
+"menu-item#itemcat17":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Romero",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat18":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Lavanda",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat19":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Menta",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat20":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Manzanilla",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat21":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Coco",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat22":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Bambú",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat23":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Árnica",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat24":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Rosas",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat25":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Naranja",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat26":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Aloe Vera",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat27":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Manteca de Karite",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat28":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Extracto de avena",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat29":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Té verde",
+    "blockClass": "itemsubcat"
+  }
+},
+  "menu-item#cat5mob":{
     "props": {
       "id": "menu-item-cat4mob",
       "type": "custom",
@@ -542,7 +1786,192 @@
       "blockClass": "itemPrin"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu.accordion#catsmob3"
+      "vtex.menu@2.x:submenu.accordion#catsmob5"
     ] 
+  },
+  "vtex.menu@2.x:submenu.accordion#catsmob5": {
+    "children": ["vtex.menu@2.x:menu#catsmobile5"],
+    "props":{
+      "blockClass":"submenudraw"
+  }
+},
+
+"vtex.menu@2.x:menu#catsmobile5": {
+  "props": {
+    "orientation": "vertical",
+    "blockClass": "submenusMob"
+  },
+  "children": [
+    "menu-item#itemcat30",
+    "menu-item#itemcat31",
+    "menu-item#itemcat32",
+    "menu-item#itemcat33"
+  ]
+},
+"menu-item#itemcat30":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Limpieza",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat31":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Hidratación",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat32":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Mascarillas",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat33":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Bálsamos labiales",
+    "blockClass": "itemsubcat"
+  }
+},
+  "menu-item#cat6mob":{
+    "props": {
+      "id": "menu-item-cat4mob",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Hogar",
+        "text": "Hogar"
+      },
+      "blockClass": "itemPrin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#catsmob6"
+    ] 
+  },
+  "vtex.menu@2.x:submenu.accordion#catsmob6": {
+    "children": ["vtex.menu@2.x:menu#catsmobile6"],
+    "props":{
+      "blockClass":"submenudraw"
+  }
+},
+
+"vtex.menu@2.x:menu#catsmobile6": {
+  "props": {
+    "orientation": "vertical",
+    "blockClass": "submenusMob"
+  },
+  "children": [
+    "menu-item#itemcat34",
+    "menu-item#itemcat35",
+    "menu-item#itemcat36",
+    "menu-item#itemcat37"
+  ]
+},
+"menu-item#itemcat34":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Aceites para difusor",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat35":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Aromatizantes",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat36":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Baño y cocina",
+    "blockClass": "itemsubcat"
+  }
+},
+"menu-item#itemcat37":{
+  "props":{
+    "type":"category",
+    "categoryId": 1,
+    "text":"Difusor",
+    "blockClass": "itemsubcat"
+  }
+},
+  "menu-item#cat7mob":{
+    "props": {
+      "id": "menu-item-cat7mob",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Regalos",
+        "text": "Regalos"
+      },
+      "blockClass": "itemPrin"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#catsmob7"
+    ] 
+  },
+    "vtex.menu@2.x:submenu.accordion#catsmob7": {
+      "children": ["vtex.menu@2.x:menu#catsmobile7"],
+      "props":{
+        "blockClass":"submenudraw"
+    }
+  },
+
+  "vtex.menu@2.x:menu#catsmobile7": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "submenusMob"
+    },
+    "children": [
+      "menu-item#itemcat38",
+      "menu-item#itemcat39",
+      "menu-item#itemcat40"
+    ]
+  },
+  "menu-item#itemcat38":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Para mujer",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat39":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Para hombre",
+      "blockClass": "itemsubcat"
+    }
+  },
+  "menu-item#itemcat40":{
+    "props":{
+      "type":"category",
+      "categoryId": 1,
+      "text":"Bolsas de regalo",
+      "blockClass": "itemsubcat"
+    }
   }
 }
+
+
+
