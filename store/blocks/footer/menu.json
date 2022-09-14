@@ -9,7 +9,9 @@
       "menu-item#acerca",
       "menu-item#terminos",
       "menu-item#aviso",
-      "menu-item#devolucion"
+      "menu-item#devolucion",
+      "menu-item#blog"
+
     ]
   },
   "menu-item#tituloAcerca":{
@@ -75,6 +77,21 @@
         "noFollow": false,
         "tagTitle": "Política de devolución",
         "text": "Política de devolución"
+      }
+    }
+  },
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-devolucion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blog",
+        "noFollow": false,
+        "tagTitle": "Blog",
+        "text": "Blog"
       }
     }
   },
@@ -249,7 +266,8 @@
       "menu-item#acerca",
       "menu-item#terminos",
       "menu-item#aviso",
-      "menu-item#devolucion"
+      "menu-item#devolucion",
+      "menu-item#blog"
     ]
   },
 

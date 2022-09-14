@@ -22,5 +22,11 @@
   },
   "store.custom#facturacion":{
     "path": "/facturacion"
+  },
+  "store.custom#blog":{
+    "path": "/blog"
+  },
+  "store.custom#indiv":{
+    "path": "/blog/blog-1"
   }
 }

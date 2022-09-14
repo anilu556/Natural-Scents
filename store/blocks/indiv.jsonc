@@ -1,0 +1,304 @@
+{
+  "store.custom#indiv":{
+    "children":[
+    "flex-layout.row#mainRow",
+    "removeCards"
+    ]
+  },
+  "flex-layout.row#mainRow":{
+    "props":{
+      "blockClass":["mainRow"]
+    },
+    "children":[
+      "flex-layout.col#contenido",
+      "flex-layout.col#productos"
+    ]
+  },
+  "flex-layout.col#productos":{
+    "props":{
+      "width":"25%",
+      "blockClass":"productos"
+    },
+    "children":[
+      "flex-layout.row#tituloProductos",
+      "flex-layout.row#shelfProductos"
+    ]
+  },
+  "flex-layout.row#tituloProductos":{
+    "props":{
+      "blockClass":"tituloProductos"
+    },
+    "children":[
+      "rich-text#tituloProductos"
+    ]
+  },
+  "rich-text#tituloProductos":{
+    "props":{
+      "blockClass":"tiutloProductos",
+      "text":"PRODUCTOS RELACIONADOS"
+    }
+  },
+
+  // Carrusel productos
+  "flex-layout.row#shelfProductos": {
+    "children": ["list-context.product-list#demoProductos"],
+    "props":{
+      "blockClass": "productosShelf",
+      "fullWidth": false
+    }
+  },
+  "list-context.product-list#demoProductos": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-productos"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "productosIndiv"
+    }
+  },
+  "slider-layout#demo-productos": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "productosIndiv",
+      "showPaginationDots": "never"
+
+    }
+  },
+
+
+  //content
+  "flex-layout.col#contenido":{
+    "props":{
+      "width":"75%",
+      "blockClass":["contenido"]
+    },
+    "children":[
+      "flex-layout.row#infocard1",
+      "flex-layout.row#textDescription1",
+      "flex-layout.row#infocard2",
+      "flex-layout.row#textDescription2",
+      "flex-layout.row#infocard3",
+      "flex-layout.row#textDescription3",
+      "flex-layout.row#infocard4",
+      "flex-layout.row#textDescription4"
+    ],
+    "title":"imagenes, texto"
+  },
+  //indivContent 4
+  "flex-layout.row#textDescription4":{
+    "props":{
+      "blockClass":["textDescription","textDescription4"]
+    },
+    "children":[
+      "rich-text#textDescription4"
+    ],
+    "title":"texto4"
+  },
+  "rich-text#textDescription4":{
+    "props":{
+      "blockClass":["textDescription","textDescription4"],
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget nisi tristique, laoreet ante quis, fermentum metus. Quisque consequat rhoncus tellus, sed ultricies nibh sagittis eget. Ut tempor iaculis ullamcorper. Mauris sed aliquet dolor, egestas ultrices orci. Nam magna mauris, aliquam ac justo eu, sagittis ultrices nisi. Nullam eu arcu ullamcorper, aliquet ex ut, interdum risus. Pellentesque eleifend massa a laoreet porttitor. Maecenas mattis cursus augue. Etiam laoreet faucibus aliquam.\nDonec vel neque neque. Integer diam sapien, ultrices vitae justo ut, sodales laoreet ligula. Quisque egestas tempor accumsan. Mauris dictum augue eu gravida tempor. Nunc non urna at nunc hendrerit hendrerit. Nam aliquet elementum ex non interdum. Curabitur condimentum dui ligula. Pellentesque vitae dolor id est lacinia posuere. Proin semper iaculis augue, non consectetur urna.\nPellentesque rutrum sem vitae sem sollicitudin, sed eleifend felis consectetur. Phasellus in odio vitae elit malesuada pretium vel nec enim. In a ipsum venenatis, consectetur nunc convallis, pulvinar dolor. Donec non ipsum nec ligula elementum blandit sed a eros. Cras dignissim eros urna, vehicula laoreet velit tristique quis. In varius, ex at lobortis scelerisque, quam ex blandit urna, id efficitur magna justo in sem. Maecenas nec nisl vitae massa pellentesque gravida vitae pharetra orci."
+    }
+  },
+  "flex-layout.row#infocard4":{
+    "props":{
+      "blockClass":["info-card","info-card4"]
+    },
+    "children":[
+      "slider-layout#infocard4"
+    ],
+    "title":"imagenes4"
+  },
+  "slider-layout#infocard4": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass":["info-card","info-card4"]
+    },
+    "children": [
+      "image#8",
+      "image#7"
+    ]
+  },
+  "image#8": {
+    "props": {
+      "blockClass":["imagen","imagen8"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  "image#7": {
+    "props": {
+      "blockClass":["imagen","imagen7"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  //indivContent 3
+  "flex-layout.row#textDescription3":{
+    "props":{
+      "blockClass":["textDescription","textDescription3"]
+    },
+    "children":[
+      "rich-text#textDescription3"
+    ],
+    "title":"texto3"
+  },
+  "rich-text#textDescription3":{
+    "props":{
+      "blockClass":["textDescription","textDescription3"],
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget nisi tristique, laoreet ante quis, fermentum metus. Quisque consequat rhoncus tellus, sed ultricies nibh sagittis eget. Ut tempor iaculis ullamcorper. Mauris sed aliquet dolor, egestas ultrices orci. Nam magna mauris, aliquam ac justo eu, sagittis ultrices nisi. Nullam eu arcu ullamcorper, aliquet ex ut, interdum risus. Pellentesque eleifend massa a laoreet porttitor. Maecenas mattis cursus augue. Etiam laoreet faucibus aliquam.\nDonec vel neque neque. Integer diam sapien, ultrices vitae justo ut, sodales laoreet ligula. Quisque egestas tempor accumsan. Mauris dictum augue eu gravida tempor. Nunc non urna at nunc hendrerit hendrerit. Nam aliquet elementum ex non interdum. Curabitur condimentum dui ligula. Pellentesque vitae dolor id est lacinia posuere. Proin semper iaculis augue, non consectetur urna.\nPellentesque rutrum sem vitae sem sollicitudin, sed eleifend felis consectetur. Phasellus in odio vitae elit malesuada pretium vel nec enim. In a ipsum venenatis, consectetur nunc convallis, pulvinar dolor. Donec non ipsum nec ligula elementum blandit sed a eros. Cras dignissim eros urna, vehicula laoreet velit tristique quis. In varius, ex at lobortis scelerisque, quam ex blandit urna, id efficitur magna justo in sem. Maecenas nec nisl vitae massa pellentesque gravida vitae pharetra orci."
+    }
+  },
+  "flex-layout.row#infocard3":{
+    "props":{
+      "blockClass":["info-card","info-card3"]
+    },
+    "children":[
+      "slider-layout#infocard3"
+    ],
+    "title":"imagenes3"
+  },
+  "slider-layout#infocard3": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass":["info-card","info-card3"]
+    },
+    "children": [
+      "image#6",
+      "image#5"
+    ]
+  },
+  "image#6": {
+    "props": {
+      "blockClass":["imagen","imagen6"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  "image#5": {
+    "props": {
+      "blockClass":["imagen","imagen5"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  //indivContent 2
+  "flex-layout.row#textDescription2":{
+    "props":{
+      "blockClass":["textDescription","textDescription2"]
+    },
+    "children":[
+      "rich-text#textDescription2"
+    ],
+    "title":"texto2"
+  },
+  "rich-text#textDescription2":{
+    "props":{
+      "blockClass":["textDescription","textDescription2"],
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget nisi tristique, laoreet ante quis, fermentum metus. Quisque consequat rhoncus tellus, sed ultricies nibh sagittis eget. Ut tempor iaculis ullamcorper. Mauris sed aliquet dolor, egestas ultrices orci. Nam magna mauris, aliquam ac justo eu, sagittis ultrices nisi. Nullam eu arcu ullamcorper, aliquet ex ut, interdum risus. Pellentesque eleifend massa a laoreet porttitor. Maecenas mattis cursus augue. Etiam laoreet faucibus aliquam.\nDonec vel neque neque. Integer diam sapien, ultrices vitae justo ut, sodales laoreet ligula. Quisque egestas tempor accumsan. Mauris dictum augue eu gravida tempor. Nunc non urna at nunc hendrerit hendrerit. Nam aliquet elementum ex non interdum. Curabitur condimentum dui ligula. Pellentesque vitae dolor id est lacinia posuere. Proin semper iaculis augue, non consectetur urna.\nPellentesque rutrum sem vitae sem sollicitudin, sed eleifend felis consectetur. Phasellus in odio vitae elit malesuada pretium vel nec enim. In a ipsum venenatis, consectetur nunc convallis, pulvinar dolor. Donec non ipsum nec ligula elementum blandit sed a eros. Cras dignissim eros urna, vehicula laoreet velit tristique quis. In varius, ex at lobortis scelerisque, quam ex blandit urna, id efficitur magna justo in sem. Maecenas nec nisl vitae massa pellentesque gravida vitae pharetra orci."
+    }
+  },
+  "flex-layout.row#infocard2":{
+    "props":{
+      "blockClass":["info-card","info-card1"]
+    },
+    "children":[
+      "slider-layout#infocard2"
+    ],
+    "title":"imagenes2"
+  },
+  "slider-layout#infocard2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass":["info-card","info-card2"]
+    },
+    "children": [
+      "image#4",
+      "image#3"
+    ]
+  },
+  "image#3": {
+    "props": {
+      "blockClass":["imagen","imagen3"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  "image#4": {
+    "props": {
+      "blockClass":["imagen","imagen4"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  //indivContent 1
+  "flex-layout.row#textDescription1":{
+    "props":{
+      "blockClass":["textDescription","textDescription1"]
+    },
+    "children":[
+      "rich-text#textDescription1"
+    ],
+    "title":"texto1"
+  },
+  "rich-text#textDescription1":{
+    "props":{
+      "blockClass":["textDescription","textDescription1"],
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget nisi tristique, laoreet ante quis, fermentum metus. Quisque consequat rhoncus tellus, sed ultricies nibh sagittis eget. Ut tempor iaculis ullamcorper. Mauris sed aliquet dolor, egestas ultrices orci. Nam magna mauris, aliquam ac justo eu, sagittis ultrices nisi. Nullam eu arcu ullamcorper, aliquet ex ut, interdum risus. Pellentesque eleifend massa a laoreet porttitor. Maecenas mattis cursus augue. Etiam laoreet faucibus aliquam.\nDonec vel neque neque. Integer diam sapien, ultrices vitae justo ut, sodales laoreet ligula. Quisque egestas tempor accumsan. Mauris dictum augue eu gravida tempor. Nunc non urna at nunc hendrerit hendrerit. Nam aliquet elementum ex non interdum. Curabitur condimentum dui ligula. Pellentesque vitae dolor id est lacinia posuere. Proin semper iaculis augue, non consectetur urna.\nPellentesque rutrum sem vitae sem sollicitudin, sed eleifend felis consectetur. Phasellus in odio vitae elit malesuada pretium vel nec enim. In a ipsum venenatis, consectetur nunc convallis, pulvinar dolor. Donec non ipsum nec ligula elementum blandit sed a eros. Cras dignissim eros urna, vehicula laoreet velit tristique quis. In varius, ex at lobortis scelerisque, quam ex blandit urna, id efficitur magna justo in sem. Maecenas nec nisl vitae massa pellentesque gravida vitae pharetra orci."
+    }
+  },
+  "flex-layout.row#infocard1":{
+    "props":{
+      "blockClass":["infocard","info-card1"]
+    },
+    "children":[
+      "slider-layout#infocard1"
+    ],
+    "title":"imagenes1"
+  },
+  "slider-layout#infocard1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass":["info-card","info-card1"]
+    },
+    "children": [
+      "image#1",
+      "image#2"
+    ]
+  },
+  "image#1": {
+    "props": {
+      "blockClass":["imagen","imagen1"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  "image#2": {
+    "props": {
+      "blockClass":["imagen","imagen2"],
+      "src":"assets/main.jpeg"
+    }
+  }
+}

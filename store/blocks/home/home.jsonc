@@ -14,11 +14,21 @@
       "rich-text#shelf-title1",
       "flex-layout.row#shelf1", 
       "flex-layout.row#infocards",
-      "rich-text#slider-title-ingredientes",
-      "slider-layout#ingredientes",
+      // "rich-text#slider-title-ingredientes",
+      "flex-layout.row#ingredientes",
+      // "slider-layout#ingredientes",
       "rich-text#instagram",
       "slider-layout#instagramSlider",
       "flex-layout.row#logos"
+    ]
+  },
+  "flex-layout.row#ingredientes":{
+    "props":{
+      "blockClass":"ingredientes-row-home"
+    },
+    "children":[
+      "rich-text#slider-title-ingredientes",
+      "slider-layout#ingredientes"
     ]
   },
 
@@ -33,8 +43,9 @@
       "flex-layout.row#infocardCol4Mob",
       "flex-layout.row#infocardCol2Mob",
       "flex-layout.row#infocardCol1Mob",
-      "rich-text#slider-title-ingredientes",
-      "slider-layout#ingredientes",
+      "flex-layout.row#ingredientes",
+      // "rich-text#slider-title-ingredientes",
+      // "slider-layout#ingredientes",
       "rich-text#instagram",
       "slider-layout#instagramSlider",
       "flex-layout.row#logos"
@@ -52,8 +63,9 @@
       "flex-layout.row#infocardCol4Mob",
       "flex-layout.row#infocardCol2Mob",
       "flex-layout.row#infocardCol1Mob",
-      "rich-text#slider-title-ingredientes",
-      "slider-layout#ingredientes",
+      "flex-layout.row#ingredientes",
+      // "rich-text#slider-title-ingredientes",
+      // "slider-layout#ingredientes",
       "rich-text#instagram",
       "slider-layout#instagramSlider",
       "flex-layout.row#logos1",

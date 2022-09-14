@@ -1,0 +1,2741 @@
+{
+  "store.custom#blog":{
+    "children":[
+      "flex-layout.row#blogMain",
+      "removeCards"
+    ]
+  },
+  "flex-layout.row#blogMain":{
+    "props":{
+      "blockClass":"blogMainRow"
+    },
+    "children":[
+      "flex-layout.col#blogMain"
+    ],
+    "title":"banner, cards"
+  },
+
+  "flex-layout.col#blogMain":{
+    "props":{
+      "blockClass":"blogMainCol"
+    },
+    "children":[
+      // "flex-layout.row#banner1",
+      "flex-layout.row#bannerImage1",
+      "flex-layout.row#imagenes1",
+      // "flex-layout.row#banner2",
+      "flex-layout.row#bannerImage2",
+      "flex-layout.row#imagenes2",
+      // "flex-layout.row#banner3",
+      "flex-layout.row#bannerImage3",
+      "flex-layout.row#imagenes3",
+      // "flex-layout.row#banner4",
+      "flex-layout.row#bannerImage4",
+      "flex-layout.row#imagenes4",
+      // "flex-layout.row#banner5",
+      "flex-layout.row#bannerImage5",
+      "flex-layout.row#imagenes5",
+      // "flex-layout.row#banner6",
+      "flex-layout.row#bannerImage6",
+      "flex-layout.row#imagenes6",
+      // "flex-layout.row#banner7",
+      "flex-layout.row#bannerImage7",
+      "flex-layout.row#imagenes7",
+      // "flex-layout.row#banner8",
+      "flex-layout.row#bannerImage8",
+      "flex-layout.row#imagenes8",
+      // "flex-layout.row#banner9",
+      "flex-layout.row#bannerImage9",
+      "flex-layout.row#imagenes9"
+    ]
+  },
+  //imagen banner 9
+  "flex-layout.row#bannerImage9":{
+    "props":{
+      "blockClass":["bannerImage","bannerImage9"]
+    },
+    "children":[
+      "flex-layout.col#bannerImage9",
+      "flex-layout.col#bannerText9"
+    ],
+    "title":"bannerImage9"
+  },
+  "flex-layout.col#bannerText9":{
+    "props":{
+      "width":"0%",
+      "blockClass":["bannerText","bannerText9"]
+    },
+    "children":[
+      "rich-text#bannerText9"
+    ]
+  },
+  "rich-text#bannerText9":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerText","bannerText9"],
+      "text":"00.00.0000\n### Neque porro quisquam est qui dolorem\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.\n\n[Leer más](/blog/blog-1)"
+    }
+  },
+  "flex-layout.col#bannerImage9":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage9"]
+    },
+    "children":[
+      "image#bannerImage9"
+    ]
+  },
+  "image#bannerImage9":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage9"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  //imagen banner 8
+  "flex-layout.row#bannerImage8":{
+    "props":{
+      "blockClass":["bannerImage","bannerImage8"]
+    },
+    "children":[
+      "flex-layout.col#bannerImage8",
+      "flex-layout.col#bannerText8"
+    ],
+    "title":"bannerImage8"
+  },
+  "flex-layout.col#bannerText8":{
+    "props":{
+      "width":"0%",
+      "blockClass":["bannerText","bannerText8"]
+    },
+    "children":[
+      "rich-text#bannerText8"
+    ]
+  },
+  "rich-text#bannerText8":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerText","bannerText8"],
+      "text":"00.00.0000\n### Neque porro quisquam est qui dolorem\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.\n\n[Leer más](/blog/blog-1)"
+    }
+  },
+  "flex-layout.col#bannerImage8":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage8"]
+    },
+    "children":[
+      "image#bannerImage8"
+    ]
+  },
+  "image#bannerImage8":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage8"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  //imagen banner 7
+  "flex-layout.row#bannerImage7":{
+    "props":{
+      "blockClass":["bannerImage","bannerImage7"]
+    },
+    "children":[
+      "flex-layout.col#bannerImage7",
+      "flex-layout.col#bannerText7"
+    ],
+    "title":"bannerImage7"
+  },
+  "flex-layout.col#bannerText7":{
+    "props":{
+      "width":"0%",
+      "blockClass":["bannerText","bannerText7"]
+    },
+    "children":[
+      "rich-text#bannerText7"
+    ]
+  },
+  "rich-text#bannerText7":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerText","bannerText7"],
+      "text":"00.00.0000\n### Neque porro quisquam est qui dolorem\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.\n\n[Leer más](/blog/blog-1)"
+    }
+  },
+  "flex-layout.col#bannerImage7":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage7"]
+    },
+    "children":[
+      "image#bannerImage7"
+    ]
+  },
+  "image#bannerImage7":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage7"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  //imagen banner 6
+  "flex-layout.row#bannerImage6":{
+    "props":{
+      "blockClass":["bannerImage","bannerImage6"]
+    },
+    "children":[
+      "flex-layout.col#bannerImage6",
+      "flex-layout.col#bannerText6"
+    ],
+    "title":"bannerImage6"
+  },
+  "flex-layout.col#bannerText6":{
+    "props":{
+      "width":"0%",
+      "blockClass":["bannerText","bannerText6"]
+    },
+    "children":[
+      "rich-text#bannerText6"
+    ]
+  },
+  "rich-text#bannerText6":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerText","bannerText6"],
+      "text":"00.00.0000\n### Neque porro quisquam est qui dolorem\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.\n\n[Leer más](/blog/blog-1)"
+    }
+  },
+  "flex-layout.col#bannerImage6":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage6"]
+    },
+    "children":[
+      "image#bannerImage6"
+    ]
+  },
+  "image#bannerImage6":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage6"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  //imagen banner 5
+  "flex-layout.row#bannerImage5":{
+    "props":{
+      "blockClass":["bannerImage","bannerImage5"]
+    },
+    "children":[
+      "flex-layout.col#bannerImage5",
+      "flex-layout.col#bannerText5"
+    ],
+    "title":"bannerImage5"
+  },
+  "flex-layout.col#bannerText5":{
+    "props":{
+      "width":"0%",
+      "blockClass":["bannerText","bannerText5"]
+    },
+    "children":[
+      "rich-text#bannerText5"
+    ]
+  },
+  "rich-text#bannerText5":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerText","bannerText5"],
+      "text":"00.00.0000\n### Neque porro quisquam est qui dolorem\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.\n\n[Leer más](/blog/blog-1)"
+    }
+  },
+  "flex-layout.col#bannerImage5":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage5"]
+    },
+    "children":[
+      "image#bannerImage5"
+    ]
+  },
+  "image#bannerImage5":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage5"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  //imagen banner 4
+  "flex-layout.row#bannerImage4":{
+    "props":{
+      "blockClass":["bannerImage","bannerImage4"]
+    },
+    "children":[
+      "flex-layout.col#bannerImage4",
+      "flex-layout.col#bannerText4"
+    ],
+    "title":"bannerImage4"
+  },
+  "flex-layout.col#bannerText4":{
+    "props":{
+      "width":"0%",
+      "blockClass":["bannerText","bannerText4"]
+    },
+    "children":[
+      "rich-text#bannerText4"
+    ]
+  },
+  "rich-text#bannerText4":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerText","bannerText4"],
+      "text":"00.00.0000\n### Neque porro quisquam est qui dolorem\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.\n\n[Leer más](/blog/blog-1)"
+    }
+  },
+  "flex-layout.col#bannerImage4":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage4"]
+    },
+    "children":[
+      "image#bannerImage4"
+    ]
+  },
+  "image#bannerImage4":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage4"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  //imagen banner 3
+  "flex-layout.row#bannerImage3":{
+    "props":{
+      "blockClass":["bannerImage","bannerImage3"]
+    },
+    "children":[
+      "flex-layout.col#bannerImage3",
+      "flex-layout.col#bannerText3"
+    ],
+    "title":"bannerImage3"
+  },
+  "flex-layout.col#bannerText3":{
+    "props":{
+      "width":"0%",
+      "blockClass":["bannerText","bannerText3"]
+    },
+    "children":[
+      "rich-text#bannerText3"
+    ]
+  },
+  "rich-text#bannerText3":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerText","bannerText3"],
+      "text":"00.00.0000\n### Neque porro quisquam est qui dolorem\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.\n\n[Leer más](/blog/blog-1)"
+    }
+  },
+  "flex-layout.col#bannerImage3":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage3"]
+    },
+    "children":[
+      "image#bannerImage3"
+    ]
+  },
+  "image#bannerImage3":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage3"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  //imagen banner 2
+  "flex-layout.row#bannerImage2":{
+    "props":{
+      "blockClass":["bannerImage","bannerImage2"]
+    },
+    "children":[
+      "flex-layout.col#bannerImage2",
+      "flex-layout.col#bannerText2"
+    ],
+    "title":"bannerImage2"
+  },
+  "flex-layout.col#bannerText2":{
+    "props":{
+      "width":"0%",
+      "blockClass":["bannerText","bannerText2"]
+    },
+    "children":[
+      "rich-text#bannerText2"
+    ]
+  },
+  "rich-text#bannerText2":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerText","bannerText2"],
+      "text":"00.00.0000\n### Neque porro quisquam est qui dolorem\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.\n\n[Leer más](/blog/blog-1)"
+    }
+  },
+  "flex-layout.col#bannerImage2":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage2"]
+    },
+    "children":[
+      "image#bannerImage2"
+    ]
+  },
+  "image#bannerImage2":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage2"],
+      "src":"assets/main.jpeg"
+    }
+  },
+  //imagen banner 1
+  "flex-layout.row#bannerImage1":{
+    "props":{
+      "blockClass":["bannerImage","bannerImage1"]
+    },
+    "children":[
+      "flex-layout.col#bannerImage1",
+      "flex-layout.col#bannerText1"
+    ],
+    "title":"bannerImage1"
+  },
+  "flex-layout.col#bannerText1":{
+    "props":{
+      "width":"0%",
+      "blockClass":["bannerText","bannerText1"]
+    },
+    "children":[
+      "rich-text#bannerText1"
+    ]
+  },
+  "rich-text#bannerText1":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerText","bannerText1"],
+      "text":"00.00.0000\n### Neque porro quisquam est qui dolorem\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.\n\n[Leer más](/blog/blog-1)"
+    }
+  },
+  "flex-layout.col#bannerImage1":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage1"]
+    },
+    "children":[
+      "image#bannerImage1"
+    ]
+  },
+  "image#bannerImage1":{
+    "props":{
+      "width":"grow",
+      "blockClass":["bannerImage","bannerImage1"],
+      "src":"assets/main.jpeg"
+    }
+  },
+
+  //row img 9
+  "flex-layout.row#imagenes9":{
+    "props":{
+      "blockClass":["imagenes", "imagenes9"]
+    },
+    "children":[
+      "flex-layout.col#imagen81",
+      "flex-layout.col#imagen80",
+      "flex-layout.col#imagen79",
+      "flex-layout.col#imagen78",
+      "flex-layout.col#imagen77",
+      "flex-layout.col#imagen76",
+      "flex-layout.col#imagen75",
+      "flex-layout.col#imagen74",
+      "flex-layout.col#imagen73"
+    ]
+  },
+  // card 81
+  "flex-layout.col#imagen81":{
+    "props":{
+       "blockClass":["imagen", "imagen81"]
+    },
+    "children":[
+      "image#imagen81",
+      "rich-text#texto81"
+    ],
+    "title":"card81"
+  },
+  "image#imagen81":{
+     "props":{
+      "blockClass":["imagen", "imagen81"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto81":{
+    "props":{
+      "blockClass":["texto", "texto81"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 80
+  "flex-layout.col#imagen80":{
+    "props":{
+      "blockClass":["imagen", "imagen80"]
+    },
+    "children":[
+      "image#imagen80",
+      "rich-text#texto80"
+    ],
+    "title":"card80"
+  },
+  "image#imagen80":{
+    "props":{
+      "blockClass":["imagen", "imagen80"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto80":{
+    "props":{
+      "blockClass":["texto", "texto80"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 79
+  "flex-layout.col#imagen79":{
+    "props":{
+      "blockClass":["imagen", "imagen79"]
+    },
+    "children":[
+      "image#imagen79",
+      "rich-text#texto79"
+    ],
+    "title":"card79"
+  },
+  "image#imagen79":{
+    "props":{
+      "blockClass":["imagen", "imagen79"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto79":{
+    "props":{
+      "blockClass":["texto", "texto79"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 78
+  "flex-layout.col#imagen78":{
+    "props":{
+      "blockClass":["imagen", "imagen78"]
+    },
+    "children":[
+      "image#imagen78",
+      "rich-text#texto78"
+    ],
+    "title":"card78"
+  },
+  "image#imagen78":{
+    "props":{
+      "blockClass":["imagen", "imagen78"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto78":{
+    "props":{
+      "blockClass":["texto", "texto78"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 77
+  "flex-layout.col#imagen77":{
+    "props":{
+      "blockClass":["imagen", "imagen77"]
+    },
+    "children":[
+      "image#imagen77",
+      "rich-text#texto77"
+    ],
+    "title":"card77"
+  },
+  "image#imagen77":{
+    "props":{
+      "blockClass":["imagen", "imagen77"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto77":{
+    "props":{
+      "blockClass":["texto", "texto77"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 76
+  "flex-layout.col#imagen76":{
+    "props":{
+      "blockClass":["imagen", "imagen76"]
+    },
+    "children":[
+      "image#imagen76",
+      "rich-text#texto76"
+    ],
+    "title":"card76"
+  },
+  "image#imagen76":{
+    "props":{
+      "blockClass":["imagen", "imagen76"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto76":{
+    "props":{
+      "blockClass":["texto", "texto76"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 75
+  "flex-layout.col#imagen75":{
+    "props":{
+      "blockClass":["imagen", "imagen75"]
+    },
+    "children":[
+      "image#imagen75",
+      "rich-text#texto75"
+    ],
+    "title":"card75"
+  },
+  "image#imagen75":{
+    "props":{
+      "blockClass":["imagen", "imagen75"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto75":{
+    "props":{
+      "blockClass":["texto", "texto75"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 74
+  "flex-layout.col#imagen74":{
+    "props":{
+      "blockClass":["imagen", "imagen74"]
+    },
+    "children":[
+      "image#imagen74",
+      "rich-text#texto74"
+    ],
+    "title":"card74"
+  },
+  "image#imagen74":{
+    "props":{
+      "blockClass":["imagen", "imagen74"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto74":{
+    "props":{
+      "blockClass":["texto", "texto74"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 73
+  "flex-layout.col#imagen73":{
+    "props":{
+      "blockClass":["imagen", "imagen73"]
+    },
+    "children":[
+      "image#imagen73",
+      "rich-text#texto73"
+    ],
+    "title":"card73"
+  },
+  "image#imagen73":{
+    "props":{
+      "blockClass":["imagen", "imagen73"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto73":{
+    "props":{
+      "blockClass":["texto", "texto73"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  //row img 8
+  "flex-layout.row#imagenes8":{
+    "props":{
+      "blockClass":["imagenes", "imagenes8"]
+    },
+    "children":[
+      "flex-layout.col#imagen72",
+      "flex-layout.col#imagen71",
+      "flex-layout.col#imagen70",
+      "flex-layout.col#imagen69",
+      "flex-layout.col#imagen68",
+      "flex-layout.col#imagen67",
+      "flex-layout.col#imagen66",
+      "flex-layout.col#imagen65",
+      "flex-layout.col#imagen64"
+    ]
+  },
+  // card 72
+  "flex-layout.col#imagen72":{
+    "props":{
+       "blockClass":["imagen", "imagen72"]
+    },
+    "children":[
+      "image#imagen72",
+      "rich-text#texto72"
+    ],
+    "title":"card72"
+  },
+  "image#imagen72":{
+     "props":{
+      "blockClass":["imagen", "imagen72"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto72":{
+    "props":{
+      "blockClass":["texto", "texto72"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 71
+  "flex-layout.col#imagen71":{
+    "props":{
+      "blockClass":["imagen", "imagen71"]
+    },
+    "children":[
+      "image#imagen71",
+      "rich-text#texto71"
+    ],
+    "title":"card71"
+  },
+  "image#imagen71":{
+    "props":{
+      "blockClass":["imagen", "imagen71"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto71":{
+    "props":{
+      "blockClass":["texto", "texto71"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 70
+  "flex-layout.col#imagen70":{
+    "props":{
+      "blockClass":["imagen", "imagen70"]
+    },
+    "children":[
+      "image#imagen70",
+      "rich-text#texto70"
+    ],
+    "title":"card70"
+  },
+  "image#imagen70":{
+    "props":{
+      "blockClass":["imagen", "imagen70"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto70":{
+    "props":{
+      "blockClass":["texto", "texto70"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 69
+  "flex-layout.col#imagen69":{
+    "props":{
+      "blockClass":["imagen", "imagen69"]
+    },
+    "children":[
+      "image#imagen69",
+      "rich-text#texto69"
+    ],
+    "title":"card69"
+  },
+  "image#imagen69":{
+    "props":{
+      "blockClass":["imagen", "imagen69"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto69":{
+    "props":{
+      "blockClass":["texto", "texto69"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 68
+  "flex-layout.col#imagen68":{
+    "props":{
+      "blockClass":["imagen", "imagen68"]
+    },
+    "children":[
+      "image#imagen68",
+      "rich-text#texto68"
+    ],
+    "title":"card68"
+  },
+  "image#imagen68":{
+    "props":{
+      "blockClass":["imagen", "imagen68"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto68":{
+    "props":{
+      "blockClass":["texto", "texto68"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 67
+  "flex-layout.col#imagen67":{
+    "props":{
+      "blockClass":["imagen", "imagen67"]
+    },
+    "children":[
+      "image#imagen67",
+      "rich-text#texto67"
+    ],
+    "title":"card67"
+  },
+  "image#imagen67":{
+    "props":{
+      "blockClass":["imagen", "imagen67"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto67":{
+    "props":{
+      "blockClass":["texto", "texto67"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 66
+  "flex-layout.col#imagen66":{
+    "props":{
+      "blockClass":["imagen", "imagen66"]
+    },
+    "children":[
+      "image#imagen66",
+      "rich-text#texto66"
+    ],
+    "title":"card66"
+  },
+  "image#imagen66":{
+    "props":{
+      "blockClass":["imagen", "imagen66"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto66":{
+    "props":{
+      "blockClass":["texto", "texto66"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 65
+  "flex-layout.col#imagen65":{
+    "props":{
+      "blockClass":["imagen", "imagen65"]
+    },
+    "children":[
+      "image#imagen65",
+      "rich-text#texto65"
+    ],
+    "title":"card65"
+  },
+  "image#imagen65":{
+    "props":{
+      "blockClass":["imagen", "imagen65"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto65":{
+    "props":{
+      "blockClass":["texto", "texto65"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 64
+  "flex-layout.col#imagen64":{
+    "props":{
+      "blockClass":["imagen", "imagen64"]
+    },
+    "children":[
+      "image#imagen64",
+      "rich-text#texto64"
+    ],
+    "title":"card64"
+  },
+  "image#imagen64":{
+    "props":{
+      "blockClass":["imagen", "imagen64"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto64":{
+    "props":{
+      "blockClass":["texto", "texto64"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  //row img 7
+  "flex-layout.row#imagenes7":{
+    "props":{
+      "blockClass":["imagenes", "imagenes7"]
+    },
+    "children":[
+      "flex-layout.col#imagen63",
+      "flex-layout.col#imagen62",
+      "flex-layout.col#imagen61",
+      "flex-layout.col#imagen60",
+      "flex-layout.col#imagen59",
+      "flex-layout.col#imagen58",
+      "flex-layout.col#imagen57",
+      "flex-layout.col#imagen56",
+      "flex-layout.col#imagen55"
+    ]
+  },
+  // card 63
+  "flex-layout.col#imagen63":{
+    "props":{
+       "blockClass":["imagen", "imagen63"]
+    },
+    "children":[
+      "image#imagen63",
+      "rich-text#texto63"
+    ],
+    "title":"card63"
+  },
+  "image#imagen63":{
+     "props":{
+      "blockClass":["imagen", "imagen63"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto63":{
+    "props":{
+      "blockClass":["texto", "texto63"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 62
+  "flex-layout.col#imagen62":{
+    "props":{
+      "blockClass":["imagen", "imagen62"]
+    },
+    "children":[
+      "image#imagen62",
+      "rich-text#texto62"
+    ],
+    "title":"card62"
+  },
+  "image#imagen62":{
+    "props":{
+      "blockClass":["imagen", "imagen62"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto62":{
+    "props":{
+      "blockClass":["texto", "texto62"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 61
+  "flex-layout.col#imagen61":{
+    "props":{
+      "blockClass":["imagen", "imagen61"]
+    },
+    "children":[
+      "image#imagen61",
+      "rich-text#texto61"
+    ],
+    "title":"card61"
+  },
+  "image#imagen61":{
+    "props":{
+      "blockClass":["imagen", "imagen61"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto61":{
+    "props":{
+      "blockClass":["texto", "texto61"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 60
+  "flex-layout.col#imagen60":{
+    "props":{
+      "blockClass":["imagen", "imagen60"]
+    },
+    "children":[
+      "image#imagen60",
+      "rich-text#texto60"
+    ],
+    "title":"card60"
+  },
+  "image#imagen60":{
+    "props":{
+      "blockClass":["imagen", "imagen60"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto60":{
+    "props":{
+      "blockClass":["texto", "texto60"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 59
+  "flex-layout.col#imagen59":{
+    "props":{
+      "blockClass":["imagen", "imagen59"]
+    },
+    "children":[
+      "image#imagen59",
+      "rich-text#texto59"
+    ],
+    "title":"card59"
+  },
+  "image#imagen59":{
+    "props":{
+      "blockClass":["imagen", "imagen59"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto59":{
+    "props":{
+      "blockClass":["texto", "texto59"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 58
+  "flex-layout.col#imagen58":{
+    "props":{
+      "blockClass":["imagen", "imagen58"]
+    },
+    "children":[
+      "image#imagen58",
+      "rich-text#texto58"
+    ],
+    "title":"card58"
+  },
+  "image#imagen58":{
+    "props":{
+      "blockClass":["imagen", "imagen58"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto58":{
+    "props":{
+      "blockClass":["texto", "texto58"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 57
+  "flex-layout.col#imagen57":{
+    "props":{
+      "blockClass":["imagen", "imagen57"]
+    },
+    "children":[
+      "image#imagen57",
+      "rich-text#texto57"
+    ],
+    "title":"card57"
+  },
+  "image#imagen57":{
+    "props":{
+      "blockClass":["imagen", "imagen57"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto57":{
+    "props":{
+      "blockClass":["texto", "texto57"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 56
+  "flex-layout.col#imagen56":{
+    "props":{
+      "blockClass":["imagen", "imagen56"]
+    },
+    "children":[
+      "image#imagen56",
+      "rich-text#texto56"
+    ],
+    "title":"card56"
+  },
+  "image#imagen56":{
+    "props":{
+      "blockClass":["imagen", "imagen56"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto56":{
+    "props":{
+      "blockClass":["texto", "texto56"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 55
+  "flex-layout.col#imagen55":{
+    "props":{
+      "blockClass":["imagen", "imagen55"]
+    },
+    "children":[
+      "image#imagen55",
+      "rich-text#texto55"
+    ],
+    "title":"card55"
+  },
+  "image#imagen55":{
+    "props":{
+      "blockClass":["imagen", "imagen55"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto55":{
+    "props":{
+      "blockClass":["texto", "texto55"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  //row img 6
+  "flex-layout.row#imagenes6":{
+    "props":{
+      "blockClass":["imagenes", "imagenes6"]
+    },
+    "children":[
+      "flex-layout.col#imagen54",
+      "flex-layout.col#imagen53",
+      "flex-layout.col#imagen52",
+      "flex-layout.col#imagen51",
+      "flex-layout.col#imagen50",
+      "flex-layout.col#imagen49",
+      "flex-layout.col#imagen48",
+      "flex-layout.col#imagen47",
+      "flex-layout.col#imagen46"
+    ]
+  },
+  // card 54
+  "flex-layout.col#imagen54":{
+    "props":{
+       "blockClass":["imagen", "imagen54"]
+    },
+    "children":[
+      "image#imagen54",
+      "rich-text#texto54"
+    ],
+    "title":"card54"
+  },
+  "image#imagen54":{
+     "props":{
+      "blockClass":["imagen", "imagen54"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto54":{
+    "props":{
+      "blockClass":["texto", "texto54"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 53
+  "flex-layout.col#imagen53":{
+    "props":{
+      "blockClass":["imagen", "imagen53"]
+    },
+    "children":[
+      "image#imagen53",
+      "rich-text#texto53"
+    ],
+    "title":"card53"
+  },
+  "image#imagen53":{
+    "props":{
+      "blockClass":["imagen", "imagen53"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto53":{
+    "props":{
+      "blockClass":["texto", "texto53"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 52
+  "flex-layout.col#imagen52":{
+    "props":{
+      "blockClass":["imagen", "imagen52"]
+    },
+    "children":[
+      "image#imagen52",
+      "rich-text#texto52"
+    ],
+    "title":"card52"
+  },
+  "image#imagen52":{
+    "props":{
+      "blockClass":["imagen", "imagen52"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto52":{
+    "props":{
+      "blockClass":["texto", "texto52"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 51
+  "flex-layout.col#imagen51":{
+    "props":{
+      "blockClass":["imagen", "imagen51"]
+    },
+    "children":[
+      "image#imagen51",
+      "rich-text#texto51"
+    ],
+    "title":"card51"
+  },
+  "image#imagen51":{
+    "props":{
+      "blockClass":["imagen", "imagen51"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto51":{
+    "props":{
+      "blockClass":["texto", "texto51"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 50
+  "flex-layout.col#imagen50":{
+    "props":{
+      "blockClass":["imagen", "imagen50"]
+    },
+    "children":[
+      "image#imagen50",
+      "rich-text#texto50"
+    ],
+    "title":"card50"
+  },
+  "image#imagen50":{
+    "props":{
+      "blockClass":["imagen", "imagen50"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto50":{
+    "props":{
+      "blockClass":["texto", "texto50"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 49
+  "flex-layout.col#imagen49":{
+    "props":{
+      "blockClass":["imagen", "imagen49"]
+    },
+    "children":[
+      "image#imagen49",
+      "rich-text#texto49"
+    ],
+    "title":"card49"
+  },
+  "image#imagen49":{
+    "props":{
+      "blockClass":["imagen", "imagen49"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto49":{
+    "props":{
+      "blockClass":["texto", "texto49"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 48
+  "flex-layout.col#imagen48":{
+    "props":{
+      "blockClass":["imagen", "imagen48"]
+    },
+    "children":[
+      "image#imagen48",
+      "rich-text#texto48"
+    ],
+    "title":"card48"
+  },
+  "image#imagen48":{
+    "props":{
+      "blockClass":["imagen", "imagen48"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto48":{
+    "props":{
+      "blockClass":["texto", "texto48"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 47
+  "flex-layout.col#imagen47":{
+    "props":{
+      "blockClass":["imagen", "imagen47"]
+    },
+    "children":[
+      "image#imagen47",
+      "rich-text#texto47"
+    ],
+    "title":"card47"
+  },
+  "image#imagen47":{
+    "props":{
+      "blockClass":["imagen", "imagen47"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto47":{
+    "props":{
+      "blockClass":["texto", "texto47"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 46
+  "flex-layout.col#imagen46":{
+    "props":{
+      "blockClass":["imagen", "imagen46"]
+    },
+    "children":[
+      "image#imagen46",
+      "rich-text#texto46"
+    ],
+    "title":"card46"
+  },
+  "image#imagen46":{
+    "props":{
+      "blockClass":["imagen", "imagen46"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto46":{
+    "props":{
+      "blockClass":["texto", "texto46"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  //row img 4
+  "flex-layout.row#imagenes5":{
+    "props":{
+      "blockClass":["imagenes", "imagenes5"]
+    },
+    "children":[
+      "flex-layout.col#imagen45",
+      "flex-layout.col#imagen44",
+      "flex-layout.col#imagen43",
+      "flex-layout.col#imagen42",
+      "flex-layout.col#imagen41",
+      "flex-layout.col#imagen40",
+      "flex-layout.col#imagen39",
+      "flex-layout.col#imagen38",
+      "flex-layout.col#imagen37"
+    ]
+  },
+  // card 45
+  "flex-layout.col#imagen45":{
+    "props":{
+       "blockClass":["imagen", "imagen45"]
+    },
+    "children":[
+      "image#imagen45",
+      "rich-text#texto45"
+    ],
+    "title":"card45"
+  },
+  "image#imagen45":{
+     "props":{
+      "blockClass":["imagen", "imagen45"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto45":{
+    "props":{
+      "blockClass":["texto", "texto45"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 44
+  "flex-layout.col#imagen44":{
+    "props":{
+      "blockClass":["imagen", "imagen44"]
+    },
+    "children":[
+      "image#imagen44",
+      "rich-text#texto44"
+    ],
+    "title":"card44"
+  },
+  "image#imagen44":{
+    "props":{
+      "blockClass":["imagen", "imagen44"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto44":{
+    "props":{
+      "blockClass":["texto", "texto44"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 43
+  "flex-layout.col#imagen43":{
+    "props":{
+      "blockClass":["imagen", "imagen43"]
+    },
+    "children":[
+      "image#imagen43",
+      "rich-text#texto43"
+    ],
+    "title":"card43"
+  },
+  "image#imagen43":{
+    "props":{
+      "blockClass":["imagen", "imagen43"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto43":{
+    "props":{
+      "blockClass":["texto", "texto43"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 42
+  "flex-layout.col#imagen42":{
+    "props":{
+      "blockClass":["imagen", "imagen42"]
+    },
+    "children":[
+      "image#imagen42",
+      "rich-text#texto42"
+    ],
+    "title":"card42"
+  },
+  "image#imagen42":{
+    "props":{
+      "blockClass":["imagen", "imagen42"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto42":{
+    "props":{
+      "blockClass":["texto", "texto42"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 41
+  "flex-layout.col#imagen41":{
+    "props":{
+      "blockClass":["imagen", "imagen41"]
+    },
+    "children":[
+      "image#imagen41",
+      "rich-text#texto41"
+    ],
+    "title":"card41"
+  },
+  "image#imagen41":{
+    "props":{
+      "blockClass":["imagen", "imagen41"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto41":{
+    "props":{
+      "blockClass":["texto", "texto41"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 40
+  "flex-layout.col#imagen40":{
+    "props":{
+      "blockClass":["imagen", "imagen40"]
+    },
+    "children":[
+      "image#imagen40",
+      "rich-text#texto40"
+    ],
+    "title":"card40"
+  },
+  "image#imagen40":{
+    "props":{
+      "blockClass":["imagen", "imagen40"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto40":{
+    "props":{
+      "blockClass":["texto", "texto40"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 39
+  "flex-layout.col#imagen39":{
+    "props":{
+      "blockClass":["imagen", "imagen39"]
+    },
+    "children":[
+      "image#imagen39",
+      "rich-text#texto39"
+    ],
+    "title":"card39"
+  },
+  "image#imagen39":{
+    "props":{
+      "blockClass":["imagen", "imagen39"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto39":{
+    "props":{
+      "blockClass":["texto", "texto39"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 38
+  "flex-layout.col#imagen38":{
+    "props":{
+      "blockClass":["imagen", "imagen38"]
+    },
+    "children":[
+      "image#imagen38",
+      "rich-text#texto38"
+    ],
+    "title":"card38"
+  },
+  "image#imagen38":{
+    "props":{
+      "blockClass":["imagen", "imagen38"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto38":{
+    "props":{
+      "blockClass":["texto", "texto38"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 37
+  "flex-layout.col#imagen37":{
+    "props":{
+      "blockClass":["imagen", "imagen37"]
+    },
+    "children":[
+      "image#imagen37",
+      "rich-text#texto37"
+    ],
+    "title":"card37"
+  },
+  "image#imagen37":{
+    "props":{
+      "blockClass":["imagen", "imagen37"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto37":{
+    "props":{
+      "blockClass":["texto", "texto37"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  //row img 4
+  "flex-layout.row#imagenes4":{
+    "props":{
+      "blockClass":["imagenes", "imagenes4"]
+    },
+    "children":[
+      "flex-layout.col#imagen36",
+      "flex-layout.col#imagen35",
+      "flex-layout.col#imagen34",
+      "flex-layout.col#imagen33",
+      "flex-layout.col#imagen32",
+      "flex-layout.col#imagen31",
+      "flex-layout.col#imagen30",
+      "flex-layout.col#imagen29",
+      "flex-layout.col#imagen28"
+    ]
+  },
+  // card 36
+  "flex-layout.col#imagen36":{
+    "props":{
+       "blockClass":["imagen", "imagen36"]
+    },
+    "children":[
+      "image#imagen36",
+      "rich-text#texto36"
+    ],
+    "title":"card36"
+  },
+  "image#imagen36":{
+     "props":{
+      "blockClass":["imagen", "imagen36"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto36":{
+    "props":{
+      "blockClass":["texto", "texto36"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 35
+  "flex-layout.col#imagen35":{
+    "props":{
+      "blockClass":["imagen", "imagen35"]
+    },
+    "children":[
+      "image#imagen35",
+      "rich-text#texto35"
+    ],
+    "title":"card35"
+  },
+  "image#imagen35":{
+    "props":{
+      "blockClass":["imagen", "imagen35"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto35":{
+    "props":{
+      "blockClass":["texto", "texto35"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 34
+  "flex-layout.col#imagen34":{
+    "props":{
+      "blockClass":["imagen", "imagen34"]
+    },
+    "children":[
+      "image#imagen34",
+      "rich-text#texto34"
+    ],
+    "title":"card34"
+  },
+  "image#imagen34":{
+    "props":{
+      "blockClass":["imagen", "imagen34"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto34":{
+    "props":{
+      "blockClass":["texto", "texto34"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 33
+  "flex-layout.col#imagen33":{
+    "props":{
+      "blockClass":["imagen", "imagen33"]
+    },
+    "children":[
+      "image#imagen33",
+      "rich-text#texto33"
+    ],
+    "title":"card33"
+  },
+  "image#imagen33":{
+    "props":{
+      "blockClass":["imagen", "imagen33"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto33":{
+    "props":{
+      "blockClass":["texto", "texto33"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 32
+  "flex-layout.col#imagen32":{
+    "props":{
+      "blockClass":["imagen", "imagen32"]
+    },
+    "children":[
+      "image#imagen32",
+      "rich-text#texto32"
+    ],
+    "title":"card32"
+  },
+  "image#imagen32":{
+    "props":{
+      "blockClass":["imagen", "imagen32"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto32":{
+    "props":{
+      "blockClass":["texto", "texto32"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 31
+  "flex-layout.col#imagen31":{
+    "props":{
+      "blockClass":["imagen", "imagen31"]
+    },
+    "children":[
+      "image#imagen31",
+      "rich-text#texto31"
+    ],
+    "title":"card31"
+  },
+  "image#imagen31":{
+    "props":{
+      "blockClass":["imagen", "imagen31"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto31":{
+    "props":{
+      "blockClass":["texto", "texto31"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 30
+  "flex-layout.col#imagen30":{
+    "props":{
+      "blockClass":["imagen", "imagen30"]
+    },
+    "children":[
+      "image#imagen30",
+      "rich-text#texto30"
+    ],
+    "title":"card30"
+  },
+  "image#imagen30":{
+    "props":{
+      "blockClass":["imagen", "imagen30"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto30":{
+    "props":{
+      "blockClass":["texto", "texto30"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 29
+  "flex-layout.col#imagen29":{
+    "props":{
+      "blockClass":["imagen", "imagen29"]
+    },
+    "children":[
+      "image#imagen29",
+      "rich-text#texto29"
+    ],
+    "title":"card29"
+  },
+  "image#imagen29":{
+    "props":{
+      "blockClass":["imagen", "imagen29"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto29":{
+    "props":{
+      "blockClass":["texto", "texto29"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 28
+  "flex-layout.col#imagen28":{
+    "props":{
+      "blockClass":["imagen", "imagen28"]
+    },
+    "children":[
+      "image#imagen28",
+      "rich-text#texto28"
+    ],
+    "title":"card28"
+  },
+  "image#imagen28":{
+    "props":{
+      "blockClass":["imagen", "imagen28"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto28":{
+    "props":{
+      "blockClass":["texto", "texto28"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  //row img 3
+  "flex-layout.row#imagenes3":{
+    "props":{
+      "blockClass":["imagenes", "imagenes3"]
+    },
+    "children":[
+      "flex-layout.col#imagen27",
+      "flex-layout.col#imagen26",
+      "flex-layout.col#imagen25",
+      "flex-layout.col#imagen24",
+      "flex-layout.col#imagen23",
+      "flex-layout.col#imagen22",
+      "flex-layout.col#imagen21",
+      "flex-layout.col#imagen20",
+      "flex-layout.col#imagen19"
+    ]
+  },
+  // card 27
+  "flex-layout.col#imagen27":{
+    "props":{
+       "blockClass":["imagen", "imagen27"]
+    },
+    "children":[
+      "image#imagen27",
+      "rich-text#texto27"
+    ],
+    "title":"card27"
+  },
+  "image#imagen27":{
+     "props":{
+      "blockClass":["imagen", "imagen27"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto27":{
+    "props":{
+      "blockClass":["texto", "texto27"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 26
+  "flex-layout.col#imagen26":{
+    "props":{
+      "blockClass":["imagen", "imagen26"]
+    },
+    "children":[
+      "image#imagen26",
+      "rich-text#texto26"
+    ],
+    "title":"card26"
+  },
+  "image#imagen26":{
+    "props":{
+      "blockClass":["imagen", "imagen26"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto26":{
+    "props":{
+      "blockClass":["texto", "texto26"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 25
+  "flex-layout.col#imagen25":{
+    "props":{
+      "blockClass":["imagen", "imagen25"]
+    },
+    "children":[
+      "image#imagen25",
+      "rich-text#texto25"
+    ],
+    "title":"card25"
+  },
+  "image#imagen25":{
+    "props":{
+      "blockClass":["imagen", "imagen25"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto25":{
+    "props":{
+      "blockClass":["texto", "texto25"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 24
+  "flex-layout.col#imagen24":{
+    "props":{
+      "blockClass":["imagen", "imagen24"]
+    },
+    "children":[
+      "image#imagen24",
+      "rich-text#texto24"
+    ],
+    "title":"card24"
+  },
+  "image#imagen24":{
+    "props":{
+      "blockClass":["imagen", "imagen24"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto24":{
+    "props":{
+      "blockClass":["texto", "texto24"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 23
+  "flex-layout.col#imagen23":{
+    "props":{
+      "blockClass":["imagen", "imagen23"]
+    },
+    "children":[
+      "image#imagen23",
+      "rich-text#texto23"
+    ],
+    "title":"card23"
+  },
+  "image#imagen23":{
+    "props":{
+      "blockClass":["imagen", "imagen23"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto23":{
+    "props":{
+      "blockClass":["texto", "texto23"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 22
+  "flex-layout.col#imagen22":{
+    "props":{
+      "blockClass":["imagen", "imagen22"]
+    },
+    "children":[
+      "image#imagen22",
+      "rich-text#texto22"
+    ],
+    "title":"card22"
+  },
+  "image#imagen22":{
+    "props":{
+      "blockClass":["imagen", "imagen22"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto22":{
+    "props":{
+      "blockClass":["texto", "texto22"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 21
+  "flex-layout.col#imagen21":{
+    "props":{
+      "blockClass":["imagen", "imagen21"]
+    },
+    "children":[
+      "image#imagen21",
+      "rich-text#texto21"
+    ],
+    "title":"card21"
+  },
+  "image#imagen21":{
+    "props":{
+      "blockClass":["imagen", "imagen21"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto21":{
+    "props":{
+      "blockClass":["texto", "texto21"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 20
+  "flex-layout.col#imagen20":{
+    "props":{
+      "blockClass":["imagen", "imagen20"]
+    },
+    "children":[
+      "image#imagen20",
+      "rich-text#texto20"
+    ],
+    "title":"card20"
+  },
+  "image#imagen20":{
+    "props":{
+      "blockClass":["imagen", "imagen20"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto20":{
+    "props":{
+      "blockClass":["texto", "texto20"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 19
+  "flex-layout.col#imagen19":{
+    "props":{
+      "blockClass":["imagen", "imagen19"]
+    },
+    "children":[
+      "image#imagen19",
+      "rich-text#texto19"
+    ],
+    "title":"card19"
+  },
+  "image#imagen19":{
+    "props":{
+      "blockClass":["imagen", "imagen19"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto19":{
+    "props":{
+      "blockClass":["texto", "texto19"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  //row img 2
+  "flex-layout.row#imagenes2":{
+    "props":{
+      "blockClass":["imagenes", "imagenes2"]
+    },
+    "children":[
+      "flex-layout.col#imagen18",
+      "flex-layout.col#imagen17",
+      "flex-layout.col#imagen16",
+      "flex-layout.col#imagen15",
+      "flex-layout.col#imagen14",
+      "flex-layout.col#imagen13",
+      "flex-layout.col#imagen12",
+      "flex-layout.col#imagen11",
+      "flex-layout.col#imagen10"
+    ]
+  },
+  // card 18
+  "flex-layout.col#imagen18":{
+    "props":{
+      "blockClass":["imagen", "imagen18"]
+    },
+    "children":[
+      "image#imagen18",
+      "rich-text#texto18"
+    ],
+    "title":"card18"
+  },
+  "image#imagen18":{
+    "props":{
+      "blockClass":["imagen", "imagen18"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto18":{
+    "props":{
+      "blockClass":["texto", "texto18"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 17
+  "flex-layout.col#imagen17":{
+    "props":{
+      "blockClass":["imagen", "imagen17"]
+    },
+    "children":[
+      "image#imagen17",
+      "rich-text#texto17"
+    ],
+    "title":"card17"
+  },
+  "image#imagen17":{
+    "props":{
+      "blockClass":["imagen", "imagen17"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto17":{
+    "props":{
+      "blockClass":["texto", "texto17"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 16
+  "flex-layout.col#imagen16":{
+    "props":{
+      "blockClass":["imagen", "imagen16"]
+    },
+    "children":[
+      "image#imagen16",
+      "rich-text#texto16"
+    ],
+    "title":"card16"
+  },
+  "image#imagen16":{
+    "props":{
+      "blockClass":["imagen", "imagen16"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto16":{
+    "props":{
+      "blockClass":["texto", "texto16"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 15
+  "flex-layout.col#imagen15":{
+    "props":{
+      "blockClass":["imagen", "imagen15"]
+    },
+    "children":[
+      "image#imagen15",
+      "rich-text#texto15"
+    ],
+    "title":"card15"
+  },
+  "image#imagen15":{
+    "props":{
+      "blockClass":["imagen", "imagen15"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto15":{
+    "props":{
+      "blockClass":["texto", "texto15"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 14
+  "flex-layout.col#imagen14":{
+    "props":{
+      "blockClass":["imagen", "imagen14"]
+    },
+    "children":[
+      "image#imagen14",
+      "rich-text#texto14"
+    ],
+    "title":"card14"
+  },
+  "image#imagen14":{
+    "props":{
+      "blockClass":["imagen", "imagen14"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto14":{
+    "props":{
+      "blockClass":["texto", "texto14"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 13
+  "flex-layout.col#imagen13":{
+    "props":{
+      "blockClass":["imagen", "imagen13"]
+    },
+    "children":[
+      "image#imagen13",
+      "rich-text#texto13"
+    ],
+    "title":"card13"
+  },
+  "image#imagen13":{
+    "props":{
+      "blockClass":["imagen", "imagen13"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto13":{
+    "props":{
+      "blockClass":["texto", "texto13"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 12
+  "flex-layout.col#imagen12":{
+    "props":{
+      "blockClass":["imagen", "imagen12"]
+    },
+    "children":[
+      "image#imagen12",
+      "rich-text#texto12"
+    ],
+    "title":"card12"
+  },
+  "image#imagen12":{
+    "props":{
+      "blockClass":["imagen", "imagen12"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto12":{
+    "props":{
+      "blockClass":["texto", "texto12"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 11
+  "flex-layout.col#imagen11":{
+    "props":{
+      "blockClass":["imagen", "imagen11"]
+    },
+    "children":[
+      "image#imagen11",
+      "rich-text#texto11"
+    ],
+    "title":"card11"
+  },
+  "image#imagen11":{
+    "props":{
+      "blockClass":["imagen", "imagen11"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto11":{
+    "props":{
+      "blockClass":["texto", "texto11"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 10
+  "flex-layout.col#imagen10":{
+    "props":{
+      "blockClass":["imagen", "imagen10"]
+    },
+    "children":[
+      "image#imagen10",
+      "rich-text#texto10"
+    ],
+    "title":"card10"
+  },
+  "image#imagen10":{
+    "props":{
+      "blockClass":["imagen", "imagen10"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto10":{
+    "props":{
+      "blockClass":["texto", "texto10"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+
+  //row img 1
+  "flex-layout.row#imagenes1":{
+    "props":{
+      "blockClass":["imagenes", "imagenes1"]
+    },
+    "children":[
+      "flex-layout.col#imagen1",
+      "flex-layout.col#imagen2",
+      "flex-layout.col#imagen3",
+      "flex-layout.col#imagen4",
+      "flex-layout.col#imagen5",
+      "flex-layout.col#imagen6",
+      "flex-layout.col#imagen7",
+      "flex-layout.col#imagen8",
+      "flex-layout.col#imagen9"
+    ]
+  },
+  // card 9
+  "flex-layout.col#imagen9":{
+    "props":{
+      "blockClass":["imagen", "imagen9"]
+    },
+    "children":[
+      "image#imagen9",
+      "rich-text#texto9"
+    ],
+    "title":"card9"
+  },
+  "image#imagen9":{
+    "props":{
+      "blockClass":["imagen", "imagen9"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto9":{
+    "props":{
+      "blockClass":["texto", "texto9"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 8
+  "flex-layout.col#imagen8":{
+    "props":{
+      "blockClass":["imagen", "imagen8"]
+    },
+    "children":[
+      "image#imagen8",
+      "rich-text#texto8"
+    ],
+    "title":"card8"
+  },
+  "image#imagen8":{
+    "props":{
+      "blockClass":["imagen", "imagen8"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto8":{
+    "props":{
+      "blockClass":["texto", "texto8"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 7
+  "flex-layout.col#imagen7":{
+    "props":{
+      "blockClass":["imagen", "imagen7"]
+    },
+    "children":[
+      "image#imagen7",
+      "rich-text#texto7"
+    ],
+    "title":"card7"
+  },
+  "image#imagen7":{
+    "props":{
+      "blockClass":["imagen", "imagen7"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto7":{
+    "props":{
+      "blockClass":["texto", "texto7"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 6
+  "flex-layout.col#imagen6":{
+    "props":{
+      "blockClass":["imagen", "imagen6"]
+    },
+    "children":[
+      "image#imagen6",
+      "rich-text#texto6"
+    ],
+    "title":"card6"
+  },
+  "image#imagen6":{
+    "props":{
+      "blockClass":["imagen", "imagen6"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto6":{
+    "props":{
+      "blockClass":["texto", "texto6"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 5
+  "flex-layout.col#imagen5":{
+    "props":{
+      "blockClass":["imagen", "imagen5"]
+    },
+    "children":[
+      "image#imagen5",
+      "rich-text#texto5"
+    ],
+    "title":"card5"
+  },
+  "image#imagen5":{
+    "props":{
+      "blockClass":["imagen", "imagen5"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto5":{
+    "props":{
+      "blockClass":["texto", "texto5"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 4
+  "flex-layout.col#imagen4":{
+    "props":{
+      "blockClass":["imagen", "imagen4"]
+    },
+    "children":[
+      "image#imagen4",
+      "rich-text#texto4"
+    ],
+    "title":"card4"
+  },
+  "image#imagen4":{
+    "props":{
+      "blockClass":["imagen", "imagen4"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto4":{
+    "props":{
+      "blockClass":["texto", "texto4"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 3
+  "flex-layout.col#imagen3":{
+    "props":{
+      "blockClass":["imagen", "imagen3"]
+    },
+    "children":[
+      "image#imagen3",
+      "rich-text#texto3"
+    ],
+    "title":"card3"
+  },
+  "image#imagen3":{
+    "props":{
+      "blockClass":["imagen", "imagen3"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto3":{
+    "props":{
+      "blockClass":["texto", "texto3"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 2
+  "flex-layout.col#imagen2":{
+    "props":{
+      "blockClass":["imagen", "imagen2"]
+    },
+    "children":[
+      "image#imagen2",
+      "rich-text#texto2"
+    ],
+    "title":"card2"
+  },
+  "image#imagen2":{
+    "props":{
+      "blockClass":["imagen", "imagen2"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto2":{
+    "props":{
+      "blockClass":["texto", "texto2"],
+      "text":"[00.00.0000](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+  // card 1
+  "flex-layout.col#imagen1":{
+    "props":{
+      "blockClass":["imagen", "imagen1"]
+    },
+    "children":[
+      "image#imagen1",
+      "rich-text#texto1"
+    ],
+    "title":"card1"
+  },
+  "image#imagen1":{
+    "props":{
+      "blockClass":["imagen", "imagen1"],
+      "src":"assets/indiv.png"
+    }
+  },
+  "rich-text#texto1":{
+    "props":{
+      "blockClass":["texto", "texto1"],
+      "text":"[00.00.0000 ](/) \n ### Mantén tu piel resplandeciente durante la primavera"
+    }
+  },
+
+  // banners
+  //9
+  "flex-layout.row#banner9":{
+    "props":{
+      "blockClass":["bannerRow", "bannerRow9"]
+    },
+    "children":[
+      "flex-layout.col#banner9"
+    ]
+  },
+  "flex-layout.col#banner9":{
+    "props":{
+      "blockClass":["bannerCol", "bannerCol9"]
+    },
+    "children":[
+      "info-card#banner9"
+    ]
+  },
+  "info-card#banner9": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/main.jpeg",
+      "headline": "Neque porro quisquam est qui dolorem",
+      "subhead":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.Generico",
+      "callToActionText": "Leer más",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "id": "banner9",
+      "blockClass":["banner", "banner9"]
+    }
+  },
+  //8
+  "flex-layout.row#banner8":{
+    "props":{
+      "blockClass":["bannerRow", "bannerRow8"]
+    },
+    "children":[
+      "flex-layout.col#banner8"
+    ]
+  },
+  "flex-layout.col#banner8":{
+    "props":{
+      "blockClass":["bannerCol", "bannerCol8"]
+    },
+    "children":[
+      "info-card#banner8"
+    ]
+  },
+  "info-card#banner8": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/main.jpeg",
+      "headline": "Neque porro quisquam est qui dolorem",
+      "subhead":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.Generico",
+      "callToActionText": "Leer más",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "id": "banner8",
+      "blockClass":["banner", "banner8"]
+    }
+  },
+  //7
+  "flex-layout.row#banner7":{
+    "props":{
+      "blockClass":["bannerRow", "bannerRow7"]
+    },
+    "children":[
+      "flex-layout.col#banner7"
+    ]
+  },
+  "flex-layout.col#banner7":{
+    "props":{
+      "blockClass":["bannerCol", "bannerCol7"]
+    },
+    "children":[
+      "info-card#banner7"
+    ]
+  },
+  "info-card#banner7": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/main.jpeg",
+      "headline": "Neque porro quisquam est qui dolorem",
+      "subhead":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.Generico",
+      "callToActionText": "Leer más",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "id": "banner7",
+      "blockClass":["banner", "banner7"]
+    }
+  },
+  //6
+  "flex-layout.row#banner6":{
+    "props":{
+      "blockClass":["bannerRow", "bannerRow6"]
+    },
+    "children":[
+      "flex-layout.col#banner6"
+    ]
+  },
+  "flex-layout.col#banner6":{
+    "props":{
+      "blockClass":["bannerCol", "bannerCol6"]
+    },
+    "children":[
+      "info-card#banner6"
+    ]
+  },
+  "info-card#banner6": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/main.jpeg",
+      "headline": "Neque porro quisquam est qui dolorem",
+      "subhead":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.Generico",
+      "callToActionText": "Leer más",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "id": "banner6",
+      "blockClass":["banner", "banner6"]
+    }
+  },
+  //5
+  "flex-layout.row#banner5":{
+    "props":{
+      "blockClass":["bannerRow", "bannerRow5"]
+    },
+    "children":[
+      "flex-layout.col#banner5"
+    ]
+  },
+  "flex-layout.col#banner5":{
+    "props":{
+      "blockClass":["bannerCol", "bannerCol5"]
+    },
+    "children":[
+      "info-card#banner5"
+    ]
+  },
+  "info-card#banner5": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/main.jpeg",
+      "headline": "Neque porro quisquam est qui dolorem",
+      "subhead":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.Generico",
+      "callToActionText": "Leer más",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "id": "banner5",
+      "blockClass":["banner", "banner5"]
+    }
+  },
+  //4
+  "flex-layout.row#banner4":{
+    "props":{
+      "blockClass":["bannerRow", "bannerRow4"]
+    },
+    "children":[
+      "flex-layout.col#banner4"
+    ]
+  },
+  "flex-layout.col#banner4":{
+    "props":{
+      "blockClass":["bannerCol", "bannerCol4"]
+    },
+    "children":[
+      "info-card#banner4"
+    ]
+  },
+  "info-card#banner4": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/main.jpeg",
+      "headline": "Neque porro quisquam est qui dolorem",
+      "subhead":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.Generico",
+      "callToActionText": "Leer más",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "id": "banner4",
+      "blockClass":["banner", "banner4"]
+    }
+  },
+  //3
+  "flex-layout.row#banner3":{
+    "props":{
+      "blockClass":["bannerRow", "bannerRow1"]
+    },
+    "children":[
+      "flex-layout.col#banner3"
+    ]
+  },
+
+  "flex-layout.col#banner3":{
+    "props":{
+      "blockClass":["bannerCol", "bannerCol3"]
+    },
+    "children":[
+      "info-card#banner3"
+    ]
+  },
+  "info-card#banner3": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/main.jpeg",
+      "headline": "Neque porro quisquam est qui dolorem",
+      "subhead":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.Generico",
+      "callToActionText": "Leer más",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "id": "banner3",
+      "blockClass":["banner", "banner3"]
+    }
+  },
+  //2
+  "flex-layout.row#banner2":{
+    "props":{
+      "blockClass":["bannerRow", "bannerRow2"]
+    },
+    "children":[
+      "flex-layout.col#banner2"
+    ]
+  },
+
+  "flex-layout.col#banner2":{
+    "props":{
+      "blockClass":["bannerCol", "bannerCol2"]
+    },
+    "children":[
+      "info-card#banner2"
+    ]
+  },
+  "info-card#banner2": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/main.jpeg",
+      "headline": "Neque porro quisquam est qui dolorem",
+      "subhead":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.Generico",
+      "callToActionText": "Leer más",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "id": "banner2",
+      "blockClass":["banner", "banner2"]
+    }
+  },
+  //1
+  "flex-layout.row#banner1":{
+    "props":{
+      "blockClass":["bannerRow", "bannerRow1"]
+    },
+    "children":[
+      "flex-layout.col#banner1"
+    ]
+  },
+
+  "flex-layout.col#banner1":{
+    "props":{
+      "blockClass":["bannerCol", "bannerCol1"]
+    },
+    "children":[
+      "info-card#banner1"
+    ]
+  },
+  "info-card#banner1": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/main.jpeg",
+      "headline": "Neque porro quisquam est qui dolorem",
+      "subhead":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl at elit mattis consequat. Vestibulum ac ullamcorper dui. Ut egestas elit quis eros mollis tempor vitae sit amet massa.Generico",
+      "callToActionText": "Leer más",
+      "callToActionUrl": "/",
+      "textAlignment": "center",
+      "id": "banner1",
+      "blockClass":["banner", "banner1"]
+    }
+  }
+}
