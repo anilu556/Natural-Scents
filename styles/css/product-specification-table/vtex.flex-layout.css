@@ -192,6 +192,7 @@
     font-size: 16px;
     color: #56C271;
     text-transform:initial;
+    white-space: nowrap;
 }
 
 :global(.vtex-disclosure-layout-1-x-trigger--infoprodtit)

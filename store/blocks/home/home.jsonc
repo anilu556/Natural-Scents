@@ -99,7 +99,14 @@
       "fullWidth": true,
       "infinite": true,
       "showNavigationArrows": "never",
-      "blockClass": "carousel"
+      "blockClass": "carousel",
+      "slideTransition":{
+        "speed": 400, "delay": 0, "timing": ""
+      },
+      "autoplay":{
+        "timeout":3000,
+        "stopOnHover":true
+      }
     }
   },
 

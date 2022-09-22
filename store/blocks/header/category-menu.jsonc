@@ -2,7 +2,7 @@
   "vtex.menu@2.x:menu#category-menu": {
     "props": {
       "experimentalOptimizeRendering": true,
-           "blockClass":"menprincontenedor"
+      "blockClass":"menprincontenedor"
     },
     "children": [
       "menu-item#cat1",
@@ -94,10 +94,10 @@
   },
   "flex-layout.col#menufragancia1":{
     "children":[
-      "menu-item#itemcat1",
-      "flex-layout.col#submenu-1",
-      "menu-item#itemcat2",
-      "flex-layout.col#submenu-2"
+      // "menu-item#itemcat1",
+      // "flex-layout.col#submenu-1",
+      // "menu-item#itemcat2"//,
+      // "flex-layout.col#submenu-2"
     ],
     "props":{
       "blocklass": "fragCol",
@@ -106,10 +106,10 @@
   },
   "flex-layout.col#menufragancia2":{
     "children":[
-      "menu-item#itemcat3",
-      "flex-layout.col#submenu-4",
-      "menu-item#itemcat4",
-      "flex-layout.col#submenu-3"
+      // "menu-item#itemcat3",
+      // "flex-layout.col#submenu-4",
+      // "menu-item#itemcat4"//,
+      // "flex-layout.col#submenu-3"
     ],
     "props":{
       "blocklass": "fragCol",
@@ -391,12 +391,16 @@
     "children":[
       "flex-layout.col#menuImg1",
       "flex-layout.col#menuImg2"
-    ]
+    ],
+    "props":{
+      "blockClass":"menuImgs"
+    }
   },
   "flex-layout.col#menuImg1":{
     "children":[
       "image#menu1"
     ], "props":{
+      "width":"49%",
       "blockclass": "menuImg1"
     }
   },
@@ -413,6 +417,7 @@
     "children":[
       "image#menu2"
     ], "props":{
+      "width":"49%",
       "blockclass": "menuImg2"
     }
   },

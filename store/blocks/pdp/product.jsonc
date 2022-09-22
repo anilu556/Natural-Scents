@@ -13,7 +13,7 @@
       // "flex-layout.row#specifications-title",
       // "product-specification-group#table",
       "shelf.relatedProducts",
-      "product-reviews",
+      "product-rating-summary",
       "product-questions-and-answers",
       "rich-text#shelf-title1",
       "flex-layout.row#shelf2"

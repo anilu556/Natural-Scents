@@ -13,8 +13,15 @@
 /* Estilos Natural Scents */
 
 :global(.vtex-store-footer-2-x-footerLayout){
+  /* background-image: url(assets/ondas-negras-footer.svg); */
   background-image: url(https://naturalscents.vteximg.com.br/arquivos/ondas.png);
   background-repeat: round;
+}
+@media (min-width: 1024px) {
+  :global(.vtex-store-footer-2-x-footerLayout){
+  height: 390px;
+  }
+  
 }
 
 :global(.vtex-store-footer-2-x-footerLayout)

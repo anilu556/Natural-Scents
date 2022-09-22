@@ -131,9 +131,12 @@
 }
 
 :global(.vtex-login-2-x-container)
-  :global(.vtex-button)
-  :global(.vtex-button__label)::before {
-    content: url(https://naturalscents.vteximg.com.br/arquivos/login.png);
+:global(.vtex-button)
+:global(.vtex-button__label)::before {
+    /* content: url(https://naturalscents.vteximg.com.br/arquivos/login.png); */
+    content: url(assets/login.svg);
+
+
 }
 
 :global(.vtex-login-2-x-container)
@@ -377,7 +380,9 @@ font-size: 14px;
 :global(.vtex-minicart-2-x-openIconContainer)
   :global(.vtex-button)
     :global(.vtex-button__label)::before{
-      content: url(https://naturalscents.vteximg.com.br/arquivos/cart.svg);
+      /* content: url(https://naturalscents.vteximg.com.br/arquivos/cart.svg); */
+      content: url(assets/mini-cart.svg);
+      padding-bottom: 2px!important;
 }
 
 :global(.vtex-minicart-2-x-openIconContainer)
@@ -664,4 +669,17 @@ font-size: 14px;
   :global(.vtex-search-2-x-biggy-autocomplete){
     left: 1030px;
   }
+}
+:global(.vtex-flex-layout-0-x-flexColChild--colImgs)
+:global(.vtex-flex-layout-0-x-flexRow){
+  margin-left: auto!important;
+  display: flex;
+  align-items: flex-end;
+}
+
+:global(.vtex-menu-2-x-menuContainer--menprincontenedor)
+:global(.vtex-menu-2-x-submenuWrapper--isOpen)
+:global(.vtex-flex-layout-0-x-flexRowContent)
+:global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+  margin-left: auto!important;
 }

@@ -78,6 +78,7 @@
       "blockClass":["contenido"]
     },
     "children":[
+      "flex-layout.row#tituloindiv",
       "flex-layout.row#infocard1",
       "flex-layout.row#textDescription1",
       "flex-layout.row#infocard2",
@@ -88,6 +89,21 @@
       "flex-layout.row#textDescription4"
     ],
     "title":"imagenes, texto"
+  },
+  //titulo indiv page blog
+  "flex-layout.row#tituloindiv":{
+    "props":{
+      "blockClass":"tituloGenerico"
+    },
+    "children":[
+      "rich-text#tituloIndiv"
+    ]
+  },
+  "rich-text#tituloIndiv":{
+    "props":{
+      "blockClass":"tituloIndivText",
+      "text":"# tituloGenerico"
+    }
   },
   //indivContent 4
   "flex-layout.row#textDescription4":{
