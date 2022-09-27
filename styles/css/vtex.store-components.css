@@ -1784,6 +1784,19 @@
     font-size: 10px;
   }
 }
+
+@media (min-width:500px) and (max-width:639px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--bannerImage){
+    display: block!important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--bannerImage)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+    position: absolute!important;
+    width: auto!important;
+  }
+  
+}
+
 @media (min-width:640px ) {
   :global(.vtex-rich-text-0-x-container--bannerText){
     width: 29em;
