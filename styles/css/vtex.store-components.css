@@ -2113,11 +2113,18 @@
 :global(.vtex-product-list-0-x-productImageContainer){
   border: 0px;
 }
-:global(.vtex-sticky-layout-0-x-container--sticky-header):hover{
-  box-shadow: rgb(0 0 0 / 5%) 0px 10px 15px -3px, rgb(0 0 0 / 5%) 0px 4px 6px -4px!important;
-}
 
 :global(.vtex-menu-2-x-submenu):hover,
 :global(.vtex-menu-2-x-submenuWrapper--isOpen):hover{
   transition: opacity .3s,transform .3s!important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--headerMobile )
+:global(.vtex-store-components-3-x-logoLink){
+  position: relative;
+  left: 15%;
+}
+
+:global(.vtex-sticky-layout-0-x-container--sticky-header-desk):hover{
+  background-color: red;
 }

@@ -60,7 +60,7 @@
 }
 
 /* stick wrapper with the same color as the desktop/mobile header */
-:global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header-desk) {
   background-color: #f0f0f0;
 }
 
