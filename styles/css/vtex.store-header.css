@@ -369,8 +369,8 @@ font-size: 14px;
 }
 
 :global(.vtex-store-components-3-x-logoLink){
-  position: relative;
-  left: -18%;
+  /* position: relative;
+  left: -18%; */
 }
 
 :global(.vtex-store-components-3-x-logoImage){
@@ -422,9 +422,9 @@ font-size: 14px;
 
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
   :global(.vtex-store-components-3-x-logoLink){
-    position: relative;
-    left: 15%;
-    width: 193px;
+    /* position: relative; */
+    /* left: 15%; */
+    /* width: 193px; */
 }
 
 :global(.vtex-store-drawer-0-x-drawer){
@@ -626,8 +626,8 @@ font-size: 14px;
 @media  only screen and (min-width:425px) and (max-width:768px){
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
   :global(.vtex-store-components-3-x-logoLink){
-    position: relative;
-    left: 24%;
+    /* position: relative;
+    left: 24%; */
   }
 
   :global(.vtex-search-2-x-biggy-autocomplete){
@@ -640,7 +640,7 @@ font-size: 14px;
 @media  only screen and (min-width:768px) and (max-width:1024px) {
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
   :global(.vtex-store-components-3-x-logoLink){
-    left: 115%;
+    /* left: 115%; */
   }
 
   :global(.vtex-search-2-x-biggy-autocomplete){

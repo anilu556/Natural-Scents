@@ -15,6 +15,7 @@
       "shelf.relatedProducts",
       "product-rating-summary",
       "product-questions-and-answers",
+      "product-reviews",
       "rich-text#shelf-title1",
       "flex-layout.row#shelf2"
     ], "props":{

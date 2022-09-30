@@ -47,9 +47,7 @@
   },
   "flex-layout.row#menu-cat1": {
     "children": [
-      "flex-layout.col#menucat-1",
-      "flex-layout.col#menucat-2",
-      "flex-layout.col#menucat-3",
+      "flex-layout.col#menucat",
       "flex-layout.col#menucat4"
     ],
     "props":{
@@ -57,7 +55,19 @@
       "width": "100%"
     }   
   },
-  "flex-layout.col#menucat-1":{
+
+  "flex-layout.col#menucat":{
+    "props":{
+      "blockClass":"menucat"
+    },
+    "children":[
+      "flex-layout.row#menucat-1",
+      "flex-layout.row#menucat-2",
+      "flex-layout.row#menucat-3"
+    ]
+  },
+
+  "flex-layout.row#menucat-1":{
     "children": [
       "menu-item#titcat1",
       "flex-layout.row#menufragancia"
@@ -326,7 +336,7 @@
       "blockClass": "subitem"
     }
   },
-  "flex-layout.col#menucat-2":{
+  "flex-layout.row#menucat-2":{
     "children": [
       "menu-item#titcat2"
     ],
@@ -352,7 +362,7 @@
     }
   },
 
-  "flex-layout.col#menucat-3":{
+  "flex-layout.row#menucat-3":{
     "children": [
       "menu-item#titcat3"
     ],

@@ -168,19 +168,42 @@
   },
   "flex-layout.row#2-mobile": {
     "children": [
-      "drawer",
+      "drawer#header-drawer",
       "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
+      // "flex-layout.col#spacer",
+      "login#login-el",
+      "minicart.v2#mc"
     ],
     "props": {
-      "blockClass": "main-header-mobile",
+      "blockClass": ["main-header-mobile", "headerMobile"],
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
   },
+  "drawer#header-drawer":{
+    "props":{
+      "width":"10%",
+      "blockClass":"drawer"
+    }
+  },
+
+  "login#login-el":{
+    "props":{
+      "width":"5%",
+      "blockClass":"login-el"
+    }
+  },
+
+  "minicart.v2#mc":{
+    "props":{
+      "width":"5%",
+      "blockClass":"mc"
+    }
+  },
+
+
+
   "drawer": {
     "children": ["menu#drawer"]
   },
@@ -205,6 +228,7 @@
 
   "logo#mobile": {
     "props": {
+      "width":"80%",
       "title": "Logo",
       "href": "/",
       "url": "assets/logook.png"
