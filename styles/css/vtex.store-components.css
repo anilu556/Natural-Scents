@@ -2139,8 +2139,3 @@
 :global(.vtex-store-components-3-x-logoImage){
   display: -webkit-inline-box;
 }
-
-:global(.vtex-menu-2-x-submenuWrapper--isOpen){
-  position: absolute;
-  width: 50%;
-}
