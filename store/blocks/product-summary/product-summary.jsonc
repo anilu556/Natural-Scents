@@ -3,6 +3,7 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
+      // "product-summary-sku-selector",
       "flex-layout.col#productRating",
       // "product-rating-summary",
       //"product-description",

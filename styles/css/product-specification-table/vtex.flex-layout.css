@@ -444,7 +444,7 @@
 :global(.vtex-store-components-3-x-skuSelectorItemImage){
   height: 80px !important;
   width: 80px !important;
-  margin: 0 9px;
+  /* margin: 0 9px; */
 }
 
 :global(.vtex-store-components-3-x-skuSelectorSubcontainer){
@@ -453,8 +453,9 @@
 
 :global(.vtex-store-components-3-x-skuSelectorItem)
   :global(.vtex-store-components-3-x-frameAround){
-    border: none;
+    /* border: none; */
     border-radius: 0;
+    border-color: #ECC0A2;  
 }
 
 :global(.vtex-store-components-3-x-skuSelectorInternalBox){
@@ -462,7 +463,7 @@
 }
 
 :global(.vtex-store-components-3-x-skuSelectorItem--selected){
-  border: 1px solid #ECC0A2;
+  /* border: 1px solid #ECC0A2; */
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--buybtnprod){

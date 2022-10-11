@@ -62,8 +62,10 @@
 
   "search-result-layout.desktop": {
     "children": [
-      "flex-layout.row#imageCat",
-      "flex-layout.row#textCat",
+      // "flex-layout.row#imageTextCat",
+      // "flex-layout.row#imageCat",
+      // "flex-layout.row#textCat",
+      "info-card#search",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
@@ -89,17 +91,44 @@
       "blockClass": "imgcat"
     }
   },
+  "flex-layout.row#imageTextCat":{
+    "props":{
+      "blockClass":"textImg"
+    },
+    "children":[  
+      "flex-layout.row#imageCat",
+      "flex-layout.row#textCat"
+    ]
+  },
+
+  "info-card#search": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/category.png",
+      "headline": "CUIDADO CORPORAL",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "",
+      "blockClass": "header-categorias-search",
+      "textAlignment": "center"
+    }
+  },
+
+
   "flex-layout.row#textCat":{
     "children":[
       "rich-text#categoryText"
     ],
     "props":{
-      "blockClass": "textCat"
+      "blockClass": "textCat",
+      "width":"100%"
     }
   },
+
   "rich-text#categoryText":{
     "props":{
-      "text": "CUIDADO FACIAL",
+      "text": "CUIDADO CORPORAL",
       "blockClass": "txtcat"
     }
   },
@@ -192,8 +221,9 @@
 
   "search-result-layout.mobile": {
     "children": [
-      "flex-layout.row#imageCatMob",
-      "flex-layout.row#textCat",
+      // "flex-layout.row#imageCatMob",
+      // "flex-layout.row#textCat",
+      "info-card#search",
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#searchbread",
       "flex-layout.row#productCountMobile",

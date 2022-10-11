@@ -108,7 +108,7 @@
 :global(.vtex-flex-layout-0-x-flexRow--textCat){
   position: absolute;
   top: 0%;
-  left: 30%;
+  /* left: 30%; */
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--resultCont){
