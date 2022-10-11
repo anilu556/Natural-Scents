@@ -2014,7 +2014,7 @@
   display: flex;
 }
 :global(.vtex-rich-text-0-x-container--shelfTitle-ingred) {
-  background-image: url(assets/ondas-verdes.svg);
+  background-image: url(assets/ondasIngredientes.svg);
   /* height: 350px; */
   height: 372px;
   background-repeat: no-repeat;
@@ -2053,7 +2053,7 @@
 
 @media (min-width:1440px) {
   :global(.vtex-rich-text-0-x-container--shelfTitle-ingred) {
-    background-image: url(assets/ondas-verdes.svg);
+    background-image: url(assets/ondasIngredientes.svg);
     /* height: 350px; */
     height: 349px;
     background-position: right;
@@ -2191,4 +2191,10 @@
     font-size: 48px;
     white-space: normal ;
   }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--ingredientes-row-home)
+:global(.vtex-store-components-3-x-container){
+  padding-left: 0!important;
+  padding-right: 0!important;
 }
