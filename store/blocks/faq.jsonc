@@ -22,6 +22,7 @@
   },
   "rich-text#faq": {
     "props": {
+      "blockClass":"titFaq",
       "text": "## Preguntas Frecuentes"
     }
   },
@@ -31,9 +32,136 @@
       "disclosure-layout#firstFaq",
       "disclosure-layout#secondFaq",
       "disclosure-layout#thirdFaq",
-      "disclosure-layout#fourth"
+      "disclosure-layout#fourth",
+      "disclosure-layout#fifth",
+      "disclosure-layout#sixth",
+      "disclosure-layout#seventh",
+      "disclosure-layout#eighth"
     ]
   },
+  "disclosure-layout#eighth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#eighth", "disclosure-content#eighth"]
+  },
+  "disclosure-trigger#eighth": {
+    "props": {
+      "blockClass": ["question", "infoprodtit"],
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question8"]
+  },
+  "disclosure-content#eighth": {
+    "props": {
+      "blockClass": ["answer", "infoprodtxt"]
+    },
+    "children": ["rich-text#answer8"]
+  },
+  "rich-text#question8": {
+    "props": {
+      "text": "¿Puedo facturar mi compra?"
+    }
+  },
+  "rich-text#answer8": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+
+
+  "disclosure-layout#seventh": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#seventh", "disclosure-content#seventh"]
+  },
+  "disclosure-trigger#seventh": {
+    "props": {
+      "blockClass": ["question", "infoprodtit"],
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question7"]
+  },
+  "disclosure-content#seventh": {
+    "props": {
+      "blockClass": ["answer", "infoprodtxt"]
+    },
+    "children": ["rich-text#answer7"]
+  },
+  "rich-text#question7": {
+    "props": {
+      "text": "¿Puedo facturar mi compra?"
+    }
+  },
+  "rich-text#answer7": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+
+
+  "disclosure-layout#sixth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#sixth", "disclosure-content#sixth"]
+  },
+  "disclosure-trigger#sixth": {
+    "props": {
+      "blockClass": ["question", "infoprodtit"],
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question6"]
+  },
+  "disclosure-content#sixth": {
+    "props": {
+      "blockClass": ["answer", "infoprodtxt"]
+    },
+    "children": ["rich-text#answer6"]
+  },
+  "rich-text#question6": {
+    "props": {
+      "text": "¿Puedo facturar mi compra?"
+    }
+  },
+  "rich-text#answer6": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+
+
+  "disclosure-layout#fifth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#fifth", "disclosure-content#fifth"]
+  },
+  "disclosure-trigger#fifth": {
+    "props": {
+      "blockClass": ["question", "infoprodtit"],
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question4"]
+  },
+  "disclosure-content#fifth": {
+    "props": {
+      "blockClass": ["answer", "infoprodtxt"]
+    },
+    "children": ["rich-text#answer5"]
+  },
+  "rich-text#question5": {
+    "props": {
+      "text": "¿Puedo facturar mi compra?"
+    }
+  },
+  "rich-text#answer5": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+
 
   "disclosure-layout#firstFaq": {
     "props": {
@@ -86,7 +214,7 @@
   },
   "rich-text#question2Faq": {
     "props": {
-      "text": "How can I track my order?"
+      "text": "¿Puedo facturar mi compra?"
     }
   },
   "rich-text#answer2Faq": {
@@ -148,7 +276,7 @@
   },
   "rich-text#question4": {
     "props": {
-      "text": "How can I track my order?"
+      "text": "¿Puedo facturar mi compra?"
     }
   },
   "rich-text#answer4": {

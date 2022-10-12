@@ -197,8 +197,8 @@
 
 :global(.vtex-disclosure-layout-1-x-trigger--infoprodtit)
   :global(.vtex-store-icons-0-x-caretIcon){
-    position: absolute;
-    right: 150px;
+    /* position: absolute; */
+    /* right: 150px; */
     color: #ECC0A2;
 }
 
@@ -219,7 +219,7 @@
 
 :global(.vtex-disclosure-layout-1-x-trigger--infoprodtit--hidden){
   border-bottom: 1px solid #ECC0A2;
-  width: 90%;
+  /* width: 90% */
 }
 
 :global(.vtex-disclosure-layout-1-x-trigger--infoprodtit--visible){
@@ -570,7 +570,7 @@
   }
 
   :global(.vtex-disclosure-layout-1-x-trigger--infoprodtit--hidden){
-    width: 85%;
+    /* width: 85%; */
   }
 
   :global(.vtex-store-components-3-x-shareContainer){

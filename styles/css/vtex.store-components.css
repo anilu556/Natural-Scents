@@ -2239,3 +2239,42 @@
   color: #56C271;
   padding: 0px 0px 15% 0px;
 }
+
+:global(.vtex-rich-text-0-x-heading-level-2){
+  text-align: center;
+  color: #56C271;
+}
+:global(.vtex-flex-layout-0-x-flexRow--faq){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--faq)
+:global(.vtex-disclosure-layout-1-x-trigger--infoprodtit--hidden){
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--faq)
+:global(.vtex-disclosure-layout-1-x-trigger--infoprodtit--visible){
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+@media (min-width: 300px) and (max-width: 425px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--faq)
+  :global(.vtex-disclosure-layout-1-x-trigger--infoprodtit--hidden){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end;
+}
+  :global(.vtex-flex-layout-0-x-flexRowContent--faq)
+  :global(.vtex-disclosure-layout-1-x-trigger--infoprodtit--visible){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end;
+}
+}
