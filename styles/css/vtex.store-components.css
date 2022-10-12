@@ -1185,7 +1185,7 @@
 }
 
 :global(.vtex-rich-text-0-x-container--instText) {
-  margin: 120px 118px;
+  margin: 1% 2%;
 }
 
 :global(.vtex-rich-text-0-x-paragraph--instText) {
@@ -2186,9 +2186,15 @@
   justify-content: center;
 }
 
-@media (max-width:900px) {
+@media (max-width:1024px) {
   :global(.vtex-store-components-3-x-infoCardHeadline--header-categorias-search){
-    font-size: 48px;
+    font-size: 33px;
+    white-space: normal ;
+  }
+}
+@media (max-width:1250px) {
+  :global(.vtex-store-components-3-x-infoCardHeadline--header-categorias-search){
+    font-size: 64px;
     white-space: normal ;
   }
 }
