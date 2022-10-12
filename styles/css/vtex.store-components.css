@@ -1362,6 +1362,7 @@
   font-family: 'MontserratSemiBold';
   font-size: 40px;
   color: #56C271;
+  text-align: center;
 }
 
 :global(.vtex-rich-text-0-x-strong--ventas-parrafo) {
@@ -1370,7 +1371,7 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--formNatural) {
-  margin: 30px 300px;
+  margin: 30px 10%;
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--formNatural):global(.vtex-styleguide-9-x-input),
@@ -1498,7 +1499,7 @@
   }
 
   :global(.vtex-flex-layout-0-x-flexRow--formNatural) {
-    margin: 30px 300px;
+    margin: 30px 10%;
   }
 
 }
@@ -2218,10 +2219,17 @@
 :global(.vtex-rich-text-0-x-paragraph--contactForm){
   font-size: 34px;
   color: #56C271;
+  text-align: center;
 }
-
+:global(.vtex-flex-layout-0-x-flexCol--colform){
+  padding: 0 5%!important;
+}
 :global(.vtex-flex-layout-0-x-flexColChild--correo){
   width: 100%;
+}
+:global(.vtex-rich-text-0-x-headingLevel6--contactForm){
+  font-size: 16px;
+  text-align: justify;
 }
 :global(.vtex-store-form-0-x-formSubmitButton--btnEnviarForm){
   display: flex;
@@ -2277,4 +2285,11 @@
     flex-direction: row-reverse;
     justify-content:flex-end;
 }
+}
+:global(.vtex-rich-text-0-x-container--ventas-titulo){
+  display: flex;
+  justify-content: center;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--ventasPage ){
+  padding: 0 5%;
 }
