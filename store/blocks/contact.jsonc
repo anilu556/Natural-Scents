@@ -1,85 +1,176 @@
 {
   "store.custom#contact-us": {
     "children": [
-      "flex-layout.row#contact-us"
+      "flex-layout.row#contact"
     ]
   },
 
-  "flex-layout.row#contact-us": {
+  "flex-layout.row#contact": {
     "props": {
       "blockClass": "contact"
     },
     "children": [
-      "flex-layout.col#contact-us"
+      "flex-layout.col#formContact"
     ]
   },
 
-  "flex-layout.col#contact-us": {
-    "children": [
-      "rich-text#contact-us",
-      "form#contact-us"
-    ]
+  // "flex-layout.col#contact-us": {
+  //   "children": [
+  //     "rich-text#contact-us",
+  //     "form#contact-us"
+  //   ]
+  // },
+  // "rich-text#contact-us": {
+  //   "props": {
+  //     "text": "## Contact Us"
+  //   }
+  // },
+
+    /*----------------- Inicio de Formulario--------------------*/
+    "flex-layout.col#formContact":{
+      "children":[
+        "rich-text#contactForm",
+        "form#contactoIndiv"
+      ],"props":{
+          // "width":"70%",
+          "blockClass":"colform",
+          "paddingLeft":10,
+          "paddingRight":10
+      }
   },
-  "rich-text#contact-us": {
-    "props": {
-      "text": "## Contact Us"
+  "rich-text#contactForm":{
+    "props":{
+      "blockClass":"contactForm",
+      "text":"Contacto"
     }
   },
-
-  "form#contact-us": {
+  
+  "form#contactoIndiv": {
     "props": {
-      "entity": "contact",
-      "schema": "site-contact"
+      "entity": "contactform",
+      "schema": "datoscont"
     },
-    "blocks": [
-      "form-success#contact-us"
+    "children": [ 
+      "flex-layout.col#nombre",
+      "flex-layout.col#mail",
+      "form-input.textarea",
+      "form-submit#contacto"
     ],
-    "children": [
-      "form-input.text#title",
-      "form-input.text#name",
-      "form-input.text#email",
-      "form-input.textarea#message",
-      "form-submit#contact"
-    ]
+    "blocks": ["form-success#contacto"]
   },
 
-  "form-success#contact-us": {
-    "children": [
-      "rich-text#success-submit"
+  "flex-layout.col#nombre":{
+    "props":{
+      "blockClass":"nombre",
+      "horizontalAlign":"left"
+    },
+    "children":[
+      "form-input.text#nombre"
     ]
   },
-  "rich-text#success-submit": {
+  "flex-layout.col#mail":{
+    "props":{
+      "blockClass":"correo",
+      "horizontalAlign":"right"
+    },
+    "children":[
+      "form-input.text#mail"
+    ]
+  },
+  "form-success#contacto": {
+    "children": [
+      "rich-text#successSubmit-contacto"
+    ]
+  },
+  "rich-text#successSubmit-contacto": {
     "props": {
-      "text": "Thanks for reaching out! We will come back shortly.",
+      "text": "Mensaje enviado correctamente!",
       "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+      "textPosition": "CENTER",
+      "blockClass":"mensajeConfirmacion"
     }
   },
-
-  "form-input.text#title": {
+  "form-input.text#nombre": {
     "props": {
-      "pointer": "#/properties/title"
+      "pointer": "#/properties/nombre",
+      "label": "Nombre"
     }
   },
-  "form-input.text#name": {
+  "form-input.text#mail": {
     "props": {
-      "pointer": "#/properties/name"
+      "pointer": "#/properties/email",
+      "label": "Correo"
     }
   },
-  "form-input.text#email": {
+  "form-input.textarea": {
     "props": {
-      "pointer": "#/properties/email"
+      "pointer": "#/properties/mensaje",
+      "label": "Mensaje"
     }
   },
-  "form-input.textarea#message": {
+  "form-submit#contacto": {
     "props": {
-      "pointer": "#/properties/message"
-    }
-  },
-
-  "form-submit#contact": {
-    "props": {
-      "label": "Submit"
+      "label": "Enviar",
+      "blockClass":"botonEnviar"
     }
   }
+  
+  /*----------------- Final de Formulario--------------------*/
+
+  // "form#contact-us": {
+  //   "props": {
+  //     "entity": "contact",
+  //     "schema": "site-contact"
+  //   },
+  //   "blocks": [
+  //     "form-success#contact-us"
+  //   ],
+  //   "children": [
+  //     "form-input.text#title",
+  //     "form-input.text#name",
+  //     "form-input.text#email",
+  //     "form-input.textarea#message",
+  //     "form-submit#contact"
+  //   ]
+  // },
+
+  // "form-success#contact-us": {
+  //   "children": [
+  //     "rich-text#success-submit"
+  //   ]
+  // },
+  // "rich-text#success-submit": {
+  //   "props": {
+  //     "text": "Thanks for reaching out! We will come back shortly.",
+  //     "textAlignment": "CENTER",
+  //     "textPosition": "CENTER"
+  //   }
+  // },
+
+  // "form-input.text#title": {
+  //   "props": {
+  //     "pointer": "#/properties/title"
+  //   }
+  // },
+  // "form-input.text#name": {
+  //   "props": {
+  //     "pointer": "#/properties/name"
+  //   }
+  // },
+  // "form-input.text#email": {
+  //   "props": {
+  //     "pointer": "#/properties/email"
+  //   }
+  // },
+  // "form-input.textarea#message": {
+  //   "props": {
+  //     "pointer": "#/properties/message"
+  //   }
+  // },
+
+  // "form-submit#contact": {
+  //   "props": {
+  //     "label": "Submit"
+  //   }
+  // }
 }

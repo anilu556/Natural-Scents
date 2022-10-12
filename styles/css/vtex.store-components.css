@@ -2186,15 +2186,15 @@
   justify-content: center;
 }
 
-@media (max-width:1024px) {
-  :global(.vtex-store-components-3-x-infoCardHeadline--header-categorias-search){
-    font-size: 33px;
-    white-space: normal ;
-  }
-}
 @media (max-width:1250px) {
   :global(.vtex-store-components-3-x-infoCardHeadline--header-categorias-search){
     font-size: 64px;
+    white-space: normal ;
+  }
+}
+@media (max-width:1024px) {
+  :global(.vtex-store-components-3-x-infoCardHeadline--header-categorias-search){
+    font-size: 33px;
     white-space: normal ;
   }
 }
@@ -2213,4 +2213,29 @@
 }
 :global(.vtex-rich-text-0-x-strong--instagramText){
   font-weight: 900;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--contactForm){
+  font-size: 34px;
+  color: #56C271;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--correo){
+  width: 100%;
+}
+:global(.vtex-store-form-0-x-formSubmitButton--btnEnviarForm){
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15%;
+}
+:global(.vtex-rich-text-0-x-container--contactForm){
+  display: flex;
+  justify-content: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--colform):last-child
+:global(.vtex-rich-text-0-x-container){
+  font-size: 34px;
+  color: #56C271;
+  padding: 0px 0px 15% 0px;
 }

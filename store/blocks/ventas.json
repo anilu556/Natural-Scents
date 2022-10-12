@@ -93,7 +93,7 @@
         "props": {
           "pointer": "#/properties/email",
           "label": "Correo electrónico:",
-          "placeholder": "ejemplo@aldoconti.com",
+          "placeholder": "ejemplo@naturalscents.com",
           "blockClass": "correo"
         }
       },
