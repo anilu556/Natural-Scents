@@ -156,8 +156,8 @@
 
 :global(.vtex-slider__selector){
   background-color: #56C271;
-  height: 30px !important;
-  width: 30px !important;
+  height: 25px !important;
+  width: 25px !important;
   top: -7.5px;
   position: relative;
 }
