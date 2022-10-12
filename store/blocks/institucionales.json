@@ -14,15 +14,13 @@
     },
     "responsive-layout.tablet#inst":{
         "children":[
-            "flex-layout.row#imageCat",
-            "flex-layout.row#textImg",
+            "info-card#search",
             "flex-layout.row#textInst"
         ]
     },
     "responsive-layout.phone#inst":{
         "children":[
-            "flex-layout.row#imageCatMob",
-            "flex-layout.row#textImg",
+            "info-card#search",
             "flex-layout.row#textInst"
         ]
     },
