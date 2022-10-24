@@ -189,7 +189,10 @@
     "props":{
       "width":"10%",
       "blockClass":"drawer"
-    }
+    },
+    "children":[
+      "menu#drawer"
+    ]
   },
 
   "login#login-el":{
@@ -203,7 +206,10 @@
     "props":{
       "width":"5%",
       "blockClass":"mc"
-    }
+    },
+    "children":[
+      "minicart-base-content"
+    ]
   },
 
 

@@ -2293,3 +2293,9 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--ventasPage ){
   padding: 0 5%;
 }
+:global(.vtex-menu-2-x-styledLinkContent--itemPrinSingOut){
+  color: black;
+}
+:global(.vtex-store-drawer-0-x-drawerContent--drawer){
+  width: 90%!important;
+}
