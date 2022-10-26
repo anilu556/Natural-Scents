@@ -130,7 +130,7 @@
     "props":{
       "type":"category",
       "categoryId": 1,
-      "text":"Avainillado",
+      "text":"Mujer",
       "blockClass": "itemsubcat"
     }
   },
@@ -138,7 +138,7 @@
     "props":{
       "type":"category",
       "categoryId": 1,
-      "text":"Frutal",
+      "text":"Hombre",
       "blockClass": "itemsubcat"
     }
   },
@@ -146,18 +146,18 @@
     "props":{
       "type":"category",
       "categoryId": 1,
-      "text":"Frutal-Floral",
+      "text":"Niño",
       "blockClass": "itemsubcat"
     }
   },
-  "menu-item#itemcat4":{
-    "props":{
-      "type":"category",
-      "categoryId": 1,
-      "text":"Floral",
-      "blockClass": "itemsubcat"
-    }
-  },
+  // "menu-item#itemcat4":{
+  //   "props":{
+  //     "type":"category",
+  //     "categoryId": 1,
+  //     "text":"Floral",
+  //     "blockClass": "itemsubcat"
+  //   }
+  // },
   "flex-layout.col#submenu-1":{
     "children":[
       "menu-item#subitem1",
@@ -1449,13 +1449,13 @@
     },
     "children": [
       "menu-item#itemcat1",
-      "flex-layout.col#submenu-1",
+      // "flex-layout.col#submenu-1",
       "menu-item#itemcat2",
-      "flex-layout.col#submenu-2",
-      "menu-item#itemcat3",
-      "flex-layout.col#submenu-4",
-      "menu-item#itemcat4",
-      "flex-layout.col#submenu-3"
+      // "flex-layout.col#submenu-2",
+      "menu-item#itemcat3"
+      // "flex-layout.col#submenu-4",
+      // "menu-item#itemcat4",
+      // "flex-layout.col#submenu-3"
     ]
   },
   "menu-item#cat2mob":{
