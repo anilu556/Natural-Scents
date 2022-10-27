@@ -2299,3 +2299,16 @@
 :global(.vtex-store-drawer-0-x-drawerContent--drawer){
   width: 90%!important;
 }
+
+:global(.vtex-similar-products-variants-0-x-variants){
+  font-size: 0;
+}
+
+:global(.vtex-similar-products-variants-0-x-variants)::before{
+  font-size: 15px;
+  content: "Productos Similares";
+}
+
+:global(.vtex-similar-products-variants-0-x-var-wrap){
+  margin-top: 13px;
+}

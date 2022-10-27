@@ -66,7 +66,8 @@
     "vtex.css-handles": "1.x",
     "vtex.store-newsletter": "1.x",
     "vtex.search": "2.x",
-    "naturalscents.naturalscents-app": "0.x"
+    "naturalscents.naturalscents-app": "0.x",
+    "vtex.similar-products-variants": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",

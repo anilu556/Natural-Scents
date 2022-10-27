@@ -162,6 +162,7 @@
       "flex-layout.row#list-price-savings",
       "flex-layout.row#priceqty",
       "sku-selector",
+      "flex-layout.row#variantes",
       //"product-installments",
       //"product-separator",
       //"product-assembly-options",
@@ -174,6 +175,24 @@
       "share#default"
     ]
   },
+
+  "flex-layout.row#variantes":{
+    "children":[
+      "similar-products-variants"
+    ],"props":{
+      "marginBottom": 5,
+      "marginTop": 5
+    }
+  },
+
+  "similar-products-variants": {
+    "props": {
+        "imageLabel": "similar"
+    }
+},
+
+
+
 
   "flex-layout.row#product-name": {
     "props": {
