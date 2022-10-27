@@ -15,7 +15,7 @@
       // "product-rating-summary",
       "product-questions-and-answers",
       "product-reviews",
-      "shelf.relatedProducts",
+      //"shelf.relatedProducts",
       "rich-text#shelf-title1",
       "flex-layout.row#shelf2"
     ], "props":{
@@ -35,7 +35,7 @@
       "condition-layout.product#availability",
       // "flex-layout.row#specifications-title",
       // "product-specification-group#table",
-      "shelf.relatedProducts",
+      //"shelf.relatedProducts",
       "product-reviews",
       "product-questions-and-answers",
       "rich-text#shelf-title1",
@@ -50,7 +50,7 @@
       "condition-layout.product#availabilityMob",
       // "flex-layout.row#specifications-title",
       // "product-specification-group#table",
-      "shelf.relatedProducts",
+      //"shelf.relatedProducts",
       "product-reviews",
       "product-questions-and-answers",
       "rich-text#shelf-title1",
