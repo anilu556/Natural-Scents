@@ -2331,3 +2331,8 @@
 :global(.vtex-store-components-3-x-infoCardContainer--info-card-home4) {
   height: 100%;
 }
+
+:global(.vtex-flex-layout-0-x-flexColChild--orderByMobileCol)
+:global(.vtex-search-result-3-x-orderByOptionsContainer) {
+  z-index: 4;
+}
