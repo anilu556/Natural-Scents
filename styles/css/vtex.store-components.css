@@ -2312,3 +2312,22 @@
 :global(.vtex-similar-products-variants-0-x-var-wrap){
   margin-top: 13px;
 }
+
+:global(.vtex-store-components-3-x-paragraph--info-card-home2),
+:global(.vtex-store-components-3-x-paragraph--info-card-home5),
+:global(.vtex-store-components-3-x-link--info-card-home2),
+:global(.vtex-store-components-3-x-link--info-card-home5) {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+:global(.vtex-store-components-3-x-infoCardContainer--info-card-home3),
+:global(.vtex-store-components-3-x-infoCardContainer--info-card-home4) {
+  height: 100%;
+}
