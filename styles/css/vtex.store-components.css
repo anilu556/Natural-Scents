@@ -1900,8 +1900,9 @@
 
 /* indiv 0=============================== */
 :global(.vtex-flex-layout-0-x-flexRowContent--mainRow){
-  width: 90%;
-  padding-left: 5%;
+  width: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
   padding-top: 2%;
 }
 :global(.vtex-slider-layout-0-x-slide--info-card){
@@ -2345,8 +2346,8 @@
 }
 :global(.vtex-flex-layout-0-x-flexRowContent--mainRow)
 :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
-  padding-left: 5%;
-  padding-top: 5%;
+  padding-left: 1%;
+  padding-top: 1%;
 }
 
 :global(.vtex-rich-text-0-x-paragraph--bannerText),
@@ -2433,3 +2434,23 @@
   padding-left: 3%;
   padding-right: 3%;
 }
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--productosIndiv){
+  padding-left: 30px!important;
+  padding-right: 30px!important;
+}
+:global(.vtex-rich-text-0-x-headingLevel1--tituloIndivText){
+  margin-top: 0px!Important;
+}
+
+:global(.vtex-rich-text-0-x-container--tiutloProductos){
+  display: flex;
+  justify-content: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--mainRow){
+
+}
+
+:global(.vtex-search-result-3-x-orderByOptionsContainer){
+  z-index: 4!important;
+} 
