@@ -3,6 +3,7 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
+      "flex-layout.row#spacer",
       // "product-summary-sku-selector",
       "flex-layout.col#productRating",
       // "product-rating-summary",
@@ -12,6 +13,13 @@
       //"product-installments#summary",
       "flex-layout.row#cartbtn"
     ]
+  },
+
+  "flex-layout.row#spacer": {
+    "props": {
+      "height": "grow",
+      "blockClass":"row-spacer"
+    }
   },
 
   "flex-layout.col#productRating": {

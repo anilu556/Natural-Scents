@@ -342,7 +342,7 @@
 
 :global(.vtex-product-summary-2-x-nameWrapper) {
   text-align: center;
-  height: 48px;
+  /* height: 48px; */
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--productShelf) {
@@ -1632,7 +1632,7 @@
 :global(.vtex-rich-text-0-x-container--bannerText){
   color: white;
   width: 18em;
-  right: 20em;
+  /* right: 20em; */
   position: relative;
 }
 :global(.vtex-rich-text-0-x-heading--texto){
@@ -1692,7 +1692,7 @@
 :global(.vtex-rich-text-0-x-container--bannerText){
   color: white;
   width: 18em;
-  right: 20em;
+  /* right: 20em; */
   position: relative;
 }
 :global(.vtex-rich-text-0-x-headingLevel3--bannerText){
@@ -1728,13 +1728,19 @@
     height: 8em;
   }
 }
+@media (min-width: 640px) {
+  :global(.vtex-rich-text-0-x-container--bannerText){
+    right: 20em;
+  }
+}
+
 @media (min-width:300px) {
   :global(.vtex-rich-text-0-x-container--bannerText){
     width: 14em;
-    right: 0em;
+    /* right: 0em; */
     height: 6.5em;
     padding-left: 2%;
-    top: -8.5em;
+    top: -9.58em;
   }
   :global(.vtex-rich-text-0-x-headingLevel3--bannerText){
     font-size: 10px;
@@ -1750,10 +1756,10 @@
 @media (min-width:430px) {
   :global(.vtex-rich-text-0-x-container--bannerText){
     width: 15em;
-    right: 0em;
+    /* right: 0em; */
     height: 6.5em;
     padding-left: 2%;
-    top: -8.5em;
+    top: -9.58em;
   }
   :global(.vtex-rich-text-0-x-headingLevel3--bannerText){
     font-size: 10px;
@@ -1769,10 +1775,10 @@
 @media (min-width:500px ) {
   :global(.vtex-rich-text-0-x-container--bannerText){
     width: 23em;
-    right: 0em;
+    /* right: 0em; */
     height: 11.5em;
     padding-left: 2%;
-    top: -10em;
+    /* top: -10em; */
   }
   :global(.vtex-rich-text-0-x-headingLevel3--bannerText){
     font-size: 14px;
@@ -1801,7 +1807,7 @@
 @media (min-width:640px ) {
   :global(.vtex-rich-text-0-x-container--bannerText){
     width: 29em;
-    right: 29em;
+
     height: 11.5em;
     top: 0em;
   }
@@ -1820,7 +1826,7 @@
 @media (min-width:815px ) {
   :global(.vtex-rich-text-0-x-container--bannerText){
     width: 36em;
-    right: 37em;
+    /* right: 37em; */
     height: 15em;
     top: 0em;
   }
@@ -1838,7 +1844,7 @@
 @media (min-width:1026px ) {
   :global(.vtex-rich-text-0-x-container--bannerText){
     width: 25em;
-    right: 26em;
+    /* right: 26em; */
     height: 100%;
     top: 0em;
   }
@@ -1856,7 +1862,8 @@
 @media (min-width:1200px ) {
   :global(.vtex-rich-text-0-x-container--bannerText){
     width: 24em;
-    right: 26em;
+    /* right: 26em; */
+    right: 20em;
     height: 100%;
     top: 0em
   }
@@ -2142,7 +2149,7 @@
 }
 
 :global(.vtex-product-summary-2-x-nameWrapper){
-  height: 20px!important;
+  /* height: 20px!important; */
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--prodrightcol)
@@ -2335,4 +2342,94 @@
 :global(.vtex-flex-layout-0-x-flexColChild--orderByMobileCol)
 :global(.vtex-search-result-3-x-orderByOptionsContainer) {
   z-index: 4;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--mainRow)
+:global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--bannerText),
+:global(.vtex-rich-text-0-x-headingLevel3--bannerText){
+  margin-top: 5px!important;
+  margin-bottom: 5px!important;
+}
+
+@media (min-width: 850px) and (max-width: 1350px) {
+  :global(.vtex-rich-text-0-x-paragraph--bannerText){
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
+@media (min-width: 300px) and (max-width: 849px) {
+  :global(.vtex-rich-text-0-x-paragraph--bannerText){
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+:global(.vtex-rich-text-0-x-container--bannerText){
+  background: linear-gradient(to right, rgba(0,0,0,0.3) 10%, rgba(30,30,30,0.5) 90%);
+}
+
+:global(.vtex-store-components-3-x-infoCardTextContainer--info-card-home){
+  margin: 0px;
+  width: 100%;
+}
+@media (max-width: 639px) {
+  :global(.vtex-rich-text-0-x-container--bannerText){
+    width: 100%;
+  }
+  :global(.vtex-rich-text-0-x-container--bannerText){
+    height: 150px;
+  }
+}
+@media (min-width: 500px) {
+  :global(.vtex-rich-text-0-x-container--bannerText){
+    width: calc(85% - 3px );
+  }
+}
+@media (min-width: 520px) {
+  :global(.vtex-rich-text-0-x-container--bannerText){
+    width: calc(85% - 2px );
+  }
+}
+@media (min-width: 540px) {
+  :global(.vtex-rich-text-0-x-container--bannerText){
+    width: calc(85% - 1px );
+  }
+}
+@media (min-width: 580px) {
+  :global(.vtex-rich-text-0-x-container--bannerText){
+    width: calc(85% - 0px );
+  }
+}
+@media (min-width: 640px) {
+  :global(.vtex-rich-text-0-x-container--bannerText){
+    width: calc(100% + 20em );
+  }
+  :global(.vtex-rich-text-0-x-container--bannerText){
+    height: calc(100% - 3.7px);
+  }
+}
+
+:global(.vtex-store-components-3-x-imageElement--bannerImage){
+  min-height: 150px;
+}
+
+@media (min-width:607px) and (max-width: 639px) {
+  :global(.vtex-rich-text-0-x-container--bannerText){
+    width: calc(85% - -1px);
+  }
+  :global(.vtex-store-components-3-x-imageElement--bannerImage){
+    height: 150px;
+  } 
+}
+:global(.vtex-rich-text-0-x-headingLevel3--bannerText),
+:global(.vtex-rich-text-0-x-paragraph--bannerText){
+  padding-left: 3%;
+  padding-right: 3%;
 }
