@@ -33,6 +33,7 @@
     "children": [
       "product-summary-image#shelf",
       "vtex.product-highlights@2.x:product-highlights#collection",
+      "vtex.product-highlights@2.x:product-highlights#collectionNuevo",
       "flex-layout.row#wlbtn"
      // "modal-trigger#quickview" // Check quickview.jsonc
 
@@ -68,7 +69,21 @@
 
   "vtex.product-highlights@2.x:product-highlights#collection": {
     "props": {
-      "type": "collection"
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": [
+          "-10%",
+          "-20%",
+          "-30%",
+          "-40%",
+          "-50%",
+          "-60%",
+          "-70%",
+          "-80%",
+          "-90%"
+        ]
+      }
     },
     "children": ["product-highlight-wrapper"]
   },
@@ -79,6 +94,31 @@
     "children": ["product-highlight-text"]
   },
   "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#collectionNuevo": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": [
+          "Nuevo"
+        ]
+      },
+      "blockClass": "highlighnuevo"
+    },
+    "children": ["product-highlight-wrapper#collectionNuevo"]
+  },
+  "product-highlight-wrapper#collectionNuevo": {
+    "props": {
+      "blockClass": "highlighnuevo"
+    },
+    "children": ["product-highlight-text#collectionNuevo"]
+  },
+  "product-highlight-text#collectionNuevo": {
     "props": {
       "message": "{highlightName}"
     }

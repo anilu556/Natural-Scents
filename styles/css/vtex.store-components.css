@@ -937,6 +937,7 @@
   height: 50px;
 }
 
+:global(.vtex-product-highlights-2-x-productHighlightWrapper--collection)
 :global(.vtex-product-highlights-2-x-productHighlightText) {
   background-image: url(https://naturalscents.vteximg.com.br/arquivos/high.png);
   background-color: transparent;
@@ -947,6 +948,14 @@
   top: 0;
   height: 40px;
   padding: 15px 8px;
+}
+
+:global(.vtex-product-highlights-2-x-productHighlightWrapper--highlighnuevo)
+:global(.vtex-product-highlights-2-x-productHighlightText) {
+  color: #ffffff;
+  background-color: red;
+  font-size: 16px;
+  font-family: 'MontserratSemiBold';
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--productRating) {
