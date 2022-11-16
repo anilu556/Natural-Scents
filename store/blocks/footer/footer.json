@@ -80,8 +80,7 @@
     "children":[
       "image#visa", 
       "image#master", 
-      "image#google",
-      "image#apple"
+      "image#paypal"
     ],
     "props":{
       "blockClass":"paymt"
@@ -109,6 +108,13 @@
     "props": {
       "src": "assets/apple.svg",
       "maxHeight": 25
+    }
+  },
+  "image#paypal": {
+    "props": {
+      "src": "assets/paypal_pink.svg",
+      "maxHeight": 25,
+      "blockClass": "paypal-icon-footer"
     }
   },
   "rich-text#paymentsTitle":{

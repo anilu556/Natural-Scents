@@ -368,4 +368,6 @@
   }
 }
 
-
+:global(.vtex-store-components-3-x-imageElement--paypal-icon-footer) {
+  margin-top: -5px;
+}

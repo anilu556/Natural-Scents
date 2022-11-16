@@ -558,11 +558,11 @@
     display: flex;
   }
 
-  :global(.vtex-flex-layout-0-x-flexRow--buybtnprod)
+  :global(.vtex-flex-layout-0-x-flexRowContent--buybtnprod)
     :global(.vtex-flex-layout-0-x-stretchChildrenWidth),
   :global(.vtex-flex-layout-0-x-flexRowContent--btnwishprod)  
     :global(.vtex-wish-list-1-x-wishlistIconContainer){
-      justify-content: center;
+      justify-content: center !important;
   }
 
   :global(.vtex-disclosure-layout-1-x-trigger){

@@ -130,7 +130,8 @@
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
-      "blockClass": "productCont"
+      "blockClass": "productCont",
+      "collection": "164"
     }
   },
   "slider-layout#demo-products": {

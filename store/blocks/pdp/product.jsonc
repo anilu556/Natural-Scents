@@ -136,6 +136,7 @@
   "product-images": {
     "props": {
       "blockClass":"thumbproduct",
+      "thumbnailVisibility": "hidden",
       "thumbnailsOrientation":"vertical",
       "thumbnailMaxHeight": 189,
       "maxHeight":631,

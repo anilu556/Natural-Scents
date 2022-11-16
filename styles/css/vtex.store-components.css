@@ -202,6 +202,10 @@
   width: 55%;
   margin: 0 auto;
 }
+:global(.vtex-store-components-3-x-infoCardTextContainer--info-card-home1) {
+  width: 90%;
+  margin: 0 auto;
+}
 
 
 
@@ -307,7 +311,8 @@
 
 :global(.vtex-product-price-1-x-currencyContainer--summary) {
   font-size: 20px;
-  font-family: "BreveSansBold";
+  font-family: "BreveSansBook";
+  font-weight: 600;
 }
 
 :global(.vtex-product-price-1-x-listPrice) {
@@ -2150,6 +2155,12 @@
     padding-left: 44px!important;
     padding-right: 0px!important;
   }
+  :global(.vtex-login-2-x-buttonLink)
+  :global(.vtex-button)
+  :global(.vtex-button__label)::before{
+    position: relative;
+    left: -5px;
+  }
 }
 :global(.vtex-flex-layout-0-x-flexColChild--logoCont){
   width: 25em;
@@ -2492,4 +2503,13 @@
 
 :global(.vtex-product-summary-2-x-productNameContainer){
   z-index: 1;
+}
+
+:global(.vtex-search-result-3-x-filter__container--brand) {
+  display: none;
+}
+
+:global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel)
+:global(.vtex-slider-layout-0-x-imageElementLink--carousel) {
+  background-color: #FFFFFF;
 }

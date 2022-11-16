@@ -295,6 +295,18 @@
       "blockClass": "filterMobileCol"
     }
   },
+  "filter-navigator.v3": {
+    "props":{
+      
+      "facetOrdering": [
+        {
+          "key": "brand",
+          "orderBy": "name",
+          "order": "ASC"
+        }
+      ]
+    }
+  },
   "flex-layout.col#switcherMobile": {
     "children": ["gallery-layout-switcher"],
     "props": {
