@@ -379,8 +379,7 @@
     "children":[
       "image#visa", 
       "image#master", 
-      "image#google",
-      "image#apple"
+      "image#paypal"
     ],
     "props":{
       "blockClass":"paymt-mob",
