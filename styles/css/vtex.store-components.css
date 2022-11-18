@@ -953,6 +953,7 @@
   top: 0;
   height: 40px;
   padding: 15px 8px;
+  font-size: 13px;
 }
 
 :global(.vtex-product-highlights-2-x-productHighlightWrapper--highlighnuevo)
@@ -2507,6 +2508,15 @@
 
 :global(.vtex-search-result-3-x-filter__container--brand) {
   display: none;
+}
+
+
+:global(.vtex-search-result-3-x-filter__container--color) :global(.vtex-search-result-3-x-filterTitleSpan) {
+  font-size: 0px;
+}
+:global(.vtex-search-result-3-x-filter__container--color) :global(.vtex-search-result-3-x-filterTitleSpan)::after {
+  font-size: 16px;
+  content: "Ingredientes";
 }
 
 :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel)
