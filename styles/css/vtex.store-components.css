@@ -1385,6 +1385,14 @@
   font-size: 20px;
 }
 
+:global(.vtex-rich-text-0-x-container--ventas-parrafo){
+  justify-content: center;
+}
+:global(.vtex-rich-text-0-x-link--linktxt){
+  text-decoration: none;
+  color: #56C271;
+}
+
 :global(.vtex-flex-layout-0-x-flexRow--formNatural) {
   margin: 30px 10%;
 }

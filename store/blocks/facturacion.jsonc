@@ -1,7 +1,9 @@
 {
     "store.custom#facturacion": {
         "children": [
-          "flex-layout.row#facturacion"
+          "rich-text#facturacion-titulo",
+          "tab-layout#fact"
+          
         ]
     },
 
@@ -16,14 +18,28 @@
       
     "flex-layout.col#text-facturacion": {
         "children": [
-          "rich-text#facturacion-titulo",
-          "rich-text#facturacion-parrafo-1",
+          "flex-layout.row#textinst",
           "flex-layout.row#formFact"
         ],
         "props": {
           "preventVerticalStretch": true
         }
     },
+    "flex-layout.row#textinst":{
+      "children":[
+        "flex-layout.col#txtinfo"
+        
+      ],"props":{
+        "horizontalAlign":"center"
+      }
+    }, "flex-layout.col#txtinfo":{
+      "children":[
+        "rich-text#facturacion-parrafo-1"
+      ],"props":{
+        "blockClass":"coltxtinf"
+      }
+    },
+
 
     "rich-text#facturacion-titulo": {
         "props": {
@@ -35,7 +51,7 @@
     "rich-text#facturacion-parrafo-1": {
         "props": {
             "blockClass": "ventas-parrafo",
-            "text": "**Por favor llena el siguiente formulario:**"
+            "text": "**Si realizaste una compra en línea y deseas facturar, por favor llena el siguiente formulario:**"
         }
     },
 
@@ -211,5 +227,81 @@
         "label": "Enviar",
         "blockClass": "btnEnviarForm"
       }
+    },
+    
+    /*----------------- Tab Facturacion -------------------- */
+
+    "tab-layout#fact":{ 
+    "children": [
+      "tab-list#fact",
+      "tab-content#fact"
+    ],
+    "props": {
+      "blockClass": "tabfact",
+      "defaultActiveTabId": "fact1"
     }
+  },
+  "tab-list#fact": {
+    "children": [
+      "tab-list.item#fact1",
+      "tab-list.item#fact2"
+    ]
+  },
+  "tab-list.item#fact1": {
+    "props": {
+      "tabId": "fact1",
+      "label": "Facturar compra en línea",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#fact2": {
+    "props": {
+      "tabId": "fact2",
+      "label": "Facturar compra en tienda"
+    }
+  },
+ "tab-content#fact": {
+   "children": [
+     "tab-content.item#fact1",
+     "tab-content.item#fact2"
+   ]
+ },
+ "tab-content.item#fact1": {
+   "children": [
+    "flex-layout.row#facturacion"
+   ],
+   "props": {
+     "tabId": "fact1"
+   }
+ },
+ "tab-content.item#fact2": {
+   "children": [
+    "flex-layout.row#infofisica"
+   ],
+   "props": {
+     "tabId": "fact2"
+   }
+},
+"flex-layout.row#infofisica":{
+  "children":[
+    "rich-text#infofisica"
+  ],"props":{
+    "horizontalAlign":"center",
+    "paddingTop":5,
+    "paddingBottom":5
+  }
+},
+"rich-text#infofisica":{
+  "props":{
+    "text": "\n\n\n **Si realizaste tu compra en una tienda física y deseas facturar, haz clic [Aquí](http://naturalstore.no-ip.net:8081/apex/f?p=102:1:0:)**",
+    "textPosition":"CENTER",
+    "blockClass":["ventas-parrafo","linktxt"]
+  }
+}
+
+
+
+    /*----------------- Tab Facturacion -------------------- */
+
+    
 }
