@@ -66,6 +66,7 @@
       // "flex-layout.row#imageCat",
       // "flex-layout.row#textCat",
       "info-card#search",
+      "textSearch",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
