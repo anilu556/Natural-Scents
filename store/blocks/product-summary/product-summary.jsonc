@@ -33,8 +33,8 @@
     "children": [
       "product-summary-image#shelf",
       "vtex.product-highlights@2.x:product-highlights#collection",
-      "vtex.product-highlights@2.x:product-highlights#collectionNuevo",
-      "flex-layout.row#wlbtn"
+      "flex-layout.row#wlbtn",
+      "vtex.product-highlights@2.x:product-highlights#collectionNuevo"
      // "modal-trigger#quickview" // Check quickview.jsonc
 
     ]
@@ -63,7 +63,11 @@
     "props": {
       "showBadge": false,
       "aspectRatio": "1:1",
-      "maxHeight": 300
+      "maxHeight": 300,
+      "hoverImage":{
+        "criteria":"index",
+        "index": 1
+      }
     }
   },
 

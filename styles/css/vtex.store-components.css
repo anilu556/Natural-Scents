@@ -2531,3 +2531,16 @@
 :global(.vtex-slider-layout-0-x-imageElementLink--carousel) {
   background-color: #FFFFFF;
 }
+
+:global(.vtex-similar-products-variants-0-x-img){
+  height: 80px;
+  width: 80px;
+}
+
+:global(.vtex-product-summary-2-x-image--hover){
+  transform: rotate(0deg);
+}
+
+:global(.vtex-product-highlights-2-x-productHighlightWrapper--highlighnuevo){
+  margin-top: 8px;
+}

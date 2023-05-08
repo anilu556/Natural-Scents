@@ -141,7 +141,7 @@
       "thumbnailMaxHeight": 189,
       "maxHeight":631,
       "aspectRatio": {
-        "desktop": "auto",
+        "desktop": "1:1",
         "phone": "16:9"
       },
        "displayThumbnailsArrows": false,
@@ -188,6 +188,7 @@
 
   "similar-products-variants": {
     "props": {
+        "blockClass":"similar-prod",
         "imageLabel": "similar"
     }
 },
